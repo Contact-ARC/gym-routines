@@ -2,52 +2,69 @@
   "schemaVersion": 1,
   "month": "2026-10",
   "effectiveFrom": "2026-10-01",
-  "title": "October — Full-body foundations",
-  "description": "Three full-body days, about 40 minutes each. Rotate A → B → C on whichever days you train. Free weights first, cables for the finishers.",
+  "title": "Late October — Lead-in",
+  "description": "The November 4-day split at low effort, to learn the lifts and find your starting weights. Rotate A → B → C → D → A → B before 1 Nov.",
   "whatsNew": [
-    "First routine in the app — welcome!",
-    "Rotate Day A, B and C in order; the app tracks which is next.",
-    "Week 4 (22–28 Oct) is a deload: lighter weights, recover, come back stronger."
+    "Same four days as November: Chest & Triceps, Legs, Back & Biceps, Shoulders & Hinge.",
+    "2 sets per exercise, leaving 4 reps in the tank (RIR 4).",
+    "First set: start light; aim for a weight you could do ~4 more reps with at the top of the range. Too easy (6+ left)? Go up. Grinding? Drop.",
+    "Log the weight you finish on — that's your November week 1 weight.",
+    "Last two sessions (29–30 Oct): add a set to the first lift and leave 3 in the tank."
   ],
-  "deloadWeek": 4,
   "days": [
     {
       "id": "A",
-      "name": "Day A — Squat & Press",
-      "estMinutes": 40,
+      "name": "Day A — Chest & Triceps",
+      "estMinutes": 50,
+      "notes": "Lead-in: 2 sets each at RIR 4 — learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-back-squat", "sets": 3, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up)." },
-        { "exerciseId": "db-bench-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
-        { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [10, 12], "restSec": 90 },
-        { "exerciseId": "db-lateral-raise", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [10, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "plank", "sets": 2, "durationSec": [30, 45], "restSec": 45 }
+        { "exerciseId": "barbell-bench-press", "sets": 2, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up). Safety arms just below chest height. 29–30 Oct: add a third set (⋯ → Add a set) at RIR 3." },
+        { "exerciseId": "incline-db-press", "sets": 2, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "cable-fly", "sets": 2, "repRange": [12, 15], "restSec": 60 },
+        { "exerciseId": "ez-bar-skullcrusher", "sets": 2, "repRange": [8, 12], "restSec": 90 },
+        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "push-up", "sets": 2, "repRange": [8, 20], "restSec": 60, "group": "S1" }
       ]
     },
     {
       "id": "B",
-      "name": "Day B — Hinge & Pull",
-      "estMinutes": 42,
+      "name": "Day B — Legs",
+      "estMinutes": 50,
+      "notes": "Lead-in: 2 sets each at RIR 4 — learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-rdl", "sets": 3, "repRange": [8, 10], "restSec": 150 },
-        { "exerciseId": "seated-db-shoulder-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
-        { "exerciseId": "pull-up", "sets": 3, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown." },
-        { "exerciseId": "db-reverse-lunge", "sets": 2, "repRange": [8, 10], "restSec": 90 },
-        { "exerciseId": "cable-face-pull", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60, "group": "S1" }
+        { "exerciseId": "barbell-back-squat", "sets": 2, "repRange": [5, 8], "restSec": 180, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up). Safety arms just below your bottom position. 29–30 Oct: add a third set (⋯ → Add a set) at RIR 3." },
+        { "exerciseId": "leg-press", "sets": 2, "repRange": [10, 15], "restSec": 120, "notes": "Log only the plates you add, not the sled." },
+        { "exerciseId": "db-bulgarian-split-squat", "sets": 2, "repRange": [8, 10], "restSec": 90 },
+        { "exerciseId": "smith-calf-raise", "sets": 2, "repRange": [10, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "pallof-press", "sets": 2, "repRange": [10, 12], "restSec": 60, "group": "S1" }
       ]
     },
     {
       "id": "C",
-      "name": "Day C — Glutes & Incline",
-      "estMinutes": 42,
+      "name": "Day C — Back & Biceps",
+      "estMinutes": 45,
+      "notes": "Lead-in: 2 sets each at RIR 4 — learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-hip-thrust", "sets": 3, "repRange": [8, 12], "restSec": 120 },
-        { "exerciseId": "incline-db-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
-        { "exerciseId": "one-arm-db-row", "sets": 3, "repRange": [10, 12], "restSec": 75 },
-        { "exerciseId": "db-bulgarian-split-squat", "sets": 2, "repRange": [8, 10], "restSec": 90 },
-        { "exerciseId": "pallof-press", "sets": 2, "repRange": [10, 12], "restSec": 45, "group": "S1" },
-        { "exerciseId": "farmers-carry", "sets": 2, "durationSec": [30, 40], "restSec": 60, "group": "S1" }
+        { "exerciseId": "pull-up", "sets": 2, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown. 29–30 Oct: add a third set (⋯ → Add a set) at RIR 3." },
+        { "exerciseId": "chest-supported-db-row", "sets": 2, "repRange": [8, 12], "restSec": 90 },
+        { "exerciseId": "one-arm-db-row", "sets": 2, "repRange": [10, 12], "restSec": 75 },
+        { "exerciseId": "cable-face-pull", "sets": 2, "repRange": [12, 15], "restSec": 60 },
+        { "exerciseId": "ez-bar-curl", "sets": 2, "repRange": [8, 12], "restSec": 75 },
+        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60 }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Day D — Shoulders & Hinge",
+      "estMinutes": 55,
+      "notes": "Lead-in: 2 sets each at RIR 4 — learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
+      "items": [
+        { "exerciseId": "barbell-overhead-press", "sets": 2, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up). 29–30 Oct: add a third set (⋯ → Add a set) at RIR 3." },
+        { "exerciseId": "barbell-rdl", "sets": 2, "repRange": [8, 10], "restSec": 150 },
+        { "exerciseId": "barbell-hip-thrust", "sets": 2, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "db-lateral-raise", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "db-rear-delt-fly", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "hanging-knee-raise", "sets": 2, "repRange": [8, 15], "restSec": 60 }
       ]
     }
   ]

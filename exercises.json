@@ -46,8 +46,15 @@
         "Brace, then squat down between your legs, elbows travelling inside your knees.",
         "Pause briefly at the bottom, then stand up by pushing the floor away."
       ],
-      "cues": ["Keep the dumbbell glued to your chest.", "Upright torso — the weight in front makes this easier.", "Knees out."],
-      "mistakes": ["Letting the dumbbell drift away from the body.", "Rounding the lower back at the bottom."],
+      "cues": [
+        "Keep the dumbbell glued to your chest.",
+        "Upright torso — the weight in front makes this easier.",
+        "Knees out."
+      ],
+      "mistakes": [
+        "Letting the dumbbell drift away from the body.",
+        "Rounding the lower back at the bottom."
+      ],
       "alternatives": ["barbell-back-squat", "db-bulgarian-split-squat"]
     },
     {
@@ -64,8 +71,16 @@
         "Push your hips straight back, sliding the bar down your thighs, until you feel a strong hamstring stretch — usually just below the knee.",
         "Squeeze your glutes and drive your hips forward to stand tall."
       ],
-      "cues": ["Bar stays in contact with your legs.", "Flat back — think 'proud chest'.", "Hips go back, not down."],
-      "mistakes": ["Bending the knees more as you go down (turns it into a squat).", "Rounding the back to reach lower.", "Leaning back at the top."],
+      "cues": [
+        "Bar stays in contact with your legs.",
+        "Flat back — think 'proud chest'.",
+        "Hips go back, not down."
+      ],
+      "mistakes": [
+        "Bending the knees more as you go down (turns it into a squat).",
+        "Rounding the back to reach lower.",
+        "Leaning back at the top."
+      ],
       "alternatives": ["db-rdl", "machine-leg-curl"]
     },
     {
@@ -94,7 +109,10 @@
       "incrementGroup": "lower",
       "primary": ["glutes"],
       "secondary": ["hamstrings", "quads"],
-      "setup": ["Bench edge sits just under your shoulder blades.", "Use a pad on the bar across your hips."],
+      "setup": [
+        "Bench edge sits just under your shoulder blades.",
+        "Use a pad on the bar across your hips."
+      ],
       "steps": [
         "Sit on the floor, upper back against the bench, bar over your hip crease.",
         "Feet flat, hip-width, positioned so your shins are vertical at the top.",
@@ -102,7 +120,10 @@
         "Squeeze your glutes hard for a second at the top, then lower under control."
       ],
       "cues": ["Ribs down, chin tucked — move like a hinge at the hips.", "Push through the heels."],
-      "mistakes": ["Arching the lower back to get 'higher'.", "Feet too close, turning it into a quad exercise."],
+      "mistakes": [
+        "Arching the lower back to get 'higher'.",
+        "Feet too close, turning it into a quad exercise."
+      ],
       "alternatives": ["glute-bridge", "db-rdl"]
     },
     {
@@ -151,14 +172,19 @@
       "perSide": true,
       "primary": ["quads", "glutes"],
       "secondary": ["adductors"],
-      "setup": ["Rear foot laces-down on a bench. Front foot far enough forward that your front knee is roughly over your mid-foot at the bottom."],
+      "setup": [
+        "Rear foot laces-down on a bench. Front foot far enough forward that your front knee is roughly over your mid-foot at the bottom."
+      ],
       "steps": [
         "Hold a dumbbell in each hand.",
         "Lower straight down until your back knee nearly touches the floor.",
         "Drive through the front heel to stand back up.",
         "Finish all reps on one leg, then switch. Log one side's reps."
       ],
-      "cues": ["Go down like an elevator, not forward.", "Slight forward lean = more glutes; upright = more quads."],
+      "cues": [
+        "Go down like an elevator, not forward.",
+        "Slight forward lean = more glutes; upright = more quads."
+      ],
       "mistakes": ["Front foot too close to the bench.", "Pushing off the back leg."],
       "alternatives": ["db-reverse-lunge", "goblet-squat"]
     },
@@ -188,7 +214,9 @@
       "incrementGroup": "dumbbell",
       "primary": ["chest"],
       "secondary": ["front_delts", "triceps"],
-      "setup": ["Sit with the dumbbells on your thighs, then lie back and use your knees to kick them up into position."],
+      "setup": [
+        "Sit with the dumbbells on your thighs, then lie back and use your knees to kick them up into position."
+      ],
       "steps": [
         "Feet flat, shoulder blades squeezed together and down into the bench.",
         "Start with the dumbbells over your chest, palms facing forward or slightly in.",
@@ -202,20 +230,30 @@
     {
       "id": "barbell-bench-press",
       "name": "Barbell Bench Press",
-      "equipment": ["barbell", "bench", "rack"],
+      "equipment": ["barbell", "flat bench", "rack"],
       "logType": "weight",
       "incrementGroup": "upper",
       "primary": ["chest"],
-      "secondary": ["front_delts", "triceps"],
-      "setup": ["Eyes directly under the bar when lying down. Use safeties or a spotter."],
-      "steps": [
-        "Grip slightly wider than shoulder-width, squeeze shoulder blades back and down, feet planted.",
-        "Unrack and hold the bar over your shoulders with straight arms.",
-        "Lower under control to your lower chest, elbows tucked about 45–70°.",
-        "Press up and slightly back toward your face to lock out."
+      "secondary": ["triceps", "front_delts"],
+      "setup": [
+        "Bench inside the rack. Set the safety arms just below your chest height so a missed rep rests on them.",
+        "Eyes under the bar when you lie down."
       ],
-      "cues": ["Bend the bar — it keeps your elbows in a good line.", "Leg drive: push the floor away."],
-      "mistakes": ["Bouncing the bar off the chest.", "Butt lifting off the bench."],
+      "steps": [
+        "Grip the bar slightly wider than shoulder width, wrists stacked over elbows.",
+        "Pull your shoulder blades back and down, plant your feet, and unrack with straight arms.",
+        "Lower the bar under control to your lower chest, elbows about 45–60° from your body.",
+        "Press back up and slightly toward your face, finishing over your shoulders."
+      ],
+      "cues": [
+        "Squeeze the bar and keep your shoulder blades pinned.",
+        "Touch the same spot on your chest every rep."
+      ],
+      "mistakes": [
+        "Bouncing the bar off the chest.",
+        "Elbows flared straight out to 90°.",
+        "Hips lifting off the bench."
+      ],
       "alternatives": ["db-bench-press", "push-up"]
     },
     {
@@ -268,7 +306,10 @@
         "Press up until your arms are straight, dumbbells close but not clanking.",
         "Lower back to shoulder height under control."
       ],
-      "cues": ["Ribs down — don't arch your lower back off the pad.", "Forearms vertical at the bottom."],
+      "cues": [
+        "Ribs down — don't arch your lower back off the pad.",
+        "Forearms vertical at the bottom."
+      ],
       "mistakes": ["Excessive back arch.", "Cutting the range short at the bottom."],
       "alternatives": ["incline-db-press"]
     },
@@ -305,7 +346,10 @@
         "Pull the dumbbell toward your hip, elbow close to your side.",
         "Lower until your arm is straight. Do all reps, then switch sides. Log one side's reps."
       ],
-      "cues": ["Pull toward the hip, not the armpit, for more lats.", "Keep your shoulders square to the floor."],
+      "cues": [
+        "Pull toward the hip, not the armpit, for more lats.",
+        "Keep your shoulders square to the floor."
+      ],
       "mistakes": ["Twisting the torso to swing the weight up."],
       "alternatives": ["chest-supported-db-row", "cable-seated-row"]
     },
@@ -389,7 +433,9 @@
       "perSide": true,
       "primary": ["side_delts"],
       "secondary": ["traps"],
-      "setup": ["Pulley at the lowest position. Stand side-on with the cable crossing in front of your body."],
+      "setup": [
+        "Pulley at the lowest position. Stand side-on with the cable crossing in front of your body."
+      ],
       "steps": [
         "Hold the handle with the hand furthest from the machine.",
         "Raise your arm out to the side until it's roughly parallel to the floor.",
@@ -560,6 +606,196 @@
       "cues": ["Crush the handles.", "Don't let the weights swing."],
       "mistakes": ["Shoulders rolling forward.", "Leaning to one side."],
       "alternatives": ["plank"]
+    },
+    {
+      "id": "cable-fly",
+      "name": "Cable Fly",
+      "equipment": ["cable stack", "D-handle"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["chest"],
+      "secondary": ["front_delts"],
+      "setup": [
+        "Both pulleys at about shoulder height. Take a handle in each hand and step forward into a split stance."
+      ],
+      "steps": [
+        "Start with arms out to the sides, slight bend in the elbows, feeling a stretch across your chest.",
+        "Bring the handles together in front of your chest in a wide hugging arc.",
+        "Squeeze for a second, then let your arms open slowly back to the stretch."
+      ],
+      "cues": ["Fixed elbow bend — it's a hug, not a press.", "Chest up, shoulders down."],
+      "mistakes": [
+        "Bending the elbows more to turn it into a press.",
+        "Letting the weight yank your arms back too far."
+      ],
+      "alternatives": ["db-bench-press", "push-up"]
+    },
+    {
+      "id": "ez-bar-skullcrusher",
+      "name": "EZ-Bar Skull Crusher",
+      "equipment": ["EZ bar", "flat bench"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["triceps"],
+      "secondary": [],
+      "steps": [
+        "Lie on a flat bench holding the EZ bar over your shoulders with a narrow grip on the angled sections.",
+        "Tilt your upper arms slightly back toward your head and keep them there.",
+        "Bend only at the elbows to lower the bar toward your forehead or just behind it.",
+        "Straighten your elbows to press back up."
+      ],
+      "cues": [
+        "Upper arms stay still — only the forearms move.",
+        "Lower slowly; the stretch is where it works."
+      ],
+      "mistakes": ["Elbows flaring wide.", "Turning it into a close-grip press by moving the upper arms."],
+      "alternatives": ["cable-rope-pushdown"]
+    },
+    {
+      "id": "ez-bar-curl",
+      "name": "EZ-Bar Curl",
+      "equipment": ["EZ bar"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["biceps"],
+      "secondary": ["forearms"],
+      "steps": [
+        "Stand holding the EZ bar on the outer angled grips, arms straight.",
+        "Curl the bar up toward your upper chest, keeping your elbows by your sides.",
+        "Squeeze at the top, then lower slowly to full arm extension."
+      ],
+      "cues": ["Elbows pinned to your sides.", "Lower over 2–3 seconds."],
+      "mistakes": [
+        "Swinging the torso to get the bar moving.",
+        "Stopping short of straight arms at the bottom."
+      ],
+      "alternatives": ["db-hammer-curl"]
+    },
+    {
+      "id": "leg-press",
+      "name": "Leg Press",
+      "equipment": ["leg press machine", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["quads", "glutes"],
+      "secondary": ["hamstrings", "adductors"],
+      "setup": [
+        "Load plates evenly on both sides. Log only the plates you add, not the sled.",
+        "Back and hips flat against the pad."
+      ],
+      "steps": [
+        "Feet shoulder-width in the middle of the platform.",
+        "Release the safety handles and lower the platform until your knees reach about 90° or a bit deeper.",
+        "Push through your whole foot to press the platform back up without locking your knees.",
+        "Re-engage the safety handles when you finish the set."
+      ],
+      "cues": [
+        "Lower back stays on the pad — stop before your hips curl up.",
+        "Knees track over your toes."
+      ],
+      "mistakes": [
+        "Locking the knees hard at the top.",
+        "Going so deep the lower back rounds off the seat."
+      ],
+      "alternatives": ["goblet-squat", "barbell-back-squat"]
+    },
+    {
+      "id": "smith-calf-raise",
+      "name": "Smith Machine Calf Raise",
+      "equipment": ["Smith machine", "plate"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["calves"],
+      "secondary": [],
+      "setup": [
+        "Put a weight plate under the bar to stand on. Bar across your upper back as for a squat."
+      ],
+      "steps": [
+        "Stand with the balls of your feet on the plate, heels hanging off.",
+        "Unhook the bar and let your heels drop for a full stretch.",
+        "Rise onto your toes as high as you can and pause for a second.",
+        "Lower slowly back to the stretch."
+      ],
+      "cues": ["Pause at the top and the bottom — no bouncing.", "Knees straight but not locked."],
+      "mistakes": ["Short, bouncy reps.", "Rolling onto the outside of the foot."],
+      "alternatives": ["db-single-leg-calf-raise"]
+    },
+    {
+      "id": "barbell-overhead-press",
+      "name": "Barbell Overhead Press",
+      "equipment": ["barbell", "rack"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["front_delts", "side_delts"],
+      "secondary": ["triceps", "upper_back", "abs"],
+      "setup": ["Bar on the J-hooks at upper-chest height."],
+      "steps": [
+        "Grip just outside shoulder width, unrack the bar onto your upper chest, feet hip-width.",
+        "Squeeze your glutes and brace your abs.",
+        "Press the bar straight up, moving your head back slightly so it passes your chin.",
+        "Push your head through once the bar clears it, lock out over your mid-foot, then lower to your chest."
+      ],
+      "cues": ["Glutes tight, ribs down — no leaning back.", "Bar path straight up and down."],
+      "mistakes": [
+        "Arching the lower back to finish the rep.",
+        "Pressing the bar out in front instead of overhead."
+      ],
+      "alternatives": ["seated-db-shoulder-press"]
+    },
+    {
+      "id": "db-rear-delt-fly",
+      "name": "Dumbbell Rear Delt Fly",
+      "equipment": ["dumbbells", "adjustable bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["rear_delts"],
+      "secondary": ["upper_back", "traps"],
+      "setup": ["Bench at about 30°. Lie face down with your chest on the pad."],
+      "steps": [
+        "Let light dumbbells hang straight down, palms facing each other, slight elbow bend.",
+        "Raise the dumbbells out to the sides until your arms are level with your body.",
+        "Pause, then lower slowly."
+      ],
+      "cues": ["Lead with your pinkies.", "Think 'arms wide', not 'squeeze shoulder blades'."],
+      "mistakes": ["Going heavy and turning it into a row.", "Shrugging toward your ears."],
+      "alternatives": ["cable-face-pull"]
+    },
+    {
+      "id": "hanging-knee-raise",
+      "name": "Hanging Knee Raise",
+      "equipment": ["pull-up bar"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs"],
+      "secondary": ["obliques", "forearms"],
+      "steps": [
+        "Hang from the bar with straight arms and shoulders pulled down.",
+        "Curl your knees up toward your chest, rolling your pelvis up at the top.",
+        "Lower slowly until your legs are straight, without swinging.",
+        "Log added weight in the weight box (0 for bodyweight only)."
+      ],
+      "cues": ["Curl the pelvis — don't just lift the legs.", "Control the way down to kill the swing."],
+      "mistakes": ["Swinging for momentum.", "Only lifting the knees to hip height."],
+      "alternatives": ["plank"]
+    },
+    {
+      "id": "db-single-leg-calf-raise",
+      "name": "Single-Leg Dumbbell Calf Raise",
+      "equipment": ["dumbbell", "plyo box or step"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "perSide": true,
+      "primary": ["calves"],
+      "secondary": [],
+      "steps": [
+        "Stand on one foot on the edge of a plyo box or step, heel hanging off, dumbbell in the same-side hand.",
+        "Hold something with the other hand for balance.",
+        "Let your heel drop for a full stretch, then rise as high as you can onto your toes and pause.",
+        "Lower slowly. Finish all reps, then switch legs. Log one side's reps and the weight of the dumbbell."
+      ],
+      "cues": ["Pause at the top and bottom — no bouncing."],
+      "mistakes": ["Bending the knee to help the rep.", "Rushing through a half range of motion."],
+      "alternatives": ["smith-calf-raise"]
     }
   ]
 }

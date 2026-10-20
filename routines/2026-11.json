@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-11",
+  "effectiveFrom": "2026-11-01",
+  "title": "November — 4-day split",
+  "description": "Four days, each on different muscles: A Chest & Triceps, B Legs, C Back & Biceps, D Shoulders & Hinge. Rotate A → B → C → D (Mon/Tue/Thu/Fri works well). Free weights lead; cables, leg press and Smith fill in.",
+  "whatsNew": [
+    "New 4-day split: Chest & Triceps, Legs, Back & Biceps, Shoulders & Hinge.",
+    "Warm up 5 min on the rower, SkiErg or air bike before every session.",
+    "Effort: week 1 leave 3 reps in the tank, week 2 leave 2, week 3 leave 1.",
+    "Week 4 (22–28 Nov) is a deload: one set fewer, ~10% lighter."
+  ],
+  "deloadWeek": 4,
+  "days": [
+    {
+      "id": "A",
+      "name": "Day A — Chest & Triceps",
+      "estMinutes": 50,
+      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "items": [
+        { "exerciseId": "barbell-bench-press", "sets": 4, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up). Safety arms just below chest height." },
+        { "exerciseId": "incline-db-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "cable-fly", "sets": 3, "repRange": [12, 15], "restSec": 60 },
+        { "exerciseId": "ez-bar-skullcrusher", "sets": 3, "repRange": [8, 12], "restSec": 90 },
+        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "push-up", "sets": 2, "repRange": [8, 20], "restSec": 60, "group": "S1" }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Day B — Legs",
+      "estMinutes": 50,
+      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "items": [
+        { "exerciseId": "barbell-back-squat", "sets": 4, "repRange": [5, 8], "restSec": 180, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up). Safety arms just below your bottom position." },
+        { "exerciseId": "leg-press", "sets": 3, "repRange": [10, 15], "restSec": 120, "notes": "Log only the plates you add, not the sled." },
+        { "exerciseId": "db-bulgarian-split-squat", "sets": 3, "repRange": [8, 10], "restSec": 90 },
+        { "exerciseId": "smith-calf-raise", "sets": 3, "repRange": [10, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "pallof-press", "sets": 3, "repRange": [10, 12], "restSec": 60, "group": "S1" }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Day C — Back & Biceps",
+      "estMinutes": 45,
+      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "items": [
+        { "exerciseId": "pull-up", "sets": 4, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown." },
+        { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [8, 12], "restSec": 90 },
+        { "exerciseId": "one-arm-db-row", "sets": 3, "repRange": [10, 12], "restSec": 75 },
+        { "exerciseId": "cable-face-pull", "sets": 3, "repRange": [12, 15], "restSec": 60 },
+        { "exerciseId": "ez-bar-curl", "sets": 3, "repRange": [8, 12], "restSec": 75 },
+        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60 }
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Day D — Shoulders & Hinge",
+      "estMinutes": 55,
+      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "items": [
+        { "exerciseId": "barbell-overhead-press", "sets": 4, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up)." },
+        { "exerciseId": "barbell-rdl", "sets": 3, "repRange": [8, 10], "restSec": 150 },
+        { "exerciseId": "barbell-hip-thrust", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "db-lateral-raise", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "db-rear-delt-fly", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "hanging-knee-raise", "sets": 2, "repRange": [8, 15], "restSec": 60 }
+      ]
+    }
+  ]
+}
