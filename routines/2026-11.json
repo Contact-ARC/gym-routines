@@ -8,7 +8,8 @@
     "New 4-day split: Chest & Triceps, Legs, Back & Biceps, Shoulders & Hinge.",
     "Warm up 5 min on the rower, SkiErg or air bike before every session.",
     "The target changes each week: leave 3 reps in the tank, then 2, then 1. The app shows it on every exercise.",
-    "Week 4 (22–28 Nov) is a deload. The app drops a set and suggests about 10% lighter weights."
+    "Week 4 (22–28 Nov) is a deload. The app drops a set and suggests about 10% lighter weights.",
+    "Lifting for under 6 months? Pick the beginner track in Settings: simpler exercises and fewer sets."
   ],
   "deloadWeek": 4,
   "days": [
@@ -18,13 +19,47 @@
       "estMinutes": 50,
       "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-bench-press", "sets": 4, "repRange": [6, 8], "restSec": 150, "notes": "Safety arms just below chest height." },
-        { "exerciseId": "incline-db-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
-        { "exerciseId": "cable-fly", "sets": 3, "repRange": [12, 15], "restSec": 60 },
-        { "exerciseId": "ez-bar-skullcrusher", "sets": 3, "repRange": [8, 12], "restSec": 90 },
+        {
+          "exerciseId": "barbell-bench-press",
+          "sets": 4,
+          "repRange": [6, 8],
+          "restSec": 150,
+          "notes": "Safety arms just below chest height.",
+          "es": { "notes": "Barras de seguridad justo por debajo de la altura del pecho." },
+          "beginner": {
+            "exerciseId": "db-bench-press",
+            "sets": 3,
+            "repRange": [8, 12],
+            "restSec": 120,
+            "notes": "Dumbbells are easier to learn and safe without a spotter.",
+            "es": { "notes": "Las mancuernas son más fáciles de aprender y seguras sin compañero que te ayude." }
+          }
+        },
+        {
+          "exerciseId": "incline-db-press",
+          "sets": 3,
+          "repRange": [8, 12],
+          "restSec": 120,
+          "beginner": { "sets": 2 }
+        },
+        {
+          "exerciseId": "cable-fly",
+          "sets": 3,
+          "repRange": [12, 15],
+          "restSec": 60,
+          "beginner": { "sets": 2 }
+        },
+        {
+          "exerciseId": "ez-bar-skullcrusher",
+          "sets": 3,
+          "repRange": [8, 12],
+          "restSec": 90,
+          "beginner": { "exerciseId": "overhead-cable-triceps-extension", "sets": 2, "repRange": [10, 15] }
+        },
         { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "push-up", "sets": 2, "repRange": [8, 20], "restSec": 60, "group": "S1" }
-      ]
+      ],
+      "es": { "name": "Día A — Pecho y tríceps", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "B",
@@ -32,12 +67,41 @@
       "estMinutes": 50,
       "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-back-squat", "sets": 4, "repRange": [5, 8], "restSec": 180, "notes": "Safety arms just below your bottom position." },
-        { "exerciseId": "leg-press", "sets": 3, "repRange": [10, 15], "restSec": 120, "notes": "Log only the plates you add, not the sled." },
-        { "exerciseId": "db-bulgarian-split-squat", "sets": 3, "repRange": [8, 10], "restSec": 90 },
+        {
+          "exerciseId": "barbell-back-squat",
+          "sets": 4,
+          "repRange": [5, 8],
+          "restSec": 180,
+          "notes": "Safety arms just below your bottom position.",
+          "es": { "notes": "Barras de seguridad justo por debajo de tu posición más baja." },
+          "beginner": {
+            "exerciseId": "goblet-squat",
+            "sets": 3,
+            "repRange": [8, 12],
+            "restSec": 120,
+            "notes": "Learn the squat pattern first; the barbell comes later.",
+            "es": { "notes": "Aprende primero el patrón de sentadilla; la barra llegará después." }
+          }
+        },
+        {
+          "exerciseId": "leg-press",
+          "sets": 3,
+          "repRange": [10, 15],
+          "restSec": 120,
+          "notes": "Log only the plates you add, not the sled.",
+          "es": { "notes": "Apunta solo los discos que añades, no el carro." }
+        },
+        {
+          "exerciseId": "db-bulgarian-split-squat",
+          "sets": 3,
+          "repRange": [8, 10],
+          "restSec": 90,
+          "beginner": { "exerciseId": "db-reverse-lunge", "sets": 2 }
+        },
         { "exerciseId": "smith-calf-raise", "sets": 3, "repRange": [10, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "pallof-press", "sets": 3, "repRange": [10, 12], "restSec": 60, "group": "S1" }
-      ]
+      ],
+      "es": { "name": "Día B — Piernas", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "C",
@@ -45,13 +109,41 @@
       "estMinutes": 45,
       "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "pull-up", "sets": 4, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown." },
+        {
+          "exerciseId": "pull-up",
+          "sets": 4,
+          "repRange": [5, 10],
+          "restSec": 120,
+          "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown.",
+          "es": { "notes": "¿Aún no sacas 5 repeticiones limpias? Cámbialo por jalón al pecho en polea." },
+          "beginner": {
+            "exerciseId": "cable-lat-pulldown",
+            "sets": 3,
+            "repRange": [8, 12],
+            "restSec": 120,
+            "notes": "Build up to pull-ups with the pulldown.",
+            "es": { "notes": "Prepárate para las dominadas con el jalón." }
+          }
+        },
         { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [8, 12], "restSec": 90 },
-        { "exerciseId": "one-arm-db-row", "sets": 3, "repRange": [10, 12], "restSec": 75 },
+        {
+          "exerciseId": "one-arm-db-row",
+          "sets": 3,
+          "repRange": [10, 12],
+          "restSec": 75,
+          "beginner": { "sets": 2 }
+        },
         { "exerciseId": "cable-face-pull", "sets": 3, "repRange": [12, 15], "restSec": 60 },
-        { "exerciseId": "ez-bar-curl", "sets": 3, "repRange": [8, 12], "restSec": 75 },
+        {
+          "exerciseId": "ez-bar-curl",
+          "sets": 3,
+          "repRange": [8, 12],
+          "restSec": 75,
+          "beginner": { "sets": 2 }
+        },
         { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60 }
-      ]
+      ],
+      "es": { "name": "Día C — Espalda y bíceps", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "D",
@@ -59,21 +151,90 @@
       "estMinutes": 55,
       "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-overhead-press", "sets": 4, "repRange": [6, 8], "restSec": 150 },
-        { "exerciseId": "barbell-rdl", "sets": 3, "repRange": [8, 10], "restSec": 150 },
-        { "exerciseId": "barbell-hip-thrust", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        {
+          "exerciseId": "barbell-overhead-press",
+          "sets": 4,
+          "repRange": [6, 8],
+          "restSec": 150,
+          "beginner": { "exerciseId": "seated-db-shoulder-press", "sets": 3, "repRange": [8, 12] }
+        },
+        {
+          "exerciseId": "barbell-rdl",
+          "sets": 3,
+          "repRange": [8, 10],
+          "restSec": 150,
+          "beginner": { "exerciseId": "db-rdl", "repRange": [10, 12] }
+        },
+        {
+          "exerciseId": "barbell-hip-thrust",
+          "sets": 3,
+          "repRange": [8, 12],
+          "restSec": 120,
+          "beginner": { "exerciseId": "glute-bridge", "repRange": [12, 20] }
+        },
         { "exerciseId": "db-lateral-raise", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "db-rear-delt-fly", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "hanging-knee-raise", "sets": 2, "repRange": [8, 15], "restSec": 60 }
-      ]
+        {
+          "exerciseId": "hanging-knee-raise",
+          "sets": 2,
+          "repRange": [8, 15],
+          "restSec": 60,
+          "beginner": { "exerciseId": "dead-bug", "repRange": [8, 12] }
+        }
+      ],
+      "es": { "name": "Día D — Hombros y bisagra de cadera", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     }
   ],
   "rir": 2,
   "weekPlan": [
-    { "week": 1, "rir": 3, "focus": "Find working weights on the new lifts and log everything." },
-    { "week": 2, "rir": 2, "focus": "Add weight wherever every set hit the top of the range." },
-    { "week": 3, "rir": 1, "focus": "Hardest week. Chase rep records." },
-    { "week": 4, "deload": true, "rir": 3, "focus": "Deload: one set fewer, about 10% lighter, clean technique." },
-    { "week": 5, "rir": 2, "focus": "Back to normal. Carry the numbers into December." }
-  ]
+    {
+      "week": 1,
+      "rir": 3,
+      "focus": "Find working weights on the new lifts and log everything.",
+      "es": { "focus": "Encuentra tus pesos de trabajo en los ejercicios nuevos y apúntalo todo." }
+    },
+    {
+      "week": 2,
+      "rir": 2,
+      "focus": "Add weight wherever every set hit the top of the range.",
+      "es": { "focus": "Sube peso donde todas las series llegaron al tope del rango." }
+    },
+    {
+      "week": 3,
+      "rir": 1,
+      "focus": "Hardest week. Chase rep records.",
+      "es": { "focus": "La semana más dura. Ve a por récords de repeticiones." }
+    },
+    {
+      "week": 4,
+      "deload": true,
+      "rir": 3,
+      "focus": "Deload: one set fewer, about 10% lighter, clean technique.",
+      "es": { "focus": "Descarga: una serie menos, un 10 % más ligero, técnica limpia." }
+    },
+    {
+      "week": 5,
+      "rir": 2,
+      "focus": "Back to normal. Carry the numbers into December.",
+      "es": { "focus": "Vuelta a la normalidad. Lleva los números a diciembre." }
+    }
+  ],
+  "es": {
+    "title": "Noviembre — rutina de 4 días",
+    "description": "Cuatro días, cada uno con músculos distintos: A Pecho y tríceps, B Piernas, C Espalda y bíceps, D Hombros y bisagra de cadera. Rota A → B → C → D (lunes/martes/jueves/viernes va bien). Mandan los pesos libres; poleas, prensa y multipower completan.",
+    "whatsNew": [
+      "Nueva rutina de 4 días: Pecho y tríceps, Piernas, Espalda y bíceps, Hombros y bisagra de cadera.",
+      "Calienta 5 min en el remo, el SkiErg o la air bike antes de cada sesión.",
+      "El objetivo cambia cada semana: deja 3 repeticiones en reserva, luego 2 y luego 1. La app lo muestra en cada ejercicio.",
+      "La semana 4 (22–28 nov) es de descarga. La app quita una serie y sugiere pesos un 10 % más ligeros.",
+      "¿Llevas menos de 6 meses entrenando? Elige la versión para principiantes en Ajustes: ejercicios más sencillos y menos series."
+    ]
+  },
+  "challenge": {
+    "type": "workouts",
+    "target": 14,
+    "title": "14 workouts in November",
+    "description": "About 3 or 4 a week. Every finished workout counts, deload week included. Track it with the crew.",
+    "es": { "title": "14 entrenamientos en noviembre", "description": "Unos 3 o 4 por semana. Cuenta cada entrenamiento terminado, también en la semana de descarga. Síguelo con tu grupo." }
+  }
 }

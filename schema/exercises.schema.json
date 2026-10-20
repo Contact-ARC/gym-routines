@@ -117,6 +117,46 @@
               "pattern": "^(images/|https://)"
             },
             "description": "Paths relative to this repo, or full https links"
+          },
+          "es": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Spanish text. Any field left out falls back to English.",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "equipment": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "setup": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cues": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "mistakes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       }

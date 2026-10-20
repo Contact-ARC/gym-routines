@@ -49,7 +49,14 @@ for (const ex of ids.values()) {
   if (ex.logType !== 'time' && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
     warn(`${exFile}: "${ex.id}" has no incrementGroup — the app will assume "upper"`)
   }
+  if (ex.es) {
+    for (const k of ['steps', 'setup', 'cues', 'mistakes']) {
+      if (ex.es[k] && ex[k] && ex.es[k].length !== ex[k].length) warn(`${exFile}: "${ex.id}" has ${ex[k].length} ${k} in English but ${ex.es[k].length} in Spanish`)
+    }
+  }
 }
+const missingEs = [...ids.values()].filter(ex => !ex.es?.name).map(ex => ex.id)
+if (missingEs.length) warn(`${exFile}: no Spanish name for ${missingEs.length} exercise(s): ${missingEs.slice(0, 5).join(', ')}${missingEs.length > 5 ? '…' : ''}`)
 
 // ── Routines ──
 const listed = new Set()
@@ -77,6 +84,16 @@ for (const entry of latest?.routines || []) {
     if (isNaN(Date.parse(d.from)) || (d.to && isNaN(Date.parse(d.to)))) fail(`${entry.file}: datePlan has an invalid date`)
   }
 
+  // Monthly challenge
+  const ch = r.challenge
+  if (ch) {
+    for (const id of ch.exerciseIds || []) if (!ids.has(id)) fail(`${entry.file}: challenge counts unknown exercise "${id}"`)
+    if (ch.exerciseIds?.length && ['workouts', 'manual'].includes(ch.type)) warn(`${entry.file}: challenge type "${ch.type}" ignores exerciseIds`)
+    if (ch.type === 'volume' && !ch.unit) warn(`${entry.file}: volume challenge has no unit — the app assumes the target is in each person's unit`)
+    if (ch.type === 'manual' && !ch.unitLabel) warn(`${entry.file}: manual challenge has no unitLabel (what people are counting)`)
+  }
+  if (r.es?.whatsNew && r.whatsNew && r.es.whatsNew.length !== r.whatsNew.length) warn(`${entry.file}: whatsNew has ${r.whatsNew.length} lines in English but ${r.es.whatsNew.length} in Spanish`)
+
   const dayIds = new Set()
   for (const day of r.days || []) {
     if (dayIds.has(day.id)) fail(`${entry.file}: duplicate day id "${day.id}"`)
@@ -91,6 +108,19 @@ for (const entry of latest?.routines || []) {
       const range = it.repRange || it.durationSec
       if (range && range[0] > range[1]) fail(`${where}: range ${JSON.stringify(range)} is backwards`)
       if (it.group) (groups[it.group] ||= []).push(i)
+      // Beginner track: the merged item has to make sense too
+      if (it.beginner) {
+        const b = { ...it, ...it.beginner }
+        const bex = ids.get(b.exerciseId)
+        if (!bex) { fail(`${where}: beginner version uses unknown exerciseId "${b.exerciseId}"`); return }
+        if (it.beginner.repRange && it.beginner.durationSec) fail(`${where}: beginner version has both repRange and durationSec`)
+        const timed = bex.logType === 'time'
+        const bRange = it.beginner.durationSec || it.beginner.repRange || (timed ? it.durationSec : it.repRange)
+        if (timed && !(it.beginner.durationSec || it.durationSec)) fail(`${where}: beginner exercise "${bex.id}" is timed — give the beginner version a durationSec`)
+        if (!timed && !(it.beginner.repRange || it.repRange)) fail(`${where}: beginner exercise "${bex.id}" is rep-based — give the beginner version a repRange`)
+        if (bRange && bRange[0] > bRange[1]) fail(`${where}: beginner range ${JSON.stringify(bRange)} is backwards`)
+        if (b.exerciseId === it.exerciseId && Object.keys(it.beginner).every(k => k === 'es' || k === 'notes')) warn(`${where}: beginner version only changes the notes`)
+      }
     })
     for (const [g, idx] of Object.entries(groups)) {
       if (idx.length < 2) fail(`${entry.file} day ${day.id}: superset ${g} has only one exercise`)

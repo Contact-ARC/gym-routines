@@ -86,6 +86,15 @@
               "all",
               "first"
             ]
+          },
+          "es": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "focus": {
+                "type": "string"
+              }
+            }
           }
         },
         "required": [
@@ -136,6 +145,15 @@
               "all",
               "first"
             ]
+          },
+          "es": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "focus": {
+                "type": "string"
+              }
+            }
           }
         },
         "required": [
@@ -233,8 +251,153 @@
                 "warmup": {
                   "type": "boolean",
                   "description": "Show the warm-up checklist (default: first exercise of the day only)"
+                },
+                "es": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "notes": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "beginner": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "minProperties": 1,
+                  "description": "Overrides for people on the beginner track (only the fields given change)",
+                  "properties": {
+                    "exerciseId": {
+                      "type": "string"
+                    },
+                    "sets": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 10
+                    },
+                    "repRange": {
+                      "$ref": "#/definitions/range"
+                    },
+                    "durationSec": {
+                      "$ref": "#/definitions/range"
+                    },
+                    "restSec": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 600
+                    },
+                    "notes": {
+                      "type": "string"
+                    },
+                    "es": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "properties": {
+                        "notes": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
                 }
               }
+            }
+          },
+          "es": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "notes": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "es": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Spanish text for the routine announcement",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "whatsNew": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "challenge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "target",
+        "title"
+      ],
+      "description": "Monthly challenge shown on the home screen and the crew board",
+      "properties": {
+        "type": {
+          "enum": [
+            "workouts",
+            "sets",
+            "reps",
+            "time",
+            "volume",
+            "manual"
+          ],
+          "description": "workouts: finished workouts; sets: hard sets; reps/time: total reps or seconds (optionally only exerciseIds); volume: weight × reps; manual: people tap +1 themselves"
+        },
+        "target": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "exerciseIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Only count these exercises (sets, reps, time, volume)"
+        },
+        "unit": {
+          "enum": [
+            "kg",
+            "lb"
+          ],
+          "description": "Unit of the target for volume challenges (converted for lb users)"
+        },
+        "unitLabel": {
+          "type": "string",
+          "description": "What a manual challenge counts, e.g. 'days with 10k steps'"
+        },
+        "es": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "unitLabel": {
+              "type": "string"
             }
           }
         }

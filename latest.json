@@ -1,6 +1,13 @@
 {
   "schemaVersion": 1,
-  "app": { "version": "0.3.1", "notes": "Cleaner supersets, and a quick how-to sheet with photos and muscles during your workout.", "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest" },
+  "app": {
+    "version": "0.4.1",
+    "notes": "Spanish, beginner track, monthly challenge, crew board, weekly automatic backups, CSV export, month reports, share images, rep records, body tracking and a history calendar. 0.4.1: small polish.",
+    "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
+    "es": {
+      "notes": "Español, versión para principiantes, reto mensual, tablón del grupo, copias de seguridad semanales automáticas, exportar a CSV, informe mensual, imágenes para compartir, récords de repeticiones, seguimiento corporal y calendario del historial. 0.4.1: pequeños retoques."
+    }
+  },
   "exercisesFile": "exercises.json",
   "routines": [
     { "month": "2026-10", "file": "routines/2026-10.json", "effectiveFrom": "2026-10-01" },

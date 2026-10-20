@@ -63,6 +63,14 @@ button:disabled { opacity: .4; cursor: default; }
 .prev-item span:last-child { color: var(--ink-2); white-space: nowrap; font-family: 'Barlow Condensed'; font-size: 16px; }
 pre { background: var(--card-2); padding: 10px; border-radius: 10px; overflow-x: auto; font-size: 12px; }
 .hint { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+details { margin-top: 12px; }
+summary { cursor: pointer; font-weight: 600; color: var(--ink-2); font-size: 14px; }
+details[open] summary { margin-bottom: 8px; }
+.beg { grid-column: 2 / -1; display: grid; grid-template-columns: minmax(160px, 1fr) 64px 130px 80px; gap: 8px; align-items: end; padding: 10px; border-radius: 10px; background: var(--card); border: 1.5px dashed var(--line); }
+.beg input { background: var(--card-2) !important; }
+.beg .wide { grid-column: 1 / -1; }
+@media (max-width: 700px) { .beg { grid-template-columns: 1fr 1fr; } }
+.tag { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 8px; border-radius: 10px; background: var(--warn-soft); color: var(--ink-2); margin-left: 6px; }
 </style>
 </head>
 <body>
@@ -103,6 +111,19 @@ pre { background: var(--card-2); padding: 10px; border-radius: 10px; overflow-x:
       <div style="margin-top: 12px"><label for="title">Title</label><input id="title" data-f="title" placeholder="December — Strength block"></div>
       <div style="margin-top: 12px"><label for="desc">Description</label><textarea id="desc" rows="2" data-f="description"></textarea></div>
       <div style="margin-top: 12px"><label for="news">What's new (one line each)</label><textarea id="news" rows="4" data-f="whatsNew" data-lines></textarea></div>
+      <details id="monthEs">
+        <summary>Spanish text (optional)</summary>
+        <p class="hint">Shown to people who use the app in Spanish. Anything left empty shows in English.</p>
+        <div style="margin-top: 8px"><label>Title</label><input data-f="es.title"></div>
+        <div style="margin-top: 8px"><label>Description</label><textarea rows="2" data-f="es.description"></textarea></div>
+        <div style="margin-top: 8px"><label>What's new (one line each, same order)</label><textarea rows="4" data-f="es.whatsNew" data-lines></textarea></div>
+      </details>
+    </section>
+
+    <section class="card">
+      <div class="row"><h2 style="flex: 1">Monthly challenge</h2><label class="check" style="padding: 0"><input type="checkbox" id="chOn"> Include a challenge</label></div>
+      <p class="hint">Optional. Shows on everyone's home screen with a progress bar, and on the crew board.</p>
+      <div id="challenge"></div>
     </section>
 
     <section class="card">
@@ -192,6 +213,7 @@ async function copyMonth () {
     const src = await getJSON(baseUrl() + $('copyFrom').value)
     const old = src.month
     R = JSON.parse(JSON.stringify(src))
+    staleEs.clear()
     // Move it one month on so you don't overwrite the original by accident
     const [y, m] = old.split('-').map(Number)
     const d = new Date(y, m, 1)
@@ -208,16 +230,56 @@ async function copyMonth () {
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
 function renderAll () { renderMonth(); renderPlans(); renderDays(); refresh() }
 
+// Nested fields use dotted paths: "es.title", "beginner.sets", "repRange.0"
+function getPath (obj, path) { return path.split('.').reduce((o, k) => (o == null ? undefined : o[k]), obj) }
+function setPath (obj, path, val) {
+  const keys = path.split('.')
+  let o = obj
+  keys.slice(0, -1).forEach((k, i) => { if (o[k] == null || typeof o[k] !== 'object') o[k] = /^\d+$/.test(keys[i + 1]) ? [] : {}; o = o[k] })
+  o[keys[keys.length - 1]] = val
+}
+
 function renderMonth () {
   document.querySelectorAll('[data-f]').forEach(el => {
-    const v = R[el.dataset.f]
-    el.value = el.dataset.lines ? (v || []).join('\n') : (v ?? '')
+    const v = getPath(R, el.dataset.f)
+    el.value = el.dataset.lines !== undefined ? (v || []).join('\n') : (v ?? '')
   })
+  $('monthEs').open = !!R.es
+  renderChallenge()
+}
+
+const CH_TYPES = [
+  ['workouts', 'Finished workouts'], ['sets', 'Hard sets'], ['reps', 'Total reps'], ['time', 'Total seconds'],
+  ['volume', 'Volume (weight × reps)'], ['manual', 'Manual: people tap +1 (e.g. step days)']
+]
+function renderChallenge () {
+  const c = R.challenge
+  $('chOn').checked = !!c
+  if (!c) { $('challenge').innerHTML = ''; return }
+  const counts = ['sets', 'reps', 'time', 'volume'].includes(c.type)
+  $('challenge').innerHTML = `
+    <div class="grid" style="margin-top: 12px">
+      <div><label>Counts</label><select data-ch="type">${CH_TYPES.map(([v, l]) => `<option value="${v}" ${c.type === v ? 'selected' : ''}>${l}</option>`).join('')}</select></div>
+      <div><label>Target</label><input type="number" min="1" value="${c.target ?? ''}" data-ch="target" data-num></div>
+      ${c.type === 'volume' ? `<div><label>Target unit</label><select data-ch="unit"><option value="kg" ${c.unit !== 'lb' ? 'selected' : ''}>kg</option><option value="lb" ${c.unit === 'lb' ? 'selected' : ''}>lb</option></select></div>` : ''}
+      ${c.type === 'manual' ? `<div><label>What people count</label><input value="${esc(c.unitLabel)}" placeholder="days with 10k steps" data-ch="unitLabel"></div>` : ''}
+    </div>
+    <div style="margin-top: 12px"><label>Title</label><input value="${esc(c.title)}" placeholder="14 workouts in November" data-ch="title"></div>
+    <div style="margin-top: 12px"><label>Description</label><input value="${esc(c.description)}" data-ch="description"></div>
+    ${counts ? `<div style="margin-top: 12px"><label>Only these exercises (one per line, empty = all)</label>
+      <textarea rows="2" data-ch="exerciseIds" data-exlist>${esc((c.exerciseIds || []).map(id => byId[id]?.name || id).join('\n'))}</textarea></div>` : ''}
+    <details ${c.es ? 'open' : ''}>
+      <summary>Spanish (optional)</summary>
+      <div><label>Title</label><input value="${esc(c.es?.title)}" data-ch="es.title"></div>
+      <div style="margin-top: 8px"><label>Description</label><input value="${esc(c.es?.description)}" data-ch="es.description"></div>
+      ${c.type === 'manual' ? `<div style="margin-top: 8px"><label>What people count</label><input value="${esc(c.es?.unitLabel)}" data-ch="es.unitLabel"></div>` : ''}
+    </details>`
 }
 
 const planFields = (p, i, kind) => `
   <div><label>Reps left</label><input type="number" min="0" max="5" value="${p.rir ?? ''}" data-plan="${kind}" data-i="${i}" data-k="rir" data-num></div>
-  <div><label>Focus</label><input value="${esc(p.focus)}" data-plan="${kind}" data-i="${i}" data-k="focus"></div>
+  <div><label>Focus</label><input value="${esc(p.focus)}" data-plan="${kind}" data-i="${i}" data-k="focus">
+    <input style="margin-top: 4px" value="${esc(p.es?.focus)}" placeholder="En español (opcional)" data-plan="${kind}" data-i="${i}" data-k="es.focus"></div>
   <div><label>Sets ±</label><input type="number" min="-3" max="3" value="${p.setDelta ?? ''}" data-plan="${kind}" data-i="${i}" data-k="setDelta" data-num></div>
   <div><label>Apply to</label><select data-plan="${kind}" data-i="${i}" data-k="applyTo"><option value="">All</option><option value="first" ${p.applyTo === 'first' ? 'selected' : ''}>First exercise</option></select></div>
   <label class="check"><input type="checkbox" ${p.deload ? 'checked' : ''} data-plan="${kind}" data-i="${i}" data-k="deload" data-bool> Deload</label>
@@ -245,6 +307,13 @@ function renderDays () {
         </div>
       </div>
       <div style="margin-top: 10px"><label>Notes for the day</label><input value="${esc(d.notes)}" data-day="${di}" data-k="notes"></div>
+      <details ${d.es ? 'open' : ''}>
+        <summary>Spanish (optional)</summary>
+        <div class="grid" style="grid-template-columns: minmax(0, 1fr) minmax(0, 2fr)">
+          <div><label>Name</label><input value="${esc(d.es?.name)}" placeholder="Día ${esc(d.id)} — " data-day="${di}" data-k="es.name"></div>
+          <div><label>Notes</label><input value="${esc(d.es?.notes)}" data-day="${di}" data-k="es.notes"></div>
+        </div>
+      </details>
       <div class="items">${d.items.map((it, ii) => itemRow(it, di, ii)).join('')}</div>
       <button style="margin-top: 10px" data-act="addItem" data-d="${di}">Add exercise</button>
     </section>`).join('')
@@ -267,13 +336,39 @@ function itemRow (it, di, ii) {
       <div><label>Rest (s)</label><input type="number" min="0" step="15" value="${it.restSec}" data-item="${di}.${ii}" data-k="restSec" data-num></div>
       <div><label>Superset</label><input value="${esc(it.group)}" placeholder="S1" data-item="${di}.${ii}" data-k="group" maxlength="2"></div>
       <div class="wide row" style="gap: 12px">
-        <input style="flex: 1 1 240px" value="${esc(it.notes)}" placeholder="Notes (optional)" data-item="${di}.${ii}" data-k="notes">
+        <input style="flex: 1 1 200px" value="${esc(it.notes)}" placeholder="Notes (optional)" data-item="${di}.${ii}" data-k="notes">
+        <input style="flex: 1 1 200px" value="${esc(it.es?.notes)}" placeholder="Notas en español (opcional)" data-item="${di}.${ii}" data-k="es.notes">
         <label class="check"><input type="checkbox" ${it.warmup ? 'checked' : ''} data-item="${di}.${ii}" data-k="warmup" data-bool> Warm-up checklist</label>
+        <label class="check"><input type="checkbox" ${it.beginner ? 'checked' : ''} data-act-toggle="beginner" data-d="${di}" data-i="${ii}"> Beginner version</label>
         <div class="tools">
           <button class="icon" data-act="up" data-d="${di}" data-i="${ii}" ${ii === 0 ? 'disabled' : ''} title="Move up">↑</button>
           <button class="icon" data-act="down" data-d="${di}" data-i="${ii}" ${ii === items.length - 1 ? 'disabled' : ''} title="Move down">↓</button>
           <button class="icon danger" data-act="delItem" data-d="${di}" data-i="${ii}" title="Remove">✕</button>
         </div>
+      </div>
+      ${it.beginner ? begRow(it, di, ii) : ''}
+    </div>`
+}
+
+// Beginner track: only the fields filled in here replace the main ones
+function begRow (it, di, ii) {
+  const b = it.beginner
+  const ex = byId[b.exerciseId || it.exerciseId]
+  const timed = ex?.logType === 'time'
+  const key = timed ? 'durationSec' : 'repRange'
+  const r = b[key] || []
+  return `
+    <div class="beg">
+      <div class="wide hint" style="margin: 0">Beginner version. Leave a box empty to keep the main value.</div>
+      <div><label>Exercise</label><input list="exList" value="${esc(b.exerciseId ? (byId[b.exerciseId]?.name || b.exerciseId) : '')}" placeholder="${esc(byId[it.exerciseId]?.name || 'Same exercise')}" data-item="${di}.${ii}" data-k="beginner.exercise"></div>
+      <div><label>Sets</label><input type="number" min="1" max="10" value="${b.sets ?? ''}" placeholder="${it.sets}" data-item="${di}.${ii}" data-k="beginner.sets" data-num></div>
+      <div><label>${timed ? 'Seconds' : 'Reps'}</label><div class="range">
+        <input type="number" min="1" value="${r[0] ?? ''}" data-item="${di}.${ii}" data-k="beginner.${key}.0" data-num>–
+        <input type="number" min="1" value="${r[1] ?? ''}" data-item="${di}.${ii}" data-k="beginner.${key}.1" data-num></div></div>
+      <div><label>Rest (s)</label><input type="number" min="0" step="15" value="${b.restSec ?? ''}" placeholder="${it.restSec}" data-item="${di}.${ii}" data-k="beginner.restSec" data-num></div>
+      <div class="wide row" style="gap: 8px">
+        <input style="flex: 1 1 200px" value="${esc(b.notes)}" placeholder="Note for beginners (optional)" data-item="${di}.${ii}" data-k="beginner.notes">
+        <input style="flex: 1 1 200px" value="${esc(b.es?.notes)}" placeholder="Nota en español (opcional)" data-item="${di}.${ii}" data-k="beginner.es.notes">
       </div>
     </div>`
 }
@@ -290,10 +385,12 @@ function renderPreview () {
   $('preview').innerHTML = `
     <p><b>${esc(R.title || 'Untitled routine')}</b></p>
     ${R.description ? `<p class="muted small">${esc(R.description)}</p>` : ''}
+    ${R.challenge ? `<p class="small">🏁 <b>${esc(R.challenge.title || 'Challenge')}</b> <span class="muted">(${R.challenge.target || '?'} ${esc(R.challenge.type)})</span></p>` : ''}
     ${R.days.map((d, i) => `
       <div class="prev-day">
         <div><span class="plate" style="background:${PLATES[i % PLATES.length]};color:${PLATE_FG[i % PLATE_FG.length]}">${esc(d.id)}</span><b>${esc((d.name || '').replace(/^day\s+\w+\s*[—–-]\s*/i, ''))}</b></div>
-        ${d.items.map(it => `<div class="prev-item"><span>${it.group ? '⛓ ' : ''}${esc(byId[it.exerciseId]?.name || it.exerciseId || '?')}</span><span>${prescription(it)}</span></div>`).join('')}
+        ${d.items.map(it => `<div class="prev-item"><span>${it.group ? '⛓ ' : ''}${esc(byId[it.exerciseId]?.name || it.exerciseId || '?')}${it.beginner ? '<span class="tag">B</span>' : ''}</span><span>${prescription(it)}</span></div>`).join('')}
+        ${d.items.some(it => it.beginner) ? `<div class="hint" style="padding-left: 36px">B = has a beginner version: ${d.items.filter(it => it.beginner).map(it => { const b = { ...it, ...clean(it.beginner) }; return esc(byId[b.exerciseId]?.name || b.exerciseId) + ' ' + prescription(b) }).join(', ')}</div>` : ''}
       </div>`).join('')}`
 }
 
@@ -332,18 +429,62 @@ function validate () {
         ;(groups[it.group] ||= []).push(i)
       }
     })
+    d.items.forEach((it, i) => {
+      if (!it.beginner) return
+      const b = clean(it.beginner)
+      const bex = byId[b.exerciseId || it.exerciseId]
+      if (b.exerciseId && !byId[b.exerciseId]) errs.push(`${where}, exercise ${i + 1}: pick the beginner exercise from the list.`)
+      else if (bex) {
+        const timed = bex.logType === 'time'
+        const r = timed ? (b.durationSec || it.durationSec) : (b.repRange || it.repRange)
+        if (!r) errs.push(`${where}, beginner ${bex.name}: fill in the ${timed ? 'seconds' : 'reps'} range (it's a different kind of exercise).`)
+        else if (r.length === 2 && r[0] > r[1]) errs.push(`${where}, beginner ${bex.name}: range is backwards.`)
+        const rr = b.repRange || b.durationSec
+        if (rr && rr.filter(x => x !== '' && x != null).length === 1) errs.push(`${where}, beginner ${bex.name}: fill in both ends of the range or neither.`)
+      }
+      if (!Object.keys(b).length) errs.push(`${where}, exercise ${i + 1}: the beginner version changes nothing. Fill something in or untick it.`)
+    })
     for (const [g, idx] of Object.entries(groups)) {
       if (idx.length < 2) errs.push(`${where}: superset ${g} has only one exercise.`)
       if (idx.some((v, k) => k && v !== idx[k - 1] + 1)) errs.push(`${where}: superset ${g} exercises must be next to each other.`)
     }
   })
+  const c = R.challenge
+  if (c) {
+    if (!c.title?.trim()) errs.push('Challenge: give it a title.')
+    if (!(c.target >= 1)) errs.push('Challenge: set a target of at least 1.')
+    for (const id of c.exerciseIds || []) if (!byId[id]) errs.push(`Challenge: "${id}" isn't an exercise from the list.`)
+  }
   return errs
+}
+
+/** Drop empty strings, nulls, half-filled ranges and empty objects from an override block. */
+function clean (o) {
+  const out = {}
+  for (const [k, v] of Object.entries(o || {})) {
+    if (v === '' || v == null || v === false) continue
+    if (Array.isArray(v)) {
+      if (k === 'repRange' || k === 'durationSec') { if (v.length === 2 && v.every(x => x !== '' && x != null)) out[k] = v }
+      else if (v.length) out[k] = v
+      continue
+    }
+    if (typeof v === 'object') { const c = clean(v); if (Object.keys(c).length) out[k] = c; continue }
+    out[k] = v
+  }
+  return out
 }
 
 function output () {
   const out = JSON.parse(JSON.stringify(R))
   out.schemaVersion = 1
   for (const k of ['description', 'deloadWeek', 'rir']) if (out[k] === '' || out[k] == null) delete out[k]
+  if (out.es) { out.es = clean(out.es); if (!out.es.whatsNew?.length) delete out.es.whatsNew; if (!Object.keys(out.es).length) delete out.es }
+  if (out.challenge) {
+    out.challenge = clean(out.challenge)
+    if (!out.challenge.exerciseIds?.length) delete out.challenge.exerciseIds
+    if (out.challenge.type !== 'volume') delete out.challenge.unit
+    if (out.challenge.type !== 'manual') { delete out.challenge.unitLabel; if (out.challenge.es) delete out.challenge.es.unitLabel }
+  }
   if (!out.whatsNew?.length) delete out.whatsNew
   for (const k of ['weekPlan', 'datePlan']) {
     if (!out[k]?.length) { delete out[k]; continue }
@@ -352,8 +493,16 @@ function output () {
   out.days.forEach(d => {
     if (!d.notes) delete d.notes
     if (!d.estMinutes) delete d.estMinutes
-    d.items.forEach(it => { for (const k of ['notes', 'group']) if (!it[k]) delete it[k]; if (!it.warmup) delete it.warmup })
+    if (d.es) { d.es = clean(d.es); if (!Object.keys(d.es).length) delete d.es }
+    d.items.forEach(it => {
+      for (const k of ['notes', 'group']) if (!it[k]) delete it[k]
+      if (!it.warmup) delete it.warmup
+      if (it.es) { it.es = clean(it.es); if (!Object.keys(it.es).length) delete it.es }
+      if (it.beginner) { it.beginner = clean(it.beginner); if (!Object.keys(it.beginner).length) delete it.beginner }
+    })
   })
+  if (out.weekPlan) out.weekPlan.forEach(w => { if (w.es) { w.es = clean(w.es); if (!Object.keys(w.es).length) delete w.es } })
+  if (out.datePlan) out.datePlan.forEach(w => { if (w.es) { w.es = clean(w.es); if (!Object.keys(w.es).length) delete w.es } })
   return out
 }
 
@@ -362,10 +511,45 @@ function refresh () {
   $('issues').innerHTML = errs.length
     ? `<ul class="issues err small">${errs.map(e => `<li>${esc(e)}</li>`).join('')}</ul>`
     : '<p class="ok">All good. Ready to download.</p>'
+  if (staleEs.size) {
+    $('issues').innerHTML += `<p class="small" style="margin-top: 10px"><b>Check the Spanish:</b> you changed the English of
+      ${[...staleEs.values()].map(esc).join(', ')}, but not the Spanish. Update it or leave it if it still fits.</p>`
+  }
   $('download').disabled = !!errs.length
   $('fname').textContent = `routines/${R.month || '…'}.json`
   $('manifestLine').textContent = JSON.stringify({ month: R.month, file: `routines/${R.month}.json`, effectiveFrom: R.effectiveFrom })
   renderPreview()
+}
+
+// ── Spanish that may be out of date ──────────────────────
+// Editing English text that has a Spanish version flags it until the Spanish is edited too (doesn't block the download).
+const staleEs = new Map()
+function trackEs (key, label, english, spanishExists) {
+  if (english) { if (spanishExists) staleEs.set(key, label) } else staleEs.delete(key)
+}
+function esCheck (el) {
+  const k = el.dataset.k
+  if (el.dataset.f) {
+    const f = el.dataset.f.replace(/^es\./, '')
+    if (['title', 'description', 'whatsNew'].includes(f)) trackEs('m:' + f, `the month ${f === 'whatsNew' ? "what's new" : f}`, !el.dataset.f.startsWith('es.'), R.es?.[f] != null)
+  } else if (el.dataset.ch) {
+    const f = el.dataset.ch.replace(/^es\./, '')
+    if (['title', 'description', 'unitLabel'].includes(f)) trackEs('c:' + f, `the challenge ${f === 'unitLabel' ? 'label' : f}`, !el.dataset.ch.startsWith('es.'), R.challenge?.es?.[f] != null)
+  } else if (el.dataset.plan) {
+    const p = R[el.dataset.plan][el.dataset.i]
+    const where = el.dataset.plan === 'weekPlan' ? `week ${p.week}` : `dates from ${p.from}`
+    if (k === 'focus' || k === 'es.focus') trackEs(`p:${el.dataset.plan}:${el.dataset.i}`, `the ${where} focus`, k === 'focus', p.es?.focus != null)
+  } else if (el.dataset.day) {
+    const d = R.days[el.dataset.day]
+    const f = k.replace(/^es\./, '')
+    if (f === 'name' || f === 'notes') trackEs(`d:${el.dataset.day}:${f}`, `day ${d.id} ${f}`, !k.startsWith('es.'), d.es?.[f] != null)
+  } else if (el.dataset.item) {
+    const [di, ii] = el.dataset.item.split('.').map(Number)
+    const it = R.days[di].items[ii]
+    const label = `day ${R.days[di].id} exercise ${ii + 1}`
+    if (k === 'notes' || k === 'es.notes') trackEs(`i:${di}:${ii}`, `${label} notes`, k === 'notes', it.es?.notes != null)
+    if (k === 'beginner.notes' || k === 'beginner.es.notes') trackEs(`b:${di}:${ii}`, `${label} beginner note`, k === 'beginner.notes', it.beginner?.es?.notes != null)
+  }
 }
 
 // ── Editing ───────────────────────────────────────────────
@@ -373,18 +557,49 @@ function num (el) { return el.value === '' ? '' : Number(el.value) }
 document.addEventListener('input', (e) => {
   const el = e.target
   const val = el.dataset.bool !== undefined ? el.checked : el.dataset.num !== undefined ? num(el) : el.value
+  if (el.matches('input:not([type=checkbox]):not([type=number]), textarea')) esCheck(el)
+  if (el.id === 'chOn') {
+    R.challenge = el.checked ? (R.challenge || { type: 'workouts', target: 12, title: '' }) : undefined
+    if (!el.checked) delete R.challenge
+    renderChallenge(); refresh(); return
+  }
+  if (el.dataset.ch) {
+    const k = el.dataset.ch
+    if (el.dataset.exlist !== undefined) {
+      R.challenge.exerciseIds = el.value.split('\n').map(s => s.trim()).filter(Boolean)
+        .map(n => exercises.find(x => x.name.toLowerCase() === n.toLowerCase())?.id || n)
+    } else setPath(R.challenge, k, val)
+    if (k === 'type') renderChallenge()
+    refresh(); return
+  }
+  if (el.dataset.actToggle) {
+    const it = R.days[el.dataset.d].items[el.dataset.i]
+    if (el.checked) it.beginner = it.beginner || {}
+    else delete it.beginner
+    renderDays(); refresh(); return
+  }
   if (el.dataset.f) {
-    R[el.dataset.f] = el.dataset.lines ? el.value.split('\n').map(s => s.trim()).filter(Boolean) : val
+    setPath(R, el.dataset.f, el.dataset.lines !== undefined ? el.value.split('\n').map(s => s.trim()).filter(Boolean) : val)
     if (el.dataset.f === 'month' && val && (!R.effectiveFrom || R.effectiveFrom.slice(0, 7) !== val)) { R.effectiveFrom = `${val}-01`; $('from').value = R.effectiveFrom }
   } else if (el.dataset.plan) {
-    R[el.dataset.plan][el.dataset.i][el.dataset.k] = val
+    setPath(R[el.dataset.plan][el.dataset.i], el.dataset.k, val)
   } else if (el.dataset.day) {
-    R.days[el.dataset.day][el.dataset.k] = val
+    setPath(R.days[el.dataset.day], el.dataset.k, val)
   } else if (el.dataset.item) {
     const [di, ii] = el.dataset.item.split('.').map(Number)
     const it = R.days[di].items[ii]
     const k = el.dataset.k
-    if (k === 'exercise') {
+    if (k === 'beginner.exercise') {
+      const v = el.value.trim()
+      const ex = exercises.find(x => x.name.toLowerCase() === v.toLowerCase())
+      const wasTimed = byId[it.beginner.exerciseId || it.exerciseId]?.logType === 'time'
+      if (!v) delete it.beginner.exerciseId
+      else it.beginner.exerciseId = ex ? ex.id : v
+      const nowTimed = byId[it.beginner.exerciseId || it.exerciseId]?.logType === 'time'
+      if (wasTimed !== nowTimed) { delete it.beginner.repRange; delete it.beginner.durationSec; renderDays() }
+    } else if (k.startsWith('beginner.') || k.startsWith('es.')) {
+      setPath(it, k, val)
+    } else if (k === 'exercise') {
       const ex = exercises.find(x => x.name.toLowerCase() === el.value.trim().toLowerCase())
       if (!ex) { it.exerciseId = el.value.trim(); refresh(); return }
       const wasTimed = byId[it.exerciseId]?.logType === 'time'
@@ -411,6 +626,9 @@ document.addEventListener('click', (e) => {
   const d = Number(b.dataset.d); const i = Number(b.dataset.i)
   const items = R.days[d]?.items
   const swap = (arr, a, c) => { [arr[a], arr[c]] = [arr[c], arr[a]] }
+  // Moving or deleting shifts positions, so drop position-based Spanish reminders
+  if (['delItem', 'up', 'down', 'delDay', 'dayUp', 'dayDown'].includes(b.dataset.act)) for (const k of [...staleEs.keys()]) if (/^[idb]:/.test(k)) staleEs.delete(k)
+  if (b.dataset.act === 'delPlan') for (const k of [...staleEs.keys()]) if (k.startsWith('p:')) staleEs.delete(k)
   switch (b.dataset.act) {
     case 'addItem': items.push({ exerciseId: '', sets: 3, repRange: [8, 12], restSec: 90 }); break
     case 'delItem': items.splice(i, 1); break
@@ -436,10 +654,10 @@ $('addWeek').onclick = () => {
 $('addDate').onclick = () => { R.datePlan = R.datePlan || []; R.datePlan.push({ from: R.effectiveFrom, to: '' }); renderPlans(); refresh() }
 $('load').onclick = load
 $('copy').onclick = copyMonth
-$('blank').onclick = () => { R = blank(); renderAll() }
+$('blank').onclick = () => { R = blank(); staleEs.clear(); renderAll() }
 $('openFile').onchange = async (e) => {
   const f = e.target.files[0]; if (!f) return
-  try { R = JSON.parse(await f.text()); R.days = R.days || []; renderAll(); $('status').textContent = `Opened ${f.name}.` } catch { $('status').innerHTML = '<span class="err">That file is not valid JSON.</span>' }
+  try { R = JSON.parse(await f.text()); R.days = R.days || []; staleEs.clear(); renderAll(); $('status').textContent = `Opened ${f.name}.` } catch { $('status').innerHTML = '<span class="err">That file is not valid JSON.</span>' }
 }
 $('download').onclick = () => {
   const blob = new Blob([JSON.stringify(output(), null, 2) + '\n'], { type: 'application/json' })

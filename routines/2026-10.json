@@ -18,13 +18,21 @@
       "estMinutes": 50,
       "notes": "Lead-in: learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-bench-press", "sets": 2, "repRange": [6, 8], "restSec": 150, "notes": "Safety arms just below chest height." },
+        {
+          "exerciseId": "barbell-bench-press",
+          "sets": 2,
+          "repRange": [6, 8],
+          "restSec": 150,
+          "notes": "Safety arms just below chest height.",
+          "es": { "notes": "Barras de seguridad justo por debajo de la altura del pecho." }
+        },
         { "exerciseId": "incline-db-press", "sets": 2, "repRange": [8, 12], "restSec": 120 },
         { "exerciseId": "cable-fly", "sets": 2, "repRange": [12, 15], "restSec": 60 },
         { "exerciseId": "ez-bar-skullcrusher", "sets": 2, "repRange": [8, 12], "restSec": 90 },
         { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "push-up", "sets": 2, "repRange": [8, 20], "restSec": 60, "group": "S1" }
-      ]
+      ],
+      "es": { "name": "Día A — Pecho y tríceps", "notes": "Adaptación: aprende los ejercicios y encuentra tus pesos de partida. Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "B",
@@ -32,12 +40,27 @@
       "estMinutes": 50,
       "notes": "Lead-in: learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "barbell-back-squat", "sets": 2, "repRange": [5, 8], "restSec": 180, "notes": "Safety arms just below your bottom position." },
-        { "exerciseId": "leg-press", "sets": 2, "repRange": [10, 15], "restSec": 120, "notes": "Log only the plates you add, not the sled." },
+        {
+          "exerciseId": "barbell-back-squat",
+          "sets": 2,
+          "repRange": [5, 8],
+          "restSec": 180,
+          "notes": "Safety arms just below your bottom position.",
+          "es": { "notes": "Barras de seguridad justo por debajo de tu posición más baja." }
+        },
+        {
+          "exerciseId": "leg-press",
+          "sets": 2,
+          "repRange": [10, 15],
+          "restSec": 120,
+          "notes": "Log only the plates you add, not the sled.",
+          "es": { "notes": "Apunta solo los discos que añades, no el carro." }
+        },
         { "exerciseId": "db-bulgarian-split-squat", "sets": 2, "repRange": [8, 10], "restSec": 90 },
         { "exerciseId": "smith-calf-raise", "sets": 2, "repRange": [10, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "pallof-press", "sets": 2, "repRange": [10, 12], "restSec": 60, "group": "S1" }
-      ]
+      ],
+      "es": { "name": "Día B — Piernas", "notes": "Adaptación: aprende los ejercicios y encuentra tus pesos de partida. Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "C",
@@ -45,13 +68,21 @@
       "estMinutes": 45,
       "notes": "Lead-in: learn the lifts and find starting weights. Warm up 5 min on the rower, SkiErg or air bike first.",
       "items": [
-        { "exerciseId": "pull-up", "sets": 2, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown." },
+        {
+          "exerciseId": "pull-up",
+          "sets": 2,
+          "repRange": [5, 10],
+          "restSec": 120,
+          "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown.",
+          "es": { "notes": "¿Aún no sacas 5 repeticiones limpias? Cámbialo por jalón al pecho en polea." }
+        },
         { "exerciseId": "chest-supported-db-row", "sets": 2, "repRange": [8, 12], "restSec": 90 },
         { "exerciseId": "one-arm-db-row", "sets": 2, "repRange": [10, 12], "restSec": 75 },
         { "exerciseId": "cable-face-pull", "sets": 2, "repRange": [12, 15], "restSec": 60 },
         { "exerciseId": "ez-bar-curl", "sets": 2, "repRange": [8, 12], "restSec": 75 },
         { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60 }
-      ]
+      ],
+      "es": { "name": "Día C — Espalda y bíceps", "notes": "Adaptación: aprende los ejercicios y encuentra tus pesos de partida. Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     },
     {
       "id": "D",
@@ -65,11 +96,31 @@
         { "exerciseId": "db-lateral-raise", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "db-rear-delt-fly", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
         { "exerciseId": "hanging-knee-raise", "sets": 2, "repRange": [8, 15], "restSec": 60 }
-      ]
+      ],
+      "es": { "name": "Día D — Hombros y bisagra de cadera", "notes": "Adaptación: aprende los ejercicios y encuentra tus pesos de partida. Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
     }
   ],
   "rir": 4,
   "datePlan": [
-    { "from": "2026-10-29", "to": "2026-10-31", "rir": 3, "setDelta": 1, "applyTo": "first", "focus": "Last lead-in sessions: confirm your November week 1 weights." }
-  ]
+    {
+      "from": "2026-10-29",
+      "to": "2026-10-31",
+      "rir": 3,
+      "setDelta": 1,
+      "applyTo": "first",
+      "focus": "Last lead-in sessions: confirm your November week 1 weights.",
+      "es": { "focus": "Últimas sesiones de adaptación: confirma tus pesos de la semana 1 de noviembre." }
+    }
+  ],
+  "es": {
+    "title": "Finales de octubre — Adaptación",
+    "description": "La rutina de 4 días de noviembre a baja intensidad, para aprender los ejercicios y encontrar tus pesos de partida. Rota A → B → C → D → A → B antes del 1 de noviembre.",
+    "whatsNew": [
+      "Los mismos cuatro días que en noviembre: Pecho y tríceps, Piernas, Espalda y bíceps, Hombros y bisagra de cadera.",
+      "2 series por ejercicio, dejando 4 repeticiones en reserva. La app muestra el objetivo en cada ejercicio.",
+      "Primera serie: empieza ligero; busca un peso con el que podrías hacer unas 4 repeticiones más al llegar al tope del rango. ¿Demasiado fácil (6 o más en reserva)? Sube. ¿Te cuesta muchísimo? Baja.",
+      "Apunta el peso con el que terminas. Ese es tu peso de la semana 1 de noviembre.",
+      "Del 29 al 31 de octubre la app añade una tercera serie al primer ejercicio y el objetivo pasa a 3 repeticiones en reserva."
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 # gym-routines
 
 Public data for the Gym Crew app: the exercise library and one routine per month.
-The app downloads these files from `https://raw.githubusercontent.com/OWNER/gym-routines/main/`.
+The app downloads these files from `https://raw.githubusercontent.com/Contact-ARC/gym-routines/main/`.
 No code here and nothing personal — workout logs stay on each phone.
 
 ```
@@ -9,7 +9,7 @@ builder/index.html     ← routine builder: make next month's file with forms
 images/                ← exercise photos (public domain, see images/README.md)
 latest.json            ← manifest: which routine is live + newest app version
 exercises.json         ← every exercise (instructions, muscles, alternatives)
-routines/2026-10.json  ← one file per month
+routines/2026-11.json  ← one file per month
 schema/                ← JSON Schemas the validator checks against
 scripts/validate.mjs   ← run by GitHub Actions on every push
 ```
@@ -19,7 +19,8 @@ scripts/validate.mjs   ← run by GitHub Actions on every push
 Open `builder/index.html` (double-click it, or turn on GitHub Pages for this repo and open
 `https://contact-arc.github.io/gym-routines/builder/`). It loads the exercise list, lets you copy
 last month as a starting point, edit days and exercises with forms, set week-by-week targets, and
-checks everything with the same rules as CI. Download the file, then do steps 3 and 6 below.
+checks everything with the same rules as CI. It also edits the monthly challenge, beginner versions
+and the Spanish text. Download the file, then do steps 3 and 6 below.
 
 ## Publishing next month's routine
 
@@ -74,6 +75,48 @@ A/B/C rotation resets to Day A and everyone gets a "What's new" popup.
 ```
 
 - `repRange` drives progression: once every set hits the top number, the app suggests adding weight.
+
+### Monthly challenge (v0.4)
+
+```jsonc
+"challenge": {
+  "type": "workouts",              // workouts | sets | reps | time | volume | manual
+  "target": 14,
+  "title": "14 workouts in November",
+  "description": "optional",
+  "exerciseIds": ["push-up"],      // sets/reps/time/volume: only count these (leave out = all)
+  "unit": "kg",                    // volume only: unit of the target (converted for lb users)
+  "unitLabel": "days with 10k steps", // manual only: people tap +1 themselves
+  "es": { "title": "14 entrenamientos en noviembre", "description": "…" }
+}
+```
+Progress shows on the home screen and on the crew board. Only workouts in that calendar month count.
+
+### Beginner track (v0.4)
+
+Any item can carry a `beginner` block. People who picked "Beginner" in the app get those values instead;
+fields you leave out stay as the main item:
+
+```jsonc
+{ "exerciseId": "barbell-back-squat", "sets": 4, "repRange": [5, 8], "restSec": 150,
+  "beginner": { "exerciseId": "goblet-squat", "sets": 3, "repRange": [8, 12], "restSec": 120,
+                "notes": "Learn the squat pattern first", "es": { "notes": "…" } } }
+```
+Swapping to an exercise of the other kind (reps ↔ timed) needs its own `repRange` / `durationSec`; the validator checks.
+
+### Spanish text (v0.4)
+
+Add an `es` block wherever there's text. Anything without one shows in English.
+
+| Where | Fields |
+|---|---|
+| routine | `es: { title, description, whatsNew }` (same number of lines as `whatsNew`) |
+| day | `es: { name, notes }` |
+| item, beginner block | `es: { notes }` |
+| weekPlan / datePlan entry | `es: { focus }` |
+| challenge | `es: { title, description, unitLabel }` |
+| exercise | `es: { name, equipment, setup, steps, cues, mistakes }` (same number of lines as English) |
+| latest.json `app` | `es: { notes }` |
 - `durationSec` is for timed exercises (`logType: "time"` in the library).
 - `setDelta` / `loadFactor` / `applyTo` in a plan change the sets and suggested weights when a workout starts that day.
 
@@ -92,6 +135,15 @@ A/B/C rotation resets to Day A and everyone gets a "What's new" popup.
 | `images` | up to 4 photos, e.g. `["images/goblet-squat/0.jpg"]` (start and end position) |
 | `videoUrl` | optional; otherwise the app opens a YouTube search |
 | `alternatives` | ids offered in the in-workout Swap menu |
+
+## Crew board
+
+The crew board's server details live here too, so it can be set up or moved without a new APK:
+
+```json
+"crew": { "url": "https://<project>.supabase.co", "anonKey": "sb_publishable_…" }
+```
+Setup steps are in the `gym-app` README ("Crew board"). The key is a public key; leave the block out until it's set up.
 
 ## Releasing an app update
 
