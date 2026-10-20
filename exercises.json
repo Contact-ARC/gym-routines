@@ -30,7 +30,8 @@
         "Hips shooting up first so it turns into a good-morning.",
         "Cutting depth short as the weight gets heavy."
       ],
-      "alternatives": ["goblet-squat", "db-bulgarian-split-squat"]
+      "alternatives": ["goblet-squat", "db-bulgarian-split-squat"],
+      "images": ["images/barbell-back-squat/0.jpg", "images/barbell-back-squat/1.jpg"]
     },
     {
       "id": "goblet-squat",
@@ -55,7 +56,8 @@
         "Letting the dumbbell drift away from the body.",
         "Rounding the lower back at the bottom."
       ],
-      "alternatives": ["barbell-back-squat", "db-bulgarian-split-squat"]
+      "alternatives": ["barbell-back-squat", "db-bulgarian-split-squat"],
+      "images": ["images/goblet-squat/0.jpg", "images/goblet-squat/1.jpg"]
     },
     {
       "id": "barbell-rdl",
@@ -81,7 +83,8 @@
         "Rounding the back to reach lower.",
         "Leaning back at the top."
       ],
-      "alternatives": ["db-rdl", "machine-leg-curl"]
+      "alternatives": ["db-rdl", "machine-leg-curl"],
+      "images": ["images/barbell-rdl/0.jpg", "images/barbell-rdl/1.jpg"]
     },
     {
       "id": "db-rdl",
@@ -99,7 +102,8 @@
       ],
       "cues": ["Dumbbells close to the legs.", "Neutral neck — look at the floor a metre ahead."],
       "mistakes": ["Reaching for the floor at the cost of a round back."],
-      "alternatives": ["barbell-rdl", "machine-leg-curl"]
+      "alternatives": ["barbell-rdl", "machine-leg-curl"],
+      "images": ["images/db-rdl/0.jpg", "images/db-rdl/1.jpg"]
     },
     {
       "id": "barbell-hip-thrust",
@@ -124,7 +128,8 @@
         "Arching the lower back to get 'higher'.",
         "Feet too close, turning it into a quad exercise."
       ],
-      "alternatives": ["glute-bridge", "db-rdl"]
+      "alternatives": ["glute-bridge", "db-rdl"],
+      "images": ["images/barbell-hip-thrust/0.jpg", "images/barbell-hip-thrust/1.jpg"]
     },
     {
       "id": "glute-bridge",
@@ -142,7 +147,8 @@
       ],
       "cues": ["Ribs down.", "Pause at the top."],
       "mistakes": ["Pushing through the toes."],
-      "alternatives": ["barbell-hip-thrust"]
+      "alternatives": ["barbell-hip-thrust"],
+      "images": ["images/glute-bridge/0.jpg", "images/glute-bridge/1.jpg"]
     },
     {
       "id": "db-reverse-lunge",
@@ -161,7 +167,8 @@
       ],
       "cues": ["Most of your weight stays on the front foot.", "Torso tall or slightly forward."],
       "mistakes": ["Front knee caving in.", "Slamming the back knee into the floor."],
-      "alternatives": ["db-bulgarian-split-squat", "goblet-squat"]
+      "alternatives": ["db-bulgarian-split-squat", "goblet-squat"],
+      "images": ["images/db-reverse-lunge/0.jpg", "images/db-reverse-lunge/1.jpg"]
     },
     {
       "id": "db-bulgarian-split-squat",
@@ -186,7 +193,8 @@
         "Slight forward lean = more glutes; upright = more quads."
       ],
       "mistakes": ["Front foot too close to the bench.", "Pushing off the back leg."],
-      "alternatives": ["db-reverse-lunge", "goblet-squat"]
+      "alternatives": ["db-reverse-lunge", "goblet-squat"],
+      "images": ["images/db-bulgarian-split-squat/0.jpg", "images/db-bulgarian-split-squat/1.jpg"]
     },
     {
       "id": "machine-leg-curl",
@@ -204,7 +212,8 @@
       ],
       "cues": ["Control the lowering — that's where most of the work is."],
       "mistakes": ["Hips lifting off the pad.", "Swinging the weight."],
-      "alternatives": ["barbell-rdl", "db-rdl"]
+      "alternatives": ["barbell-rdl", "db-rdl"],
+      "images": ["images/machine-leg-curl/0.jpg", "images/machine-leg-curl/1.jpg"]
     },
     {
       "id": "db-bench-press",
@@ -225,7 +234,8 @@
       ],
       "cues": ["Shoulder blades pinned back the whole set.", "Wrists stacked over elbows."],
       "mistakes": ["Elbows flared straight out at 90°.", "Bouncing at the bottom."],
-      "alternatives": ["barbell-bench-press", "push-up"]
+      "alternatives": ["barbell-bench-press", "push-up"],
+      "images": ["images/db-bench-press/0.jpg", "images/db-bench-press/1.jpg"]
     },
     {
       "id": "barbell-bench-press",
@@ -254,7 +264,8 @@
         "Elbows flared straight out to 90°.",
         "Hips lifting off the bench."
       ],
-      "alternatives": ["db-bench-press", "push-up"]
+      "alternatives": ["db-bench-press", "push-up"],
+      "images": ["images/barbell-bench-press/0.jpg", "images/barbell-bench-press/1.jpg"]
     },
     {
       "id": "incline-db-press",
@@ -272,7 +283,8 @@
       ],
       "cues": ["Keep the chest high.", "Control the bottom position."],
       "mistakes": ["Bench too steep.", "Losing shoulder blade position as you tire."],
-      "alternatives": ["db-bench-press", "push-up"]
+      "alternatives": ["db-bench-press", "push-up"],
+      "images": ["images/incline-db-press/0.jpg", "images/incline-db-press/1.jpg"]
     },
     {
       "id": "push-up",
@@ -290,7 +302,8 @@
       ],
       "cues": ["Squeeze glutes and brace — no sagging hips."],
       "mistakes": ["Half reps.", "Head poking forward."],
-      "alternatives": ["db-bench-press"]
+      "alternatives": ["db-bench-press"],
+      "images": ["images/push-up/0.jpg", "images/push-up/1.jpg"]
     },
     {
       "id": "seated-db-shoulder-press",
@@ -311,7 +324,8 @@
         "Forearms vertical at the bottom."
       ],
       "mistakes": ["Excessive back arch.", "Cutting the range short at the bottom."],
-      "alternatives": ["incline-db-press"]
+      "alternatives": ["incline-db-press"],
+      "images": ["images/seated-db-shoulder-press/0.jpg", "images/seated-db-shoulder-press/1.jpg"]
     },
     {
       "id": "chest-supported-db-row",
@@ -329,7 +343,8 @@
       ],
       "cues": ["Lead with the elbows.", "Chest stays on the pad — no heaving."],
       "mistakes": ["Shrugging the dumbbells up with the traps."],
-      "alternatives": ["one-arm-db-row", "cable-seated-row"]
+      "alternatives": ["one-arm-db-row", "cable-seated-row"],
+      "images": ["images/chest-supported-db-row/0.jpg", "images/chest-supported-db-row/1.jpg"]
     },
     {
       "id": "one-arm-db-row",
@@ -351,7 +366,8 @@
         "Keep your shoulders square to the floor."
       ],
       "mistakes": ["Twisting the torso to swing the weight up."],
-      "alternatives": ["chest-supported-db-row", "cable-seated-row"]
+      "alternatives": ["chest-supported-db-row", "cable-seated-row"],
+      "images": ["images/one-arm-db-row/0.jpg", "images/one-arm-db-row/1.jpg"]
     },
     {
       "id": "cable-seated-row",
@@ -369,7 +385,8 @@
       ],
       "cues": ["Torso stays mostly still — small lean only."],
       "mistakes": ["Rocking back and forth to move the weight."],
-      "alternatives": ["chest-supported-db-row", "one-arm-db-row"]
+      "alternatives": ["chest-supported-db-row", "one-arm-db-row"],
+      "images": ["images/cable-seated-row/0.jpg", "images/cable-seated-row/1.jpg"]
     },
     {
       "id": "cable-lat-pulldown",
@@ -387,7 +404,8 @@
       ],
       "cues": ["Shoulders down away from your ears before you pull.", "Chest up to meet the bar."],
       "mistakes": ["Pulling behind the neck.", "Swinging the torso back to cheat."],
-      "alternatives": ["pull-up"]
+      "alternatives": ["pull-up"],
+      "images": ["images/cable-lat-pulldown/0.jpg", "images/cable-lat-pulldown/1.jpg"]
     },
     {
       "id": "pull-up",
@@ -405,7 +423,8 @@
       ],
       "cues": ["Squeeze glutes, legs slightly in front — no kipping."],
       "mistakes": ["Half reps that stop short of a full hang."],
-      "alternatives": ["cable-lat-pulldown"]
+      "alternatives": ["cable-lat-pulldown"],
+      "images": ["images/pull-up/0.jpg", "images/pull-up/1.jpg"]
     },
     {
       "id": "db-lateral-raise",
@@ -422,7 +441,8 @@
       ],
       "cues": ["Lead with your elbows, pinkies slightly up.", "Think 'out', not 'up'."],
       "mistakes": ["Going too heavy and swinging.", "Shrugging your shoulders up."],
-      "alternatives": ["cable-lateral-raise"]
+      "alternatives": ["cable-lateral-raise"],
+      "images": ["images/db-lateral-raise/0.jpg", "images/db-lateral-raise/1.jpg"]
     },
     {
       "id": "cable-lateral-raise",
@@ -443,7 +463,8 @@
       ],
       "cues": ["Keep a slight elbow bend throughout."],
       "mistakes": ["Leaning away to cheat the weight up."],
-      "alternatives": ["db-lateral-raise"]
+      "alternatives": ["db-lateral-raise"],
+      "images": ["images/cable-lateral-raise/0.jpg", "images/cable-lateral-raise/1.jpg"]
     },
     {
       "id": "cable-face-pull",
@@ -461,7 +482,8 @@
       ],
       "cues": ["Elbows high and wide.", "Finish like a 'double biceps' pose."],
       "mistakes": ["Leaning back and using bodyweight.", "Going too heavy — this is a quality exercise."],
-      "alternatives": ["cable-seated-row"]
+      "alternatives": ["cable-seated-row"],
+      "images": ["images/cable-face-pull/0.jpg", "images/cable-face-pull/1.jpg"]
     },
     {
       "id": "db-hammer-curl",
@@ -478,7 +500,8 @@
       ],
       "cues": ["Elbows stay pinned to your sides."],
       "mistakes": ["Swinging the body to start the rep."],
-      "alternatives": ["cable-curl"]
+      "alternatives": ["cable-curl"],
+      "images": ["images/db-hammer-curl/0.jpg", "images/db-hammer-curl/1.jpg"]
     },
     {
       "id": "cable-curl",
@@ -496,7 +519,8 @@
       ],
       "cues": ["Constant tension — don't rest at the bottom."],
       "mistakes": ["Elbows drifting forward."],
-      "alternatives": ["db-hammer-curl"]
+      "alternatives": ["db-hammer-curl"],
+      "images": ["images/cable-curl/0.jpg", "images/cable-curl/1.jpg"]
     },
     {
       "id": "cable-rope-pushdown",
@@ -514,7 +538,8 @@
       ],
       "cues": ["Only your forearms move.", "Slight forward lean is fine."],
       "mistakes": ["Elbows flaring and the shoulders joining in."],
-      "alternatives": ["overhead-cable-triceps-extension"]
+      "alternatives": ["overhead-cable-triceps-extension"],
+      "images": ["images/cable-rope-pushdown/0.jpg", "images/cable-rope-pushdown/1.jpg"]
     },
     {
       "id": "overhead-cable-triceps-extension",
@@ -532,7 +557,11 @@
       ],
       "cues": ["Keep your upper arms still beside your head."],
       "mistakes": ["Elbows flaring wide."],
-      "alternatives": ["cable-rope-pushdown"]
+      "alternatives": ["cable-rope-pushdown"],
+      "images": [
+        "images/overhead-cable-triceps-extension/0.jpg",
+        "images/overhead-cable-triceps-extension/1.jpg"
+      ]
     },
     {
       "id": "plank",
@@ -548,7 +577,8 @@
       ],
       "cues": ["Push the floor away with your forearms.", "Tuck your tailbone slightly."],
       "mistakes": ["Hips sagging or piking up.", "Holding your breath."],
-      "alternatives": ["dead-bug", "pallof-press"]
+      "alternatives": ["dead-bug", "pallof-press"],
+      "images": ["images/plank/0.jpg", "images/plank/1.jpg"]
     },
     {
       "id": "dead-bug",
@@ -567,7 +597,8 @@
       ],
       "cues": ["Slow is the point.", "Exhale as you extend."],
       "mistakes": ["Lower back lifting off the floor."],
-      "alternatives": ["plank", "pallof-press"]
+      "alternatives": ["plank", "pallof-press"],
+      "images": ["images/dead-bug/0.jpg", "images/dead-bug/1.jpg"]
     },
     {
       "id": "pallof-press",
@@ -586,7 +617,8 @@
       ],
       "cues": ["Resist the twist — hips and shoulders face forward.", "Glutes squeezed."],
       "mistakes": ["Letting the cable rotate you toward the stack."],
-      "alternatives": ["plank", "dead-bug"]
+      "alternatives": ["plank", "dead-bug"],
+      "images": ["images/pallof-press/0.jpg", "images/pallof-press/1.jpg"]
     },
     {
       "id": "farmers-carry",
@@ -605,7 +637,8 @@
       ],
       "cues": ["Crush the handles.", "Don't let the weights swing."],
       "mistakes": ["Shoulders rolling forward.", "Leaning to one side."],
-      "alternatives": ["plank"]
+      "alternatives": ["plank"],
+      "images": ["images/farmers-carry/0.jpg", "images/farmers-carry/1.jpg"]
     },
     {
       "id": "cable-fly",
@@ -628,7 +661,8 @@
         "Bending the elbows more to turn it into a press.",
         "Letting the weight yank your arms back too far."
       ],
-      "alternatives": ["db-bench-press", "push-up"]
+      "alternatives": ["db-bench-press", "push-up"],
+      "images": ["images/cable-fly/0.jpg", "images/cable-fly/1.jpg"]
     },
     {
       "id": "ez-bar-skullcrusher",
@@ -649,7 +683,8 @@
         "Lower slowly; the stretch is where it works."
       ],
       "mistakes": ["Elbows flaring wide.", "Turning it into a close-grip press by moving the upper arms."],
-      "alternatives": ["cable-rope-pushdown"]
+      "alternatives": ["cable-rope-pushdown"],
+      "images": ["images/ez-bar-skullcrusher/0.jpg", "images/ez-bar-skullcrusher/1.jpg"]
     },
     {
       "id": "ez-bar-curl",
@@ -669,7 +704,8 @@
         "Swinging the torso to get the bar moving.",
         "Stopping short of straight arms at the bottom."
       ],
-      "alternatives": ["db-hammer-curl"]
+      "alternatives": ["db-hammer-curl"],
+      "images": ["images/ez-bar-curl/0.jpg", "images/ez-bar-curl/1.jpg"]
     },
     {
       "id": "leg-press",
@@ -697,7 +733,8 @@
         "Locking the knees hard at the top.",
         "Going so deep the lower back rounds off the seat."
       ],
-      "alternatives": ["goblet-squat", "barbell-back-squat"]
+      "alternatives": ["goblet-squat", "barbell-back-squat"],
+      "images": ["images/leg-press/0.jpg", "images/leg-press/1.jpg"]
     },
     {
       "id": "smith-calf-raise",
@@ -718,7 +755,8 @@
       ],
       "cues": ["Pause at the top and the bottom — no bouncing.", "Knees straight but not locked."],
       "mistakes": ["Short, bouncy reps.", "Rolling onto the outside of the foot."],
-      "alternatives": ["db-single-leg-calf-raise"]
+      "alternatives": ["db-single-leg-calf-raise"],
+      "images": ["images/smith-calf-raise/0.jpg", "images/smith-calf-raise/1.jpg"]
     },
     {
       "id": "barbell-overhead-press",
@@ -740,7 +778,8 @@
         "Arching the lower back to finish the rep.",
         "Pressing the bar out in front instead of overhead."
       ],
-      "alternatives": ["seated-db-shoulder-press"]
+      "alternatives": ["seated-db-shoulder-press"],
+      "images": ["images/barbell-overhead-press/0.jpg", "images/barbell-overhead-press/1.jpg"]
     },
     {
       "id": "db-rear-delt-fly",
@@ -758,7 +797,8 @@
       ],
       "cues": ["Lead with your pinkies.", "Think 'arms wide', not 'squeeze shoulder blades'."],
       "mistakes": ["Going heavy and turning it into a row.", "Shrugging toward your ears."],
-      "alternatives": ["cable-face-pull"]
+      "alternatives": ["cable-face-pull"],
+      "images": ["images/db-rear-delt-fly/0.jpg", "images/db-rear-delt-fly/1.jpg"]
     },
     {
       "id": "hanging-knee-raise",

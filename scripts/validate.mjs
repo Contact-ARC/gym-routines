@@ -43,6 +43,9 @@ for (const ex of ids.values()) {
     if (!ids.has(alt)) fail(`${exFile}: "${ex.id}" lists unknown alternative "${alt}"`)
     if (alt === ex.id) fail(`${exFile}: "${ex.id}" lists itself as an alternative`)
   }
+  for (const img of ex.images || []) {
+    if (!img.startsWith('https://') && !existsSync(join(root, img))) fail(`${exFile}: "${ex.id}" image ${img} does not exist`)
+  }
   if (ex.logType !== 'time' && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
     warn(`${exFile}: "${ex.id}" has no incrementGroup — the app will assume "upper"`)
   }
@@ -62,6 +65,17 @@ for (const entry of latest?.routines || []) {
   if (!r) continue
   if (r.month !== entry.month) fail(`${entry.file}: month "${r.month}" doesn't match latest.json entry "${entry.month}"`)
   if (r.effectiveFrom !== entry.effectiveFrom) fail(`${entry.file}: effectiveFrom "${r.effectiveFrom}" doesn't match latest.json "${entry.effectiveFrom}"`)
+
+  // Week and date plans
+  const weeks = new Set()
+  for (const w of r.weekPlan || []) {
+    if (weeks.has(w.week)) fail(`${entry.file}: weekPlan lists week ${w.week} twice`)
+    weeks.add(w.week)
+  }
+  for (const d of r.datePlan || []) {
+    if (d.to && d.to < d.from) fail(`${entry.file}: datePlan range ${d.from} → ${d.to} is backwards`)
+    if (isNaN(Date.parse(d.from)) || (d.to && isNaN(Date.parse(d.to)))) fail(`${entry.file}: datePlan has an invalid date`)
+  }
 
   const dayIds = new Set()
   for (const day of r.days || []) {

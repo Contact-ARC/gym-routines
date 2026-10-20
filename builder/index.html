@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Routine builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #EEF1F4; --card: #FFFFFF; --card-2: #F5F7F9; --ink: #15202E; --ink-2: #566173; --ink-3: #8A94A3;
+  --line: #DDE2E8; --ok: #1A7A43; --ok-soft: #E3F3EA; --err: #C7322B; --err-soft: #FBE7E5; --warn-soft: #FDF1DC;
+  --plates: #C7322B, #2457B5, #F2B33D, #23824F, #E6EAEF;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #181D25; --card: #212833; --card-2: #283040; --ink: #E9EDF2; --ink-2: #9AA4B2; --ink-3: #6E7888; --line: #2F3846; --ok: #4CC584; --ok-soft: rgba(76,197,132,.14); --err: #FF7A70; --err-soft: rgba(255,122,112,.14); --warn-soft: rgba(242,179,61,.14); }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 16px/1.45 Barlow, system-ui, sans-serif; }
+h1, h2, h3 { font-family: 'Barlow Condensed', Barlow, sans-serif; margin: 0; line-height: 1.1; }
+h1 { font-size: 34px; } h2 { font-size: 24px; } h3 { font-size: 20px; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 24px 16px 80px; display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; align-items: start; }
+@media (max-width: 900px) { .wrap { grid-template-columns: 1fr; } .side { position: static !important; } }
+.lead { color: var(--ink-2); margin: 6px 0 20px; max-width: 70ch; }
+.card { background: var(--card); border-radius: 16px; padding: 18px; margin-bottom: 16px; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+label { display: block; font-size: 14px; font-weight: 600; color: var(--ink-2); margin-bottom: 4px; }
+input, select, textarea { width: 100%; font: inherit; color: inherit; background: var(--card-2); border: 1.5px solid transparent; border-radius: 10px; padding: 9px 11px; outline: none; }
+input:focus, select:focus, textarea:focus { border-color: var(--ink-3); background: var(--card); }
+input[type=checkbox] { width: auto; }
+textarea { resize: vertical; }
+button { font: inherit; font-weight: 600; cursor: pointer; border: 0; border-radius: 10px; padding: 9px 14px; background: var(--card-2); color: var(--ink); }
+button:hover { filter: brightness(0.97); }
+button.primary { background: var(--ink); color: var(--paper); }
+button.danger { background: var(--err-soft); color: var(--err); }
+button.icon { padding: 6px 10px; }
+button:disabled { opacity: .4; cursor: default; }
+.day { border-left: 6px solid var(--plate); }
+.day-head { display: grid; grid-template-columns: 70px 1fr 120px auto; gap: 10px; align-items: end; }
+.items { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+.item { display: grid; grid-template-columns: 26px minmax(160px, 1fr) 64px 130px 80px 64px; gap: 8px; align-items: end; background: var(--card-2); border-radius: 12px; padding: 10px; }
+.item input, .item select { background: var(--card); }
+.item .n { font: 700 18px 'Barlow Condensed'; color: var(--ink-3); padding-bottom: 8px; }
+.item .wide { grid-column: 2 / -1; }
+.item .tools { display: flex; gap: 4px; margin-left: auto; }
+.range { display: flex; gap: 4px; align-items: center; }
+@media (max-width: 700px) { .item { grid-template-columns: 26px 1fr 1fr; } .day-head { grid-template-columns: 1fr 1fr; } }
+.plan-row { display: grid; grid-template-columns: 70px 70px 1fr 80px 80px 100px auto; gap: 8px; align-items: end; margin-top: 8px; }
+.plan-row.date { grid-template-columns: 130px 130px 70px 1fr 80px 100px auto; }
+@media (max-width: 700px) { .plan-row, .plan-row.date { grid-template-columns: 1fr 1fr; } }
+.check { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-2); padding-bottom: 9px; }
+.side { position: sticky; top: 16px; }
+.issues li { margin-bottom: 6px; }
+.ok { color: var(--ok); font-weight: 600; }
+.err { color: var(--err); }
+.muted { color: var(--ink-2); }
+.small { font-size: 14px; }
+.prev-day { padding: 10px 0; border-top: 1px solid var(--line); }
+.prev-day:first-of-type { border-top: 0; }
+.plate { display: inline-grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; color: #fff; font: 700 15px 'Barlow Condensed'; margin-right: 8px; vertical-align: middle; }
+.prev-item { display: flex; justify-content: space-between; gap: 10px; font-size: 14px; padding: 3px 0 3px 36px; }
+.prev-item span:last-child { color: var(--ink-2); white-space: nowrap; font-family: 'Barlow Condensed'; font-size: 16px; }
+pre { background: var(--card-2); padding: 10px; border-radius: 10px; overflow-x: auto; font-size: 12px; }
+.hint { font-size: 13px; color: var(--ink-3); margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <main>
+    <h1>Routine builder</h1>
+    <p class="lead">Build next month's routine with forms. When the checks are green, download the file, put it in <code>routines/</code>, add the line shown on the right to <code>latest.json</code>, and push.</p>
+
+    <section class="card">
+      <h2>Start from</h2>
+      <div class="row" style="margin-top: 12px">
+        <div style="flex: 1 1 260px">
+          <label for="src">Routines link</label>
+          <input id="src" type="url">
+        </div>
+        <button id="load">Load exercises</button>
+      </div>
+      <div class="row" style="margin-top: 12px">
+        <div style="flex: 1 1 260px">
+          <label for="copyFrom">Copy an existing month</label>
+          <select id="copyFrom"></select>
+        </div>
+        <button id="copy">Copy it</button>
+        <button id="blank">Start blank</button>
+        <label class="check" style="margin: 0"><input type="file" id="openFile" accept=".json" hidden><button type="button" onclick="document.getElementById('openFile').click()">Open a file…</button></label>
+      </div>
+      <p id="status" class="hint"></p>
+    </section>
+
+    <section class="card">
+      <h2>Month</h2>
+      <div class="grid" style="margin-top: 12px">
+        <div><label for="month">Month</label><input id="month" type="month" data-f="month"></div>
+        <div><label for="from">Starts on</label><input id="from" type="date" data-f="effectiveFrom"></div>
+        <div><label for="rir">Default reps left in the tank</label><input id="rir" type="number" min="0" max="5" data-f="rir" data-num></div>
+        <div><label for="deloadWeek">Deload week (optional)</label><input id="deloadWeek" type="number" min="1" max="6" data-f="deloadWeek" data-num></div>
+      </div>
+      <div style="margin-top: 12px"><label for="title">Title</label><input id="title" data-f="title" placeholder="December — Strength block"></div>
+      <div style="margin-top: 12px"><label for="desc">Description</label><textarea id="desc" rows="2" data-f="description"></textarea></div>
+      <div style="margin-top: 12px"><label for="news">What's new (one line each)</label><textarea id="news" rows="4" data-f="whatsNew" data-lines></textarea></div>
+    </section>
+
+    <section class="card">
+      <div class="row"><h2 style="flex: 1">Week by week</h2><button id="addWeek">Add week</button></div>
+      <p class="hint">Optional. Changes the target each week. A deload drops one set and lightens weights by about 10% unless you change it.</p>
+      <div id="weeks"></div>
+      <div class="row" style="margin-top: 18px"><h3 style="flex: 1">Specific dates</h3><button id="addDate">Add date range</button></div>
+      <p class="hint">Overrides the week for those days, e.g. an extra set on the first exercise.</p>
+      <div id="dates"></div>
+    </section>
+
+    <div id="days"></div>
+    <button id="addDay" class="primary">Add a day</button>
+  </main>
+
+  <aside class="side">
+    <section class="card">
+      <h2>Checks</h2>
+      <div id="issues" style="margin-top: 10px"></div>
+      <div class="row" style="margin-top: 12px">
+        <button id="download" class="primary">Download routine file</button>
+      </div>
+      <p class="hint">Saves as <code id="fname">routines/…json</code></p>
+      <label style="margin-top: 14px">Add this line to <code>routines</code> in latest.json</label>
+      <pre id="manifestLine"></pre>
+    </section>
+    <section class="card">
+      <h2>Preview</h2>
+      <div id="preview" style="margin-top: 8px"></div>
+    </section>
+  </aside>
+</div>
+
+<datalist id="exList"></datalist>
+
+<script>
+const PLATES = ['#C7322B', '#2457B5', '#F2B33D', '#23824F', '#9AA3AE']
+const PLATE_FG = ['#fff', '#fff', '#15202E', '#fff', '#15202E']
+const DEFAULT_SRC = 'https://raw.githubusercontent.com/Contact-ARC/gym-routines/main/'
+const $ = (id) => document.getElementById(id)
+
+let exercises = []
+let byId = {}
+let manifest = null
+let R = blank()
+
+function blank () {
+  const d = new Date(); d.setMonth(d.getMonth() + 1)
+  const m = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
+  return {
+    schemaVersion: 1, month: m, effectiveFrom: `${m}-01`, title: '', description: '', whatsNew: [],
+    days: [{ id: 'A', name: 'Day A — ', estMinutes: 45, items: [] }]
+  }
+}
+
+// ── Loading ───────────────────────────────────────────────
+function baseUrl () {
+  let u = $('src').value.trim() || DEFAULT_SRC
+  if (!u.endsWith('/')) u += '/'
+  return u
+}
+async function getJSON (u) {
+  const r = await fetch(u + (u.includes('?') ? '&' : '?') + 't=' + Date.now())
+  if (!r.ok) throw new Error(`${r.status} for ${u}`)
+  return r.json()
+}
+async function load () {
+  $('status').textContent = 'Loading…'
+  try {
+    // Hosted on GitHub Pages next to the data? Use the local copies; otherwise the link above.
+    const base = baseUrl()
+    manifest = await getJSON(base + 'latest.json')
+    const ex = await getJSON(base + (manifest.exercisesFile || 'exercises.json'))
+    exercises = ex.exercises.slice().sort((a, b) => a.name.localeCompare(b.name))
+    byId = Object.fromEntries(exercises.map(e => [e.id, e]))
+    $('exList').innerHTML = exercises.map(e => `<option value="${esc(e.name)}"></option>`).join('')
+    $('copyFrom').innerHTML = manifest.routines.map(r => `<option value="${esc(r.file)}">${esc(r.month)}</option>`).join('')
+    $('copyFrom').value = manifest.routines[manifest.routines.length - 1]?.file || ''
+    $('status').textContent = `Loaded ${exercises.length} exercises and ${manifest.routines.length} routine(s).`
+    renderAll()
+  } catch (e) {
+    $('status').innerHTML = `<span class="err">Couldn't load: ${esc(e.message)}. Check the link and that you're online.</span>`
+  }
+}
+async function copyMonth () {
+  try {
+    const src = await getJSON(baseUrl() + $('copyFrom').value)
+    const old = src.month
+    R = JSON.parse(JSON.stringify(src))
+    // Move it one month on so you don't overwrite the original by accident
+    const [y, m] = old.split('-').map(Number)
+    const d = new Date(y, m, 1)
+    R.month = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`
+    R.effectiveFrom = `${R.month}-01`
+    R.weekPlan = R.weekPlan || []
+    delete R.datePlan
+    $('status').textContent = `Copied ${old} as a starting point for ${R.month}.`
+    renderAll()
+  } catch (e) { $('status').innerHTML = `<span class="err">${esc(e.message)}</span>` }
+}
+
+// ── Rendering ─────────────────────────────────────────────
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))
+function renderAll () { renderMonth(); renderPlans(); renderDays(); refresh() }
+
+function renderMonth () {
+  document.querySelectorAll('[data-f]').forEach(el => {
+    const v = R[el.dataset.f]
+    el.value = el.dataset.lines ? (v || []).join('\n') : (v ?? '')
+  })
+}
+
+const planFields = (p, i, kind) => `
+  <div><label>Reps left</label><input type="number" min="0" max="5" value="${p.rir ?? ''}" data-plan="${kind}" data-i="${i}" data-k="rir" data-num></div>
+  <div><label>Focus</label><input value="${esc(p.focus)}" data-plan="${kind}" data-i="${i}" data-k="focus"></div>
+  <div><label>Sets ±</label><input type="number" min="-3" max="3" value="${p.setDelta ?? ''}" data-plan="${kind}" data-i="${i}" data-k="setDelta" data-num></div>
+  <div><label>Apply to</label><select data-plan="${kind}" data-i="${i}" data-k="applyTo"><option value="">All</option><option value="first" ${p.applyTo === 'first' ? 'selected' : ''}>First exercise</option></select></div>
+  <label class="check"><input type="checkbox" ${p.deload ? 'checked' : ''} data-plan="${kind}" data-i="${i}" data-k="deload" data-bool> Deload</label>
+  <button class="icon danger" data-act="delPlan" data-kind="${kind}" data-i="${i}" title="Remove">✕</button>`
+
+function renderPlans () {
+  $('weeks').innerHTML = (R.weekPlan || []).map((w, i) => `
+    <div class="plan-row"><div><label>Week</label><input type="number" min="1" max="6" value="${w.week}" data-plan="weekPlan" data-i="${i}" data-k="week" data-num></div>${planFields(w, i, 'weekPlan')}</div>`).join('')
+  $('dates').innerHTML = (R.datePlan || []).map((d, i) => `
+    <div class="plan-row date"><div><label>From</label><input type="date" value="${d.from}" data-plan="datePlan" data-i="${i}" data-k="from"></div>
+    <div><label>To</label><input type="date" value="${d.to || ''}" data-plan="datePlan" data-i="${i}" data-k="to"></div>${planFields(d, i, 'datePlan')}</div>`).join('')
+}
+
+function renderDays () {
+  $('days').innerHTML = R.days.map((d, di) => `
+    <section class="card day" style="--plate: ${PLATES[di % PLATES.length]}">
+      <div class="day-head">
+        <div><label>Letter</label><input value="${esc(d.id)}" data-day="${di}" data-k="id" maxlength="3"></div>
+        <div><label>Name</label><input value="${esc(d.name)}" data-day="${di}" data-k="name"></div>
+        <div><label>About (min)</label><input type="number" min="1" value="${d.estMinutes ?? ''}" data-day="${di}" data-k="estMinutes" data-num></div>
+        <div class="row" style="gap: 4px">
+          <button class="icon" data-act="dayUp" data-d="${di}" ${di === 0 ? 'disabled' : ''} title="Move up">↑</button>
+          <button class="icon" data-act="dayDown" data-d="${di}" ${di === R.days.length - 1 ? 'disabled' : ''} title="Move down">↓</button>
+          <button class="icon danger" data-act="delDay" data-d="${di}" title="Delete day">✕</button>
+        </div>
+      </div>
+      <div style="margin-top: 10px"><label>Notes for the day</label><input value="${esc(d.notes)}" data-day="${di}" data-k="notes"></div>
+      <div class="items">${d.items.map((it, ii) => itemRow(it, di, ii)).join('')}</div>
+      <button style="margin-top: 10px" data-act="addItem" data-d="${di}">Add exercise</button>
+    </section>`).join('')
+}
+
+function itemRow (it, di, ii) {
+  const ex = byId[it.exerciseId]
+  const timed = ex?.logType === 'time'
+  const range = timed ? (it.durationSec || [30, 45]) : (it.repRange || [8, 12])
+  const key = timed ? 'durationSec' : 'repRange'
+  const items = R.days[di].items
+  return `
+    <div class="item">
+      <div class="n">${ii + 1}</div>
+      <div><label>Exercise</label><input list="exList" value="${esc(ex?.name || it.exerciseId)}" data-item="${di}.${ii}" data-k="exercise" placeholder="Type to search"></div>
+      <div><label>Sets</label><input type="number" min="1" max="10" value="${it.sets}" data-item="${di}.${ii}" data-k="sets" data-num></div>
+      <div><label>${timed ? 'Seconds' : 'Reps'}</label><div class="range">
+        <input type="number" min="1" value="${range[0]}" data-item="${di}.${ii}" data-k="${key}.0" data-num>–
+        <input type="number" min="1" value="${range[1]}" data-item="${di}.${ii}" data-k="${key}.1" data-num></div></div>
+      <div><label>Rest (s)</label><input type="number" min="0" step="15" value="${it.restSec}" data-item="${di}.${ii}" data-k="restSec" data-num></div>
+      <div><label>Superset</label><input value="${esc(it.group)}" placeholder="S1" data-item="${di}.${ii}" data-k="group" maxlength="2"></div>
+      <div class="wide row" style="gap: 12px">
+        <input style="flex: 1 1 240px" value="${esc(it.notes)}" placeholder="Notes (optional)" data-item="${di}.${ii}" data-k="notes">
+        <label class="check"><input type="checkbox" ${it.warmup ? 'checked' : ''} data-item="${di}.${ii}" data-k="warmup" data-bool> Warm-up checklist</label>
+        <div class="tools">
+          <button class="icon" data-act="up" data-d="${di}" data-i="${ii}" ${ii === 0 ? 'disabled' : ''} title="Move up">↑</button>
+          <button class="icon" data-act="down" data-d="${di}" data-i="${ii}" ${ii === items.length - 1 ? 'disabled' : ''} title="Move down">↓</button>
+          <button class="icon danger" data-act="delItem" data-d="${di}" data-i="${ii}" title="Remove">✕</button>
+        </div>
+      </div>
+    </div>`
+}
+
+function prescription (it) {
+  const ex = byId[it.exerciseId]
+  const side = ex?.perSide ? '/side' : ''
+  if (it.durationSec) return `${it.sets} × ${it.durationSec[0]}–${it.durationSec[1]}s${side}`
+  if (it.repRange) return `${it.sets} × ${it.repRange[0]}–${it.repRange[1]}${side}`
+  return `${it.sets} sets`
+}
+
+function renderPreview () {
+  $('preview').innerHTML = `
+    <p><b>${esc(R.title || 'Untitled routine')}</b></p>
+    ${R.description ? `<p class="muted small">${esc(R.description)}</p>` : ''}
+    ${R.days.map((d, i) => `
+      <div class="prev-day">
+        <div><span class="plate" style="background:${PLATES[i % PLATES.length]};color:${PLATE_FG[i % PLATE_FG.length]}">${esc(d.id)}</span><b>${esc((d.name || '').replace(/^day\s+\w+\s*[—–-]\s*/i, ''))}</b></div>
+        ${d.items.map(it => `<div class="prev-item"><span>${it.group ? '⛓ ' : ''}${esc(byId[it.exerciseId]?.name || it.exerciseId || '?')}</span><span>${prescription(it)}</span></div>`).join('')}
+      </div>`).join('')}`
+}
+
+// ── Validation (same rules as scripts/validate.mjs) ───────
+function validate () {
+  const errs = []
+  if (!/^\d{4}-(0[1-9]|1[0-2])$/.test(R.month || '')) errs.push('Month is missing.')
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(R.effectiveFrom || '')) errs.push('Start date is missing.')
+  if (!R.title?.trim()) errs.push('Give the routine a title.')
+  if (manifest?.routines.some(r => r.month === R.month)) errs.push(`${R.month} already exists in latest.json. Pick another month or replace that file on purpose.`)
+  const weeks = new Set()
+  for (const w of R.weekPlan || []) { if (weeks.has(w.week)) errs.push(`Week ${w.week} is listed twice.`); weeks.add(w.week) }
+  for (const d of R.datePlan || []) {
+    if (!d.from) errs.push('A date range has no start date.')
+    else if (d.to && d.to < d.from) errs.push(`Date range ${d.from} to ${d.to} is backwards.`)
+  }
+  if (!R.days.length) errs.push('Add at least one day.')
+  const ids = new Set()
+  R.days.forEach((d, di) => {
+    const where = `Day ${d.id || di + 1}`
+    if (!/^[A-Z0-9]{1,3}$/.test(d.id || '')) errs.push(`${where}: the letter must be 1–3 capital letters or numbers.`)
+    if (ids.has(d.id)) errs.push(`${where}: letter used twice.`)
+    ids.add(d.id)
+    if (!d.items.length) errs.push(`${where}: has no exercises.`)
+    const groups = {}
+    d.items.forEach((it, i) => {
+      const ex = byId[it.exerciseId]
+      if (!ex) { errs.push(`${where}, exercise ${i + 1}: pick an exercise from the list.`); return }
+      const r = it.repRange || it.durationSec
+      if (!r || !(r[0] > 0) || !(r[1] > 0)) errs.push(`${where}, ${ex.name}: fill in the range.`)
+      else if (r[0] > r[1]) errs.push(`${where}, ${ex.name}: range is backwards.`)
+      if (!(it.sets >= 1)) errs.push(`${where}, ${ex.name}: needs at least 1 set.`)
+      if (!(it.restSec >= 0)) errs.push(`${where}, ${ex.name}: rest is missing.`)
+      if (it.group) {
+        if (!/^S[0-9]$/.test(it.group)) errs.push(`${where}, ${ex.name}: superset labels are S1–S9.`)
+        ;(groups[it.group] ||= []).push(i)
+      }
+    })
+    for (const [g, idx] of Object.entries(groups)) {
+      if (idx.length < 2) errs.push(`${where}: superset ${g} has only one exercise.`)
+      if (idx.some((v, k) => k && v !== idx[k - 1] + 1)) errs.push(`${where}: superset ${g} exercises must be next to each other.`)
+    }
+  })
+  return errs
+}
+
+function output () {
+  const out = JSON.parse(JSON.stringify(R))
+  out.schemaVersion = 1
+  for (const k of ['description', 'deloadWeek', 'rir']) if (out[k] === '' || out[k] == null) delete out[k]
+  if (!out.whatsNew?.length) delete out.whatsNew
+  for (const k of ['weekPlan', 'datePlan']) {
+    if (!out[k]?.length) { delete out[k]; continue }
+    out[k] = out[k].map(p => Object.fromEntries(Object.entries(p).filter(([, v]) => v !== '' && v != null && v !== false)))
+  }
+  out.days.forEach(d => {
+    if (!d.notes) delete d.notes
+    if (!d.estMinutes) delete d.estMinutes
+    d.items.forEach(it => { for (const k of ['notes', 'group']) if (!it[k]) delete it[k]; if (!it.warmup) delete it.warmup })
+  })
+  return out
+}
+
+function refresh () {
+  const errs = validate()
+  $('issues').innerHTML = errs.length
+    ? `<ul class="issues err small">${errs.map(e => `<li>${esc(e)}</li>`).join('')}</ul>`
+    : '<p class="ok">All good. Ready to download.</p>'
+  $('download').disabled = !!errs.length
+  $('fname').textContent = `routines/${R.month || '…'}.json`
+  $('manifestLine').textContent = JSON.stringify({ month: R.month, file: `routines/${R.month}.json`, effectiveFrom: R.effectiveFrom })
+  renderPreview()
+}
+
+// ── Editing ───────────────────────────────────────────────
+function num (el) { return el.value === '' ? '' : Number(el.value) }
+document.addEventListener('input', (e) => {
+  const el = e.target
+  const val = el.dataset.bool !== undefined ? el.checked : el.dataset.num !== undefined ? num(el) : el.value
+  if (el.dataset.f) {
+    R[el.dataset.f] = el.dataset.lines ? el.value.split('\n').map(s => s.trim()).filter(Boolean) : val
+    if (el.dataset.f === 'month' && val && (!R.effectiveFrom || R.effectiveFrom.slice(0, 7) !== val)) { R.effectiveFrom = `${val}-01`; $('from').value = R.effectiveFrom }
+  } else if (el.dataset.plan) {
+    R[el.dataset.plan][el.dataset.i][el.dataset.k] = val
+  } else if (el.dataset.day) {
+    R.days[el.dataset.day][el.dataset.k] = val
+  } else if (el.dataset.item) {
+    const [di, ii] = el.dataset.item.split('.').map(Number)
+    const it = R.days[di].items[ii]
+    const k = el.dataset.k
+    if (k === 'exercise') {
+      const ex = exercises.find(x => x.name.toLowerCase() === el.value.trim().toLowerCase())
+      if (!ex) { it.exerciseId = el.value.trim(); refresh(); return }
+      const wasTimed = byId[it.exerciseId]?.logType === 'time'
+      it.exerciseId = ex.id
+      const timed = ex.logType === 'time'
+      if (timed && !it.durationSec) { delete it.repRange; it.durationSec = [30, 45] }
+      if (!timed && !it.repRange) { delete it.durationSec; it.repRange = [8, 12] }
+      if (timed !== wasTimed) { renderDays() }
+    } else if (k.includes('.')) {
+      const [key, idx] = k.split('.')
+      it[key] = it[key] || [0, 0]
+      it[key][Number(idx)] = val
+    } else {
+      it[k] = val
+    }
+  }
+  refresh()
+})
+document.addEventListener('change', (e) => { if (e.target.matches('select, input[type=checkbox]')) e.target.dispatchEvent(new Event('input', { bubbles: true })) })
+
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-act]')
+  if (!b) return
+  const d = Number(b.dataset.d); const i = Number(b.dataset.i)
+  const items = R.days[d]?.items
+  const swap = (arr, a, c) => { [arr[a], arr[c]] = [arr[c], arr[a]] }
+  switch (b.dataset.act) {
+    case 'addItem': items.push({ exerciseId: '', sets: 3, repRange: [8, 12], restSec: 90 }); break
+    case 'delItem': items.splice(i, 1); break
+    case 'up': swap(items, i, i - 1); break
+    case 'down': swap(items, i, i + 1); break
+    case 'delDay': if (confirm(`Delete day ${R.days[d].id}?`)) R.days.splice(d, 1); break
+    case 'dayUp': swap(R.days, d, d - 1); break
+    case 'dayDown': swap(R.days, d, d + 1); break
+    case 'delPlan': R[b.dataset.kind].splice(i, 1); renderPlans(); refresh(); return
+  }
+  renderDays(); refresh()
+})
+$('addDay').onclick = () => {
+  const letter = String.fromCharCode(65 + R.days.length)
+  R.days.push({ id: letter, name: `Day ${letter} — `, estMinutes: 45, items: [] })
+  renderDays(); refresh()
+}
+$('addWeek').onclick = () => {
+  R.weekPlan = R.weekPlan || []
+  R.weekPlan.push({ week: (R.weekPlan[R.weekPlan.length - 1]?.week || 0) + 1, rir: '' })
+  renderPlans(); refresh()
+}
+$('addDate').onclick = () => { R.datePlan = R.datePlan || []; R.datePlan.push({ from: R.effectiveFrom, to: '' }); renderPlans(); refresh() }
+$('load').onclick = load
+$('copy').onclick = copyMonth
+$('blank').onclick = () => { R = blank(); renderAll() }
+$('openFile').onchange = async (e) => {
+  const f = e.target.files[0]; if (!f) return
+  try { R = JSON.parse(await f.text()); R.days = R.days || []; renderAll(); $('status').textContent = `Opened ${f.name}.` } catch { $('status').innerHTML = '<span class="err">That file is not valid JSON.</span>' }
+}
+$('download').onclick = () => {
+  const blob = new Blob([JSON.stringify(output(), null, 2) + '\n'], { type: 'application/json' })
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(blob)
+  a.download = `${R.month}.json`
+  a.click()
+  setTimeout(() => URL.revokeObjectURL(a.href), 3000)
+}
+
+// Default source: the data next to this page when hosted on GitHub Pages, otherwise the public repo
+$('src').value = location.protocol.startsWith('http') && !location.hostname.includes('raw.githubusercontent')
+  ? new URL('../', location.href).href
+  : DEFAULT_SRC
+renderAll()
+load()
+</script>
+</body>
+</html>
