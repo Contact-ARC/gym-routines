@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "app": { "version": "0.1.0", "notes": "First release.", "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest" },
+  "app": { "version": "0.1.1", "notes": "Routine source fix.", "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest" },
   "exercisesFile": "exercises.json",
   "routines": [
     { "month": "2026-10", "file": "routines/2026-10.json", "effectiveFrom": "2026-10-01" },
