@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Monthly routine",
+  "type": "object",
+  "required": ["schemaVersion", "month", "effectiveFrom", "title", "days"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "month": { "type": "string", "pattern": "^\\d{4}-(0[1-9]|1[0-2])$" },
+    "effectiveFrom": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "title": { "type": "string", "minLength": 1 },
+    "description": { "type": "string" },
+    "whatsNew": { "type": "array", "items": { "type": "string" } },
+    "deloadWeek": { "type": "integer", "minimum": 1, "maximum": 6 },
+    "days": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "items"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[A-Z0-9]{1,3}$" },
+          "name": { "type": "string" },
+          "estMinutes": { "type": "integer", "minimum": 1 },
+          "notes": { "type": "string" },
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["exerciseId", "sets", "restSec"],
+              "additionalProperties": false,
+              "oneOf": [
+                { "required": ["repRange"], "not": { "required": ["durationSec"] } },
+                { "required": ["durationSec"], "not": { "required": ["repRange"] } }
+              ],
+              "properties": {
+                "exerciseId": { "type": "string" },
+                "sets": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "repRange": { "$ref": "#/definitions/range" },
+                "durationSec": { "$ref": "#/definitions/range" },
+                "restSec": { "type": "integer", "minimum": 0, "maximum": 600 },
+                "group": { "type": "string", "pattern": "^S[0-9]$" },
+                "notes": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "range": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 1 },
+      "minItems": 2,
+      "maxItems": 2
+    }
+  }
+}

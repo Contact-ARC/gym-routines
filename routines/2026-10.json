@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-10",
+  "effectiveFrom": "2026-10-01",
+  "title": "October — Full-body foundations",
+  "description": "Three full-body days, about 40 minutes each. Rotate A → B → C on whichever days you train. Free weights first, cables for the finishers.",
+  "whatsNew": [
+    "First routine in the app — welcome!",
+    "Rotate Day A, B and C in order; the app tracks which is next.",
+    "Week 4 (22–28 Oct) is a deload: lighter weights, recover, come back stronger."
+  ],
+  "deloadWeek": 4,
+  "days": [
+    {
+      "id": "A",
+      "name": "Day A — Squat & Press",
+      "estMinutes": 40,
+      "items": [
+        { "exerciseId": "barbell-back-squat", "sets": 3, "repRange": [6, 8], "restSec": 150, "notes": "Do 2–3 warm-up sets first (Tools → Warm-up)." },
+        { "exerciseId": "db-bench-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [10, 12], "restSec": 90 },
+        { "exerciseId": "db-lateral-raise", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [10, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "plank", "sets": 2, "durationSec": [30, 45], "restSec": 45 }
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Day B — Hinge & Pull",
+      "estMinutes": 42,
+      "items": [
+        { "exerciseId": "barbell-rdl", "sets": 3, "repRange": [8, 10], "restSec": 150 },
+        { "exerciseId": "seated-db-shoulder-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "pull-up", "sets": 3, "repRange": [5, 10], "restSec": 120, "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown." },
+        { "exerciseId": "db-reverse-lunge", "sets": 2, "repRange": [8, 10], "restSec": 90 },
+        { "exerciseId": "cable-face-pull", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60, "group": "S1" }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Day C — Glutes & Incline",
+      "estMinutes": 42,
+      "items": [
+        { "exerciseId": "barbell-hip-thrust", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "incline-db-press", "sets": 3, "repRange": [8, 12], "restSec": 120 },
+        { "exerciseId": "one-arm-db-row", "sets": 3, "repRange": [10, 12], "restSec": 75 },
+        { "exerciseId": "db-bulgarian-split-squat", "sets": 2, "repRange": [8, 10], "restSec": 90 },
+        { "exerciseId": "pallof-press", "sets": 2, "repRange": [10, 12], "restSec": 45, "group": "S1" },
+        { "exerciseId": "farmers-carry", "sets": 2, "durationSec": [30, 40], "restSec": 60, "group": "S1" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Exercise library",
+  "type": "object",
+  "required": ["schemaVersion", "exercises"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "exercises": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "logType", "primary", "steps"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+          "name": { "type": "string", "minLength": 1 },
+          "equipment": { "type": "array", "items": { "type": "string" } },
+          "logType": { "enum": ["weight", "bodyweight", "time"] },
+          "loadUnit": { "enum": ["kg", "pin"], "description": "Omit for normal weights (uses the user's kg/lb). 'pin' for machine stacks numbered by position." },
+          "loadable": { "type": "boolean", "description": "For timed exercises that also take a weight (carries)." },
+          "incrementGroup": { "enum": ["upper", "lower", "dumbbell"] },
+          "perSide": { "type": "boolean" },
+          "primary": { "$ref": "#/definitions/muscles", "minItems": 1 },
+          "secondary": { "$ref": "#/definitions/muscles" },
+          "setup": { "type": "array", "items": { "type": "string" } },
+          "steps": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "cues": { "type": "array", "items": { "type": "string" } },
+          "mistakes": { "type": "array", "items": { "type": "string" } },
+          "videoUrl": { "type": "string", "pattern": "^https://" },
+          "alternatives": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "muscles": {
+      "type": "array",
+      "items": {
+        "enum": ["chest", "front_delts", "side_delts", "rear_delts", "triceps", "biceps", "forearms", "lats", "upper_back", "traps", "lower_back", "abs", "obliques", "glutes", "quads", "hamstrings", "adductors", "calves"]
+      }
+    }
+  }
+}

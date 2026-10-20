@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "app": {
+    "version": "0.1.0",
+    "notes": "First release.",
+    "downloadUrl": "https://github.com/OWNER/gym-app/releases/latest"
+  },
+  "exercisesFile": "exercises.json",
+  "routines": [
+    { "month": "2026-10", "file": "routines/2026-10.json", "effectiveFrom": "2026-10-01" }
+  ]
+}
