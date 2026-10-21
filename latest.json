@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.5.0",
-    "notes": "Make the routine yours: adjust any day (add, swap or remove exercises, change sets, reps and rest) and keep getting the monthly updates, save days as yours, build your own routines in My routines and use them alongside or instead of the month's routine. Create your own exercises. Body now has height, body fat (entered or estimated), lean mass and FFMI, and there are goals for lifts, reps, your body and workouts per week, plus a powerlifting total with DOTS.",
+    "version": "0.5.1",
+    "notes": "Make the routine yours: adjust any day and keep the monthly updates, save days as yours, build your own routines, create your own exercises, plus body composition, goals and a powerlifting total. New in 0.5.1: the next set's weight adapts to how the last one felt, the rest countdown sits in your notifications with a pop-up telling you which set is next, and a louder rest chime.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Haz tuya la rutina: ajusta cualquier día (añade, cambia o quita ejercicios, cambia series, repeticiones y descansos) sin perder las novedades de cada mes, guarda días como tuyos y crea tus propias rutinas en Mis rutinas para usarlas junto a la rutina del mes o en su lugar. Crea tus propios ejercicios. Cuerpo ahora tiene altura, grasa corporal (introducida o estimada), masa magra y FFMI, y hay objetivos para levantamientos, repeticiones, tu cuerpo y entrenamientos por semana, además del total de powerlifting con DOTS."
+      "notes": "Haz tuya la rutina: ajusta cualquier día sin perder las novedades de cada mes, guarda días como tuyos, crea tus propias rutinas y ejercicios, y además composición corporal, objetivos y total de powerlifting. Nuevo en 0.5.1: el peso de la siguiente serie se ajusta según cómo fue la anterior, la cuenta atrás del descanso aparece en las notificaciones con un aviso de qué serie toca, y un aviso sonoro más alto."
     }
   },
   "exercisesFile": "exercises.json",
