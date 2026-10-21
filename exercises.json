@@ -101,6 +101,63 @@
       }
     },
     {
+      "id": "barbell-deadlift",
+      "name": "Barbell Deadlift",
+      "equipment": ["barbell", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["glutes", "hamstrings", "lower_back"],
+      "secondary": ["quads", "upper_back", "traps", "forearms", "lats"],
+      "setup": [
+        "Bar over the middle of your feet, feet about hip-width, toes slightly out.",
+        "Grip just outside your legs: both palms down, or one up and one down for heavy sets."
+      ],
+      "steps": [
+        "Hinge down and grip the bar, then bend your knees until your shins touch it.",
+        "Lift your chest and pull the slack out of the bar so your back is flat and tight.",
+        "Push the floor away with your legs, keeping the bar against your shins and thighs.",
+        "Once the bar passes your knees, drive your hips forward and stand tall.",
+        "Lower it the same way: hips back first, then bend the knees once the bar is past them."
+      ],
+      "cues": [
+        "Bar stays in contact with your legs all the way.",
+        "Brace your stomach before each rep.",
+        "Hips and shoulders rise together."
+      ],
+      "mistakes": [
+        "Bar drifting away from your legs.",
+        "Rounding the lower back to reach the bar.",
+        "Leaning back at the top instead of just standing tall."
+      ],
+      "alternatives": ["barbell-rdl", "db-rdl", "barbell-hip-thrust"],
+      "images": ["images/barbell-deadlift/0.jpg", "images/barbell-deadlift/1.jpg"],
+      "es": {
+        "name": "Peso muerto con barra",
+        "equipment": ["barra", "discos"],
+        "setup": [
+          "Barra sobre la mitad del pie, pies a la anchura de la cadera y puntas un poco hacia fuera.",
+          "Agarre justo por fuera de las piernas: las dos palmas hacia abajo, o una arriba y otra abajo en series pesadas."
+        ],
+        "steps": [
+          "Lleva la cadera atrás, agarra la barra y flexiona las rodillas hasta que las espinillas la toquen.",
+          "Saca pecho y tensa la barra para que la espalda quede recta y firme.",
+          "Empuja el suelo con las piernas, con la barra pegada a las espinillas y los muslos.",
+          "Cuando la barra pase las rodillas, lleva la cadera adelante hasta quedar erguido.",
+          "Bájala igual: primero la cadera atrás y, cuando la barra pase las rodillas, flexiónalas."
+        ],
+        "cues": [
+          "La barra no se separa de las piernas en ningún momento.",
+          "Aprieta el abdomen antes de cada repetición.",
+          "Cadera y hombros suben a la vez."
+        ],
+        "mistakes": [
+          "Dejar que la barra se aleje de las piernas.",
+          "Redondear la zona lumbar para llegar a la barra.",
+          "Echarse hacia atrás arriba en lugar de solo quedarse erguido."
+        ]
+      }
+    },
+    {
       "id": "barbell-rdl",
       "name": "Barbell Romanian Deadlift",
       "equipment": ["barbell"],

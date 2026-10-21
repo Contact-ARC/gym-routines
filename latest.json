@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.4.7",
-    "notes": "Fixes saving after deleting something, asks before deleting a set, checks for new routines and versions again when you come back or reconnect, and only warns about being offline when it matters. Supersets say what comes next, and messages can be swiped away.",
+    "version": "0.5.0",
+    "notes": "Make the routine yours: adjust any day (add, swap or remove exercises, change sets, reps and rest) and keep getting the monthly updates, save days as yours, build your own routines in My routines and use them alongside or instead of the month's routine. Create your own exercises. Body now has height, body fat (entered or estimated), lean mass and FFMI, and there are goals for lifts, reps, your body and workouts per week, plus a powerlifting total with DOTS.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Arregla el guardado después de borrar algo, pide confirmación antes de borrar una serie, vuelve a buscar rutinas y versiones nuevas al volver a la app o recuperar la conexión, y solo avisa de que no hay conexión cuando importa. Las superseries dicen qué toca después y los mensajes se pueden deslizar para quitarlos."
+      "notes": "Haz tuya la rutina: ajusta cualquier día (añade, cambia o quita ejercicios, cambia series, repeticiones y descansos) sin perder las novedades de cada mes, guarda días como tuyos y crea tus propias rutinas en Mis rutinas para usarlas junto a la rutina del mes o en su lugar. Crea tus propios ejercicios. Cuerpo ahora tiene altura, grasa corporal (introducida o estimada), masa magra y FFMI, y hay objetivos para levantamientos, repeticiones, tu cuerpo y entrenamientos por semana, además del total de powerlifting con DOTS."
     }
   },
   "exercisesFile": "exercises.json",
