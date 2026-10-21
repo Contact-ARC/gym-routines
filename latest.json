@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.4.1",
-    "notes": "Spanish, beginner track, monthly challenge, crew board, weekly automatic backups, CSV export, month reports, share images, rep records, body tracking and a history calendar. 0.4.1: small polish.",
+    "version": "0.4.7",
+    "notes": "Fixes saving after deleting something, asks before deleting a set, checks for new routines and versions again when you come back or reconnect, and only warns about being offline when it matters. Supersets say what comes next, and messages can be swiped away.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Español, versión para principiantes, reto mensual, tablón del grupo, copias de seguridad semanales automáticas, exportar a CSV, informe mensual, imágenes para compartir, récords de repeticiones, seguimiento corporal y calendario del historial. 0.4.1: pequeños retoques."
+      "notes": "Arregla el guardado después de borrar algo, pide confirmación antes de borrar una serie, vuelve a buscar rutinas y versiones nuevas al volver a la app o recuperar la conexión, y solo avisa de que no hay conexión cuando importa. Las superseries dicen qué toca después y los mensajes se pueden deslizar para quitarlos."
     }
   },
   "exercisesFile": "exercises.json",

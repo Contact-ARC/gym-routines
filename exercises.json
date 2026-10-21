@@ -1377,6 +1377,7 @@
       "cues": ["Curl the pelvis — don't just lift the legs.", "Control the way down to kill the swing."],
       "mistakes": ["Swinging for momentum.", "Only lifting the knees to hip height."],
       "alternatives": ["plank"],
+      "images": ["images/hanging-knee-raise/0.jpg", "images/hanging-knee-raise/1.jpg"],
       "es": {
         "name": "Elevación de rodillas colgado",
         "equipment": ["barra de dominadas"],
@@ -1414,6 +1415,7 @@
       "cues": ["Pause at the top and bottom — no bouncing."],
       "mistakes": ["Bending the knee to help the rep.", "Rushing through a half range of motion."],
       "alternatives": ["smith-calf-raise"],
+      "images": ["images/db-single-leg-calf-raise/0.jpg", "images/db-single-leg-calf-raise/1.jpg"],
       "es": {
         "name": "Elevación de gemelo a una pierna con mancuerna",
         "equipment": ["mancuerna", "cajón o escalón"],
