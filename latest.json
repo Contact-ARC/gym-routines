@@ -1,17 +1,28 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.5.8",
-    "notes": "Make the routine yours: adjust any day and keep the monthly updates, save days as yours, build your own routines, create your own exercises, plus body composition, goals and a powerlifting total. New in 0.5.1–0.5.8: the next set's weight adapts to how the last one felt, the rest countdown sits in your notifications (and in the status bar as a Live Update on Android 16) with a pop-up telling you which set is next, a louder rest chime, and a plate calculator that remembers your gym's plates and finds the closest weight you can load, with barbell suggestions and warm-ups that stick to those weights. If the rest notifications don't appear, Settings → Rest timer now says why and has a button to turn them on, plus a 10-second test.",
+    "version": "0.6.0",
+    "notes": "The crew gets a lot bigger: notifications (pick which ones: workouts, records, comments, reactions, nudges, challenges, a Sunday recap), comments on posts, more reactions, leaderboards for the week, the month and all time plus a powerlifting board, tap anyone to see their profile, badges and lifts head-to-head, see every set of a workout and save it to My routines, share your own routines with the crew, team and head-to-head crew challenges, \"training now\", and nudges. Also: the plate calculator remembers your plates and only suggests weights you can load.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Haz tuya la rutina: ajusta cualquier día sin perder las novedades de cada mes, guarda días como tuyos, crea tus propias rutinas y ejercicios, y además composición corporal, objetivos y total de powerlifting. Nuevo en 0.5.1–0.5.8: el peso de la siguiente serie se ajusta según cómo fue la anterior, la cuenta atrás del descanso aparece en las notificaciones (y en la barra de estado como Live Update en Android 16) con un aviso de qué serie toca, un aviso sonoro más alto y una calculadora de discos que recuerda los discos de tu gimnasio y encuentra el peso más cercano que puedes cargar, con sugerencias y calentamientos con barra que se ciñen a esos pesos. Si no aparecen las notificaciones del descanso, Ajustes → Temporizador de descanso ahora dice por qué, tiene un botón para activarlas y una prueba de 10 segundos."
+      "notes": "El grupo crece: notificaciones (elige cuáles: entrenamientos, récords, comentarios, reacciones, toques, retos y un resumen el domingo), comentarios, más reacciones, clasificaciones de la semana, del mes y desde siempre, además de una de levantamientos, el perfil de cada uno con insignias y cara a cara, cada serie de un entrenamiento con la opción de guardarlo en Mis rutinas, compartir tus rutinas con el grupo, retos de equipo y cara a cara, «entrenando ahora» y toques. Además, la calculadora de discos recuerda tus discos y solo sugiere pesos que puedas cargar."
     }
   },
   "exercisesFile": "exercises.json",
-  "crew": { "url": "https://pdusdkxnsltbyooiqewx.supabase.co", "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP" },
+  "crew": {
+    "url": "https://pdusdkxnsltbyooiqewx.supabase.co",
+    "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP"
+  },
   "routines": [
-    { "month": "2026-10", "file": "routines/2026-10.json", "effectiveFrom": "2026-10-01" },
-    { "month": "2026-11", "file": "routines/2026-11.json", "effectiveFrom": "2026-11-01" }
+    {
+      "month": "2026-10",
+      "file": "routines/2026-10.json",
+      "effectiveFrom": "2026-10-01"
+    },
+    {
+      "month": "2026-11",
+      "file": "routines/2026-11.json",
+      "effectiveFrom": "2026-11-01"
+    }
   ]
 }
