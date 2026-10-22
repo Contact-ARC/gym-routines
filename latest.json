@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.6.0",
-    "notes": "The crew gets a lot bigger: notifications (pick which ones: workouts, records, comments, reactions, nudges, challenges, a Sunday recap), comments on posts, more reactions, leaderboards for the week, the month and all time plus a powerlifting board, tap anyone to see their profile, badges and lifts head-to-head, see every set of a workout and save it to My routines, share your own routines with the crew, team and head-to-head crew challenges, \"training now\", and nudges. Also: the plate calculator remembers your plates and only suggests weights you can load.",
+    "version": "0.6.1",
+    "notes": "The crew gets a lot bigger: notifications (pick which ones: workouts, records, comments, reactions, nudges, challenges, a Sunday recap), comments on posts, more reactions, leaderboards for the week, the month and all time plus a powerlifting board, tap anyone to see their profile, badges and lifts head-to-head, see every set of a workout and save it to My routines, share your own routines with the crew, team and head-to-head crew challenges, \"training now\", and nudges. Also: the plate calculator remembers your plates and only suggests weights you can load. 0.6.1: the rest alert now also arrives on time with the phone locked.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "El grupo crece: notificaciones (elige cuáles: entrenamientos, récords, comentarios, reacciones, toques, retos y un resumen el domingo), comentarios, más reacciones, clasificaciones de la semana, del mes y desde siempre, además de una de levantamientos, el perfil de cada uno con insignias y cara a cara, cada serie de un entrenamiento con la opción de guardarlo en Mis rutinas, compartir tus rutinas con el grupo, retos de equipo y cara a cara, «entrenando ahora» y toques. Además, la calculadora de discos recuerda tus discos y solo sugiere pesos que puedas cargar."
+      "notes": "El grupo crece: notificaciones (elige cuáles: entrenamientos, récords, comentarios, reacciones, toques, retos y un resumen el domingo), comentarios, más reacciones, clasificaciones de la semana, del mes y desde siempre, además de una de levantamientos, el perfil de cada uno con insignias y cara a cara, cada serie de un entrenamiento con la opción de guardarlo en Mis rutinas, compartir tus rutinas con el grupo, retos de equipo y cara a cara, «entrenando ahora» y toques. Además, la calculadora de discos recuerda tus discos y solo sugiere pesos que puedas cargar. 0.6.1: el aviso de fin de descanso también llega a tiempo con el móvil bloqueado."
     }
   },
   "exercisesFile": "exercises.json",
