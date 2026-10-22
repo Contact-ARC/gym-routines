@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.5.2",
-    "notes": "Make the routine yours: adjust any day and keep the monthly updates, save days as yours, build your own routines, create your own exercises, plus body composition, goals and a powerlifting total. New in 0.5.1–0.5.2: the next set's weight adapts to how the last one felt, the rest countdown sits in your notifications with a pop-up telling you which set is next, and a louder rest chime. If the rest notifications don't appear, Settings → Rest timer now says why and has a button to turn them on, plus a 10-second test.",
+    "version": "0.5.3",
+    "notes": "Make the routine yours: adjust any day and keep the monthly updates, save days as yours, build your own routines, create your own exercises, plus body composition, goals and a powerlifting total. New in 0.5.1–0.5.3: the next set's weight adapts to how the last one felt, the rest countdown sits in your notifications with a pop-up telling you which set is next, and a louder rest chime. If the rest notifications don't appear, Settings → Rest timer now says why and has a button to turn them on, plus a 10-second test.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Haz tuya la rutina: ajusta cualquier día sin perder las novedades de cada mes, guarda días como tuyos, crea tus propias rutinas y ejercicios, y además composición corporal, objetivos y total de powerlifting. Nuevo en 0.5.1–0.5.2: el peso de la siguiente serie se ajusta según cómo fue la anterior, la cuenta atrás del descanso aparece en las notificaciones con un aviso de qué serie toca, y un aviso sonoro más alto. Si no aparecen las notificaciones del descanso, Ajustes → Temporizador de descanso ahora dice por qué, tiene un botón para activarlas y una prueba de 10 segundos."
+      "notes": "Haz tuya la rutina: ajusta cualquier día sin perder las novedades de cada mes, guarda días como tuyos, crea tus propias rutinas y ejercicios, y además composición corporal, objetivos y total de powerlifting. Nuevo en 0.5.1–0.5.3: el peso de la siguiente serie se ajusta según cómo fue la anterior, la cuenta atrás del descanso aparece en las notificaciones con un aviso de qué serie toca, y un aviso sonoro más alto. Si no aparecen las notificaciones del descanso, Ajustes → Temporizador de descanso ahora dice por qué, tiene un botón para activarlas y una prueba de 10 segundos."
     }
   },
   "exercisesFile": "exercises.json",
