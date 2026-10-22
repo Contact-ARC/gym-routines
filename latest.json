@@ -9,6 +9,7 @@
     }
   },
   "exercisesFile": "exercises.json",
+  "crew": { "url": "https://pdusdkxnsltbyooiqewx.supabase.co", "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP" },
   "routines": [
     { "month": "2026-10", "file": "routines/2026-10.json", "effectiveFrom": "2026-10-01" },
     { "month": "2026-11", "file": "routines/2026-11.json", "effectiveFrom": "2026-11-01" }
