@@ -30,7 +30,7 @@
         "Hips shooting up first so it turns into a good-morning.",
         "Cutting depth short as the weight gets heavy."
       ],
-      "alternatives": ["goblet-squat", "db-bulgarian-split-squat"],
+      "alternatives": ["goblet-squat", "db-bulgarian-split-squat", "barbell-front-squat", "smith-machine-squat"],
       "images": ["images/barbell-back-squat/0.jpg", "images/barbell-back-squat/1.jpg"],
       "es": {
         "name": "Sentadilla trasera con barra",
@@ -129,7 +129,7 @@
         "Rounding the lower back to reach the bar.",
         "Leaning back at the top instead of just standing tall."
       ],
-      "alternatives": ["barbell-rdl", "db-rdl", "barbell-hip-thrust"],
+      "alternatives": ["barbell-rdl", "db-rdl", "barbell-hip-thrust", "sumo-deadlift"],
       "images": ["images/barbell-deadlift/0.jpg", "images/barbell-deadlift/1.jpg"],
       "es": {
         "name": "Peso muerto con barra",
@@ -181,7 +181,7 @@
         "Rounding the back to reach lower.",
         "Leaning back at the top."
       ],
-      "alternatives": ["db-rdl", "machine-leg-curl"],
+      "alternatives": ["db-rdl", "machine-leg-curl", "barbell-good-morning"],
       "images": ["images/barbell-rdl/0.jpg", "images/barbell-rdl/1.jpg"],
       "es": {
         "name": "Peso muerto rumano con barra",
@@ -258,7 +258,7 @@
         "Arching the lower back to get 'higher'.",
         "Feet too close, turning it into a quad exercise."
       ],
-      "alternatives": ["glute-bridge", "db-rdl"],
+      "alternatives": ["glute-bridge", "db-rdl", "cable-pull-through", "cable-glute-kickback"],
       "images": ["images/barbell-hip-thrust/0.jpg", "images/barbell-hip-thrust/1.jpg"],
       "es": {
         "name": "Hip thrust con barra",
@@ -299,7 +299,7 @@
       ],
       "cues": ["Ribs down.", "Pause at the top."],
       "mistakes": ["Pushing through the toes."],
-      "alternatives": ["barbell-hip-thrust"],
+      "alternatives": ["barbell-hip-thrust", "cable-glute-kickback"],
       "images": ["images/glute-bridge/0.jpg", "images/glute-bridge/1.jpg"],
       "es": {
         "name": "Puente de glúteos",
@@ -331,7 +331,7 @@
       ],
       "cues": ["Most of your weight stays on the front foot.", "Torso tall or slightly forward."],
       "mistakes": ["Front knee caving in.", "Slamming the back knee into the floor."],
-      "alternatives": ["db-bulgarian-split-squat", "goblet-squat"],
+      "alternatives": ["db-bulgarian-split-squat", "goblet-squat", "db-walking-lunge", "db-step-up"],
       "images": ["images/db-reverse-lunge/0.jpg", "images/db-reverse-lunge/1.jpg"],
       "es": {
         "name": "Zancada atrás con mancuernas",
@@ -409,7 +409,7 @@
       ],
       "cues": ["Control the lowering — that's where most of the work is."],
       "mistakes": ["Hips lifting off the pad.", "Swinging the weight."],
-      "alternatives": ["barbell-rdl", "db-rdl"],
+      "alternatives": ["barbell-rdl", "db-rdl", "stability-ball-leg-curl"],
       "images": ["images/machine-leg-curl/0.jpg", "images/machine-leg-curl/1.jpg"],
       "es": {
         "name": "Curl femoral en máquina",
@@ -445,7 +445,7 @@
       ],
       "cues": ["Shoulder blades pinned back the whole set.", "Wrists stacked over elbows."],
       "mistakes": ["Elbows flared straight out at 90°.", "Bouncing at the bottom."],
-      "alternatives": ["barbell-bench-press", "push-up"],
+      "alternatives": ["barbell-bench-press", "push-up", "machine-chest-press"],
       "images": ["images/db-bench-press/0.jpg", "images/db-bench-press/1.jpg"],
       "es": {
         "name": "Press de banca con mancuernas",
@@ -490,7 +490,7 @@
         "Elbows flared straight out to 90°.",
         "Hips lifting off the bench."
       ],
-      "alternatives": ["db-bench-press", "push-up"],
+      "alternatives": ["db-bench-press", "push-up", "machine-chest-press", "incline-barbell-bench-press"],
       "images": ["images/barbell-bench-press/0.jpg", "images/barbell-bench-press/1.jpg"],
       "es": {
         "name": "Press de banca con barra",
@@ -532,7 +532,7 @@
       ],
       "cues": ["Keep the chest high.", "Control the bottom position."],
       "mistakes": ["Bench too steep.", "Losing shoulder blade position as you tire."],
-      "alternatives": ["db-bench-press", "push-up"],
+      "alternatives": ["db-bench-press", "push-up", "incline-barbell-bench-press"],
       "images": ["images/incline-db-press/0.jpg", "images/incline-db-press/1.jpg"],
       "es": {
         "name": "Press inclinado con mancuernas",
@@ -563,7 +563,7 @@
       ],
       "cues": ["Squeeze glutes and brace — no sagging hips."],
       "mistakes": ["Half reps.", "Head poking forward."],
-      "alternatives": ["db-bench-press"],
+      "alternatives": ["db-bench-press", "machine-chest-press", "dip"],
       "images": ["images/push-up/0.jpg", "images/push-up/1.jpg"],
       "es": {
         "name": "Flexiones",
@@ -597,7 +597,7 @@
         "Forearms vertical at the bottom."
       ],
       "mistakes": ["Excessive back arch.", "Cutting the range short at the bottom."],
-      "alternatives": ["incline-db-press"],
+      "alternatives": ["incline-db-press", "machine-shoulder-press", "arnold-press"],
       "images": ["images/seated-db-shoulder-press/0.jpg", "images/seated-db-shoulder-press/1.jpg"],
       "es": {
         "name": "Press de hombro sentado con mancuernas",
@@ -631,7 +631,7 @@
       ],
       "cues": ["Lead with the elbows.", "Chest stays on the pad — no heaving."],
       "mistakes": ["Shrugging the dumbbells up with the traps."],
-      "alternatives": ["one-arm-db-row", "cable-seated-row"],
+      "alternatives": ["one-arm-db-row", "cable-seated-row", "barbell-row"],
       "images": ["images/chest-supported-db-row/0.jpg", "images/chest-supported-db-row/1.jpg"],
       "es": {
         "name": "Remo con mancuernas con pecho apoyado",
@@ -702,7 +702,7 @@
       ],
       "cues": ["Torso stays mostly still — small lean only."],
       "mistakes": ["Rocking back and forth to move the weight."],
-      "alternatives": ["chest-supported-db-row", "one-arm-db-row"],
+      "alternatives": ["chest-supported-db-row", "one-arm-db-row", "barbell-row", "inverted-row"],
       "images": ["images/cable-seated-row/0.jpg", "images/cable-seated-row/1.jpg"],
       "es": {
         "name": "Remo sentado en polea",
@@ -733,7 +733,7 @@
       ],
       "cues": ["Shoulders down away from your ears before you pull.", "Chest up to meet the bar."],
       "mistakes": ["Pulling behind the neck.", "Swinging the torso back to cheat."],
-      "alternatives": ["pull-up"],
+      "alternatives": ["pull-up", "chin-up", "assisted-pull-up-machine", "straight-arm-pulldown"],
       "images": ["images/cable-lat-pulldown/0.jpg", "images/cable-lat-pulldown/1.jpg"],
       "es": {
         "name": "Jalón al pecho en polea",
@@ -767,7 +767,7 @@
       ],
       "cues": ["Squeeze glutes, legs slightly in front — no kipping."],
       "mistakes": ["Half reps that stop short of a full hang."],
-      "alternatives": ["cable-lat-pulldown"],
+      "alternatives": ["cable-lat-pulldown", "chin-up", "assisted-pull-up-machine", "inverted-row"],
       "images": ["images/pull-up/0.jpg", "images/pull-up/1.jpg"],
       "es": {
         "name": "Dominadas",
@@ -797,7 +797,7 @@
       ],
       "cues": ["Lead with your elbows, pinkies slightly up.", "Think 'out', not 'up'."],
       "mistakes": ["Going too heavy and swinging.", "Shrugging your shoulders up."],
-      "alternatives": ["cable-lateral-raise"],
+      "alternatives": ["cable-lateral-raise", "db-front-raise"],
       "images": ["images/db-lateral-raise/0.jpg", "images/db-lateral-raise/1.jpg"],
       "es": {
         "name": "Elevaciones laterales con mancuernas",
@@ -866,7 +866,7 @@
       ],
       "cues": ["Elbows high and wide.", "Finish like a 'double biceps' pose."],
       "mistakes": ["Leaning back and using bodyweight.", "Going too heavy — this is a quality exercise."],
-      "alternatives": ["cable-seated-row"],
+      "alternatives": ["cable-seated-row", "cable-rear-delt-fly"],
       "images": ["images/cable-face-pull/0.jpg", "images/cable-face-pull/1.jpg"],
       "es": {
         "name": "Face pull en polea",
@@ -899,7 +899,7 @@
       ],
       "cues": ["Elbows stay pinned to your sides."],
       "mistakes": ["Swinging the body to start the rep."],
-      "alternatives": ["cable-curl"],
+      "alternatives": ["cable-curl", "db-curl"],
       "images": ["images/db-hammer-curl/0.jpg", "images/db-hammer-curl/1.jpg"],
       "es": {
         "name": "Curl martillo con mancuernas",
@@ -929,7 +929,7 @@
       ],
       "cues": ["Constant tension — don't rest at the bottom."],
       "mistakes": ["Elbows drifting forward."],
-      "alternatives": ["db-hammer-curl"],
+      "alternatives": ["db-hammer-curl", "db-curl", "incline-db-curl"],
       "images": ["images/cable-curl/0.jpg", "images/cable-curl/1.jpg"],
       "es": {
         "name": "Curl en polea",
@@ -960,7 +960,7 @@
       ],
       "cues": ["Only your forearms move.", "Slight forward lean is fine."],
       "mistakes": ["Elbows flaring and the shoulders joining in."],
-      "alternatives": ["overhead-cable-triceps-extension"],
+      "alternatives": ["overhead-cable-triceps-extension", "cable-bar-pushdown", "db-triceps-kickback"],
       "images": ["images/cable-rope-pushdown/0.jpg", "images/cable-rope-pushdown/1.jpg"],
       "es": {
         "name": "Extensión de tríceps en polea con cuerda",
@@ -991,7 +991,7 @@
       ],
       "cues": ["Keep your upper arms still beside your head."],
       "mistakes": ["Elbows flaring wide."],
-      "alternatives": ["cable-rope-pushdown"],
+      "alternatives": ["cable-rope-pushdown", "db-overhead-triceps-extension"],
       "images": [
         "images/overhead-cable-triceps-extension/0.jpg",
         "images/overhead-cable-triceps-extension/1.jpg"
@@ -1025,7 +1025,7 @@
       ],
       "cues": ["Push the floor away with your forearms.", "Tuck your tailbone slightly."],
       "mistakes": ["Hips sagging or piking up.", "Holding your breath."],
-      "alternatives": ["dead-bug", "pallof-press"],
+      "alternatives": ["dead-bug", "pallof-press", "side-plank"],
       "images": ["images/plank/0.jpg", "images/plank/1.jpg"],
       "es": {
         "name": "Plancha",
@@ -1088,7 +1088,7 @@
       ],
       "cues": ["Resist the twist — hips and shoulders face forward.", "Glutes squeezed."],
       "mistakes": ["Letting the cable rotate you toward the stack."],
-      "alternatives": ["plank", "dead-bug"],
+      "alternatives": ["plank", "dead-bug", "cable-woodchop"],
       "images": ["images/pallof-press/0.jpg", "images/pallof-press/1.jpg"],
       "es": {
         "name": "Press Pallof",
@@ -1122,7 +1122,7 @@
       ],
       "cues": ["Crush the handles.", "Don't let the weights swing."],
       "mistakes": ["Shoulders rolling forward.", "Leaning to one side."],
-      "alternatives": ["plank"],
+      "alternatives": ["plank", "db-shrug"],
       "images": ["images/farmers-carry/0.jpg", "images/farmers-carry/1.jpg"],
       "es": {
         "name": "Paseo del granjero",
@@ -1158,7 +1158,7 @@
         "Bending the elbows more to turn it into a press.",
         "Letting the weight yank your arms back too far."
       ],
-      "alternatives": ["db-bench-press", "push-up"],
+      "alternatives": ["db-bench-press", "push-up", "db-fly", "pec-deck", "low-to-high-cable-fly"],
       "images": ["images/cable-fly/0.jpg", "images/cable-fly/1.jpg"],
       "es": {
         "name": "Aperturas en polea",
@@ -1200,7 +1200,7 @@
         "Lower slowly; the stretch is where it works."
       ],
       "mistakes": ["Elbows flaring wide.", "Turning it into a close-grip press by moving the upper arms."],
-      "alternatives": ["cable-rope-pushdown"],
+      "alternatives": ["cable-rope-pushdown", "close-grip-bench-press"],
       "images": ["images/ez-bar-skullcrusher/0.jpg", "images/ez-bar-skullcrusher/1.jpg"],
       "es": {
         "name": "Press francés con barra Z",
@@ -1239,7 +1239,7 @@
         "Swinging the torso to get the bar moving.",
         "Stopping short of straight arms at the bottom."
       ],
-      "alternatives": ["db-hammer-curl"],
+      "alternatives": ["db-hammer-curl", "barbell-curl", "preacher-curl"],
       "images": ["images/ez-bar-curl/0.jpg", "images/ez-bar-curl/1.jpg"],
       "es": {
         "name": "Curl con barra Z",
@@ -1279,7 +1279,7 @@
         "Locking the knees hard at the top.",
         "Going so deep the lower back rounds off the seat."
       ],
-      "alternatives": ["goblet-squat", "barbell-back-squat"],
+      "alternatives": ["goblet-squat", "barbell-back-squat", "hack-squat", "smith-machine-squat", "leg-extension"],
       "images": ["images/leg-press/0.jpg", "images/leg-press/1.jpg"],
       "es": {
         "name": "Prensa de piernas",
@@ -1323,7 +1323,7 @@
       ],
       "cues": ["Pause at the top and the bottom — no bouncing.", "Knees straight but not locked."],
       "mistakes": ["Short, bouncy reps.", "Rolling onto the outside of the foot."],
-      "alternatives": ["db-single-leg-calf-raise"],
+      "alternatives": ["db-single-leg-calf-raise", "leg-press-calf-raise", "seated-calf-raise-machine"],
       "images": ["images/smith-calf-raise/0.jpg", "images/smith-calf-raise/1.jpg"],
       "es": {
         "name": "Elevación de gemelos en multipower",
@@ -1361,7 +1361,7 @@
         "Arching the lower back to finish the rep.",
         "Pressing the bar out in front instead of overhead."
       ],
-      "alternatives": ["seated-db-shoulder-press"],
+      "alternatives": ["seated-db-shoulder-press", "machine-shoulder-press"],
       "images": ["images/barbell-overhead-press/0.jpg", "images/barbell-overhead-press/1.jpg"],
       "es": {
         "name": "Press militar con barra",
@@ -1399,7 +1399,7 @@
       ],
       "cues": ["Lead with your pinkies.", "Think 'arms wide', not 'squeeze shoulder blades'."],
       "mistakes": ["Going heavy and turning it into a row.", "Shrugging toward your ears."],
-      "alternatives": ["cable-face-pull"],
+      "alternatives": ["cable-face-pull", "cable-rear-delt-fly", "reverse-pec-deck"],
       "images": ["images/db-rear-delt-fly/0.jpg", "images/db-rear-delt-fly/1.jpg"],
       "es": {
         "name": "Pájaros con mancuernas",
@@ -1433,7 +1433,7 @@
       ],
       "cues": ["Curl the pelvis — don't just lift the legs.", "Control the way down to kill the swing."],
       "mistakes": ["Swinging for momentum.", "Only lifting the knees to hip height."],
-      "alternatives": ["plank"],
+      "alternatives": ["plank", "hanging-leg-raise", "reverse-crunch"],
       "images": ["images/hanging-knee-raise/0.jpg", "images/hanging-knee-raise/1.jpg"],
       "es": {
         "name": "Elevación de rodillas colgado",
@@ -1471,7 +1471,7 @@
       ],
       "cues": ["Pause at the top and bottom — no bouncing."],
       "mistakes": ["Bending the knee to help the rep.", "Rushing through a half range of motion."],
-      "alternatives": ["smith-calf-raise"],
+      "alternatives": ["smith-calf-raise", "db-seated-calf-raise"],
       "images": ["images/db-single-leg-calf-raise/0.jpg", "images/db-single-leg-calf-raise/1.jpg"],
       "es": {
         "name": "Elevación de gemelo a una pierna con mancuerna",
@@ -1484,6 +1484,2599 @@
         ],
         "cues": ["Pausa arriba y abajo: sin rebotes."],
         "mistakes": ["Flexionar la rodilla para ayudarte.", "Hacer medio recorrido con prisas."]
+      }
+    },
+    {
+      "id": "hip-abduction-machine",
+      "name": "Hip Abduction Machine",
+      "equipment": ["hip abduction machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["glutes"],
+      "setup": [
+        "Sit with your back flat on the pad and the outside of your knees against the leg pads.",
+        "Set the start so your legs are together with a light stretch, not wide open."
+      ],
+      "steps": [
+        "Push your knees outward as far as you can control.",
+        "Pause for a second with the pads wide.",
+        "Let your legs come back together slowly without letting the stack touch down."
+      ],
+      "cues": [
+        "Push through your knees, not your feet.",
+        "Lean your chest forward slightly to feel the glutes more."
+      ],
+      "mistakes": ["Bouncing the weight out and in.", "Rocking the upper body to move more weight."],
+      "alternatives": ["cable-hip-abduction", "cable-glute-kickback"],
+      "images": ["images/hip-abduction-machine/0.jpg", "images/hip-abduction-machine/1.jpg"],
+      "es": {
+        "name": "Abducción de cadera en máquina",
+        "equipment": ["máquina de abductores"],
+        "setup": [
+          "Siéntate con la espalda apoyada y la parte de fuera de las rodillas contra las almohadillas.",
+          "Ajusta el inicio para que empieces con las piernas juntas y un ligero estiramiento, no abiertas."
+        ],
+        "steps": [
+          "Empuja las rodillas hacia fuera hasta donde puedas controlar.",
+          "Aguanta un segundo con las piernas abiertas.",
+          "Vuelve a juntar las piernas despacio sin que el peso llegue a apoyarse."
+        ],
+        "cues": [
+          "Empuja con las rodillas, no con los pies.",
+          "Inclina un poco el pecho hacia delante para notar más el glúteo."
+        ],
+        "mistakes": ["Abrir y cerrar a rebote.", "Balancear el tronco para mover más peso."]
+      }
+    },
+    {
+      "id": "cable-hip-abduction",
+      "name": "Cable Hip Abduction",
+      "equipment": ["cable stack", "ankle strap"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "perSide": true,
+      "primary": ["glutes"],
+      "secondary": ["obliques"],
+      "setup": [
+        "Pulley at the lowest setting with the ankle strap on your outside leg (the one furthest from the stack).",
+        "Stand side-on to the stack and hold the frame for balance."
+      ],
+      "steps": [
+        "Start with the strapped leg crossed slightly in front of the other.",
+        "Lift the leg out to the side, leading with the heel, until you feel your hip working hard.",
+        "Lower it back slowly. Do all reps, then switch legs."
+      ],
+      "cues": ["Toes pointing forward or slightly down.", "Stay tall; the movement is only at the hip."],
+      "mistakes": [
+        "Leaning the torso away to lift the leg higher.",
+        "Turning the toes up, which shifts the work to the front of the hip."
+      ],
+      "alternatives": ["hip-abduction-machine", "cable-glute-kickback"],
+      "images": ["images/cable-hip-abduction/0.jpg", "images/cable-hip-abduction/1.jpg"],
+      "es": {
+        "name": "Abducción de cadera en polea",
+        "equipment": ["polea", "tobillera"],
+        "setup": [
+          "Polea en la posición más baja, con la tobillera en la pierna de fuera (la más alejada de la polea).",
+          "Ponte de lado a la polea y sujétate al marco para no perder el equilibrio."
+        ],
+        "steps": [
+          "Empieza con la pierna de la tobillera un poco cruzada por delante de la otra.",
+          "Lleva la pierna hacia fuera, guiando con el talón, hasta notar que la cadera trabaja de verdad.",
+          "Bájala despacio. Haz todas las repeticiones y cambia de pierna."
+        ],
+        "cues": [
+          "Punta del pie hacia delante o un poco hacia abajo.",
+          "Mantente erguido: solo se mueve la cadera."
+        ],
+        "mistakes": [
+          "Inclinar el tronco hacia el otro lado para subir más la pierna.",
+          "Girar la punta hacia arriba, que pasa el trabajo a la parte delantera de la cadera."
+        ]
+      }
+    },
+    {
+      "id": "hip-adduction-machine",
+      "name": "Hip Adduction Machine",
+      "equipment": ["hip adduction machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["adductors"],
+      "setup": [
+        "Sit with your back against the pad and the inside of your knees on the leg pads.",
+        "Set the start to a stretch you can control, not your widest split."
+      ],
+      "steps": [
+        "Squeeze your knees together until the pads meet.",
+        "Pause briefly.",
+        "Let the legs open slowly back to the start."
+      ],
+      "cues": ["Control the opening; that is where the stretch is.", "Keep your hips planted on the seat."],
+      "mistakes": ["Starting too wide and straining the groin.", "Letting the weight slam the legs open."],
+      "alternatives": ["cable-hip-adduction", "copenhagen-plank"],
+      "images": ["images/hip-adduction-machine/0.jpg", "images/hip-adduction-machine/1.jpg"],
+      "es": {
+        "name": "Aducción de cadera en máquina",
+        "equipment": ["máquina de aductores"],
+        "setup": [
+          "Siéntate con la espalda apoyada y la parte de dentro de las rodillas en las almohadillas.",
+          "Ajusta el inicio a una apertura que controles, no a la máxima."
+        ],
+        "steps": [
+          "Junta las rodillas hasta que las almohadillas se toquen.",
+          "Aguanta un momento.",
+          "Deja que las piernas se abran despacio hasta el inicio."
+        ],
+        "cues": ["Controla la apertura: ahí está el estiramiento.", "Mantén la cadera pegada al asiento."],
+        "mistakes": [
+          "Empezar demasiado abierto y forzar la ingle.",
+          "Dejar que el peso abra las piernas de golpe."
+        ]
+      }
+    },
+    {
+      "id": "cable-hip-adduction",
+      "name": "Cable Hip Adduction",
+      "equipment": ["cable stack", "ankle strap"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "perSide": true,
+      "primary": ["adductors"],
+      "setup": [
+        "Pulley at the lowest setting with the ankle strap on your inside leg (the one nearest the stack).",
+        "Stand side-on, far enough away that the cable pulls your leg out to the side. Hold the frame."
+      ],
+      "steps": [
+        "Sweep the strapped leg across in front of your standing leg.",
+        "Pause where the legs cross.",
+        "Let it travel back out slowly. Do all reps, then switch legs."
+      ],
+      "cues": ["Keep the working leg almost straight.", "Hips square to the front."],
+      "mistakes": [
+        "Twisting the hips to swing the leg across.",
+        "Standing too close so there is no tension at the start."
+      ],
+      "alternatives": ["hip-adduction-machine", "copenhagen-plank"],
+      "images": ["images/cable-hip-adduction/0.jpg", "images/cable-hip-adduction/1.jpg"],
+      "es": {
+        "name": "Aducción de cadera en polea",
+        "equipment": ["polea", "tobillera"],
+        "setup": [
+          "Polea en la posición más baja, con la tobillera en la pierna de dentro (la más cercana a la polea).",
+          "Ponte de lado, lo bastante lejos para que el cable te abra la pierna. Sujétate al marco."
+        ],
+        "steps": [
+          "Lleva la pierna de la tobillera por delante de la pierna de apoyo.",
+          "Aguanta donde se cruzan las piernas.",
+          "Deja que vuelva hacia fuera despacio. Haz todas las repeticiones y cambia de pierna."
+        ],
+        "cues": ["La pierna que trabaja, casi recta.", "Cadera mirando al frente."],
+        "mistakes": [
+          "Girar la cadera para lanzar la pierna.",
+          "Ponerse tan cerca que no hay tensión al principio."
+        ]
+      }
+    },
+    {
+      "id": "copenhagen-plank",
+      "name": "Copenhagen Plank",
+      "equipment": ["bench"],
+      "logType": "time",
+      "perSide": true,
+      "primary": ["adductors"],
+      "secondary": ["obliques", "abs"],
+      "setup": [
+        "Lie on your side next to a flat bench, propped on your forearm.",
+        "Put the inside of your top leg on the bench. Easier: knee on the bench. Harder: ankle on the bench."
+      ],
+      "steps": [
+        "Lift your hips until your body is in a straight line.",
+        "Hold, breathing normally, with the bottom leg hanging or lifted to the bench.",
+        "Lower down, then switch sides."
+      ],
+      "cues": ["Press the top leg down into the bench.", "Elbow right under the shoulder."],
+      "mistakes": [
+        "Letting the hips sag or pike.",
+        "Starting with the ankle version before the knee version is easy."
+      ],
+      "alternatives": ["hip-adduction-machine", "cable-hip-adduction", "side-plank"],
+      "images": ["images/copenhagen-plank/0.jpg", "images/copenhagen-plank/1.jpg"],
+      "es": {
+        "name": "Plancha Copenhague",
+        "equipment": ["banco"],
+        "setup": [
+          "Túmbate de lado junto a un banco plano, apoyado en el antebrazo.",
+          "Apoya la parte de dentro de la pierna de arriba en el banco. Más fácil: la rodilla. Más difícil: el tobillo."
+        ],
+        "steps": [
+          "Sube la cadera hasta que el cuerpo quede en línea recta.",
+          "Aguanta respirando con normalidad, con la pierna de abajo colgando o subida hacia el banco.",
+          "Baja y cambia de lado."
+        ],
+        "cues": ["Empuja el banco hacia abajo con la pierna de arriba.", "El codo justo debajo del hombro."],
+        "mistakes": [
+          "Dejar caer o subir demasiado la cadera.",
+          "Empezar con el tobillo apoyado antes de dominar la versión con la rodilla."
+        ]
+      }
+    },
+    {
+      "id": "leg-extension",
+      "name": "Leg Extension",
+      "equipment": ["leg extension machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["quads"],
+      "setup": [
+        "Line up your knee joint with the machine's pivot point.",
+        "Ankle pad sits on the front of your lower shin, just above the feet."
+      ],
+      "steps": [
+        "Hold the handles and straighten your legs until the knees are fully extended.",
+        "Squeeze the quads for a second at the top.",
+        "Lower under control until the weight almost touches."
+      ],
+      "cues": ["Pull yourself down into the seat with the handles.", "Slow on the way down."],
+      "mistakes": ["Kicking the weight up and letting it drop.", "Hips lifting off the seat at the top."],
+      "alternatives": ["goblet-squat", "leg-press", "db-bulgarian-split-squat"],
+      "images": ["images/leg-extension/0.jpg", "images/leg-extension/1.jpg"],
+      "es": {
+        "name": "Extensión de cuádriceps en máquina",
+        "equipment": ["máquina de extensión de cuádriceps"],
+        "setup": [
+          "Alinea la rodilla con el eje de giro de la máquina.",
+          "La almohadilla va en la parte baja de la espinilla, justo encima del pie."
+        ],
+        "steps": [
+          "Sujeta las asas y estira las piernas hasta extender del todo las rodillas.",
+          "Aprieta el cuádriceps un segundo arriba.",
+          "Baja controlando hasta que el peso casi toque."
+        ],
+        "cues": ["Tira de las asas para quedarte pegado al asiento.", "Lento al bajar."],
+        "mistakes": ["Subir a patada y dejar caer el peso.", "Levantar la cadera del asiento arriba."]
+      }
+    },
+    {
+      "id": "cable-glute-kickback",
+      "name": "Cable Glute Kickback",
+      "equipment": ["cable stack", "ankle strap"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "perSide": true,
+      "primary": ["glutes"],
+      "secondary": ["hamstrings"],
+      "setup": [
+        "Pulley at the lowest setting with the ankle strap on one ankle.",
+        "Face the stack, hold the frame and hinge forward slightly."
+      ],
+      "steps": [
+        "Push the strapped leg back and up, keeping the knee slightly bent.",
+        "Squeeze the glute hard when the leg is behind you.",
+        "Bring it forward slowly. Do all reps, then switch legs."
+      ],
+      "cues": ["Move from the hip, not the lower back.", "Stop when the hip is fully extended."],
+      "mistakes": ["Arching the lower back to swing the leg higher.", "Rushing the reps."],
+      "alternatives": ["barbell-hip-thrust", "glute-bridge", "cable-pull-through"],
+      "images": ["images/cable-glute-kickback/0.jpg", "images/cable-glute-kickback/1.jpg"],
+      "es": {
+        "name": "Patada de glúteo en polea",
+        "equipment": ["polea", "tobillera"],
+        "setup": [
+          "Polea en la posición más baja, con la tobillera en un tobillo.",
+          "Mira hacia la polea, sujétate al marco e inclínate un poco hacia delante."
+        ],
+        "steps": [
+          "Lleva la pierna de la tobillera hacia atrás y arriba, con la rodilla un poco flexionada.",
+          "Aprieta fuerte el glúteo cuando la pierna esté atrás.",
+          "Vuelve despacio hacia delante. Haz todas las repeticiones y cambia de pierna."
+        ],
+        "cues": [
+          "El movimiento sale de la cadera, no de la zona lumbar.",
+          "Para cuando la cadera esté estirada del todo."
+        ],
+        "mistakes": ["Arquear la zona lumbar para subir más la pierna.", "Hacer las repeticiones con prisa."]
+      }
+    },
+    {
+      "id": "cable-pull-through",
+      "name": "Cable Pull-Through",
+      "equipment": ["cable stack", "rope"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["glutes", "hamstrings"],
+      "secondary": ["lower_back"],
+      "setup": [
+        "Pulley at the lowest setting with the rope.",
+        "Stand facing away from the stack, holding the rope between your legs, then walk forward two steps."
+      ],
+      "steps": [
+        "Feet a bit wider than hips. Push your hips back with a slight knee bend, letting the rope travel between your legs.",
+        "Stop when you feel a stretch in the hamstrings.",
+        "Drive your hips forward to stand tall and squeeze the glutes."
+      ],
+      "cues": ["Arms are just hooks; the hips do the work.", "Flat back the whole time."],
+      "mistakes": ["Squatting down instead of hinging.", "Leaning back at the top."],
+      "alternatives": ["barbell-hip-thrust", "barbell-rdl", "kettlebell-swing"],
+      "images": ["images/cable-pull-through/0.jpg", "images/cable-pull-through/1.jpg"],
+      "es": {
+        "name": "Pull-through en polea",
+        "equipment": ["polea", "cuerda"],
+        "setup": [
+          "Polea en la posición más baja, con la cuerda.",
+          "De espaldas a la polea, coge la cuerda entre las piernas y da dos pasos hacia delante."
+        ],
+        "steps": [
+          "Pies algo más abiertos que la cadera. Lleva la cadera atrás con las rodillas un poco flexionadas y deja que la cuerda pase entre las piernas.",
+          "Para cuando notes estiramiento en los isquios.",
+          "Empuja la cadera hacia delante hasta quedar erguido y aprieta el glúteo."
+        ],
+        "cues": ["Los brazos solo sujetan: trabaja la cadera.", "Espalda recta todo el rato."],
+        "mistakes": ["Hacer una sentadilla en vez de llevar la cadera atrás.", "Echarse atrás al final."]
+      }
+    },
+    {
+      "id": "hack-squat",
+      "name": "Hack Squat",
+      "equipment": ["hack squat machine", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["quads"],
+      "secondary": ["glutes", "adductors"],
+      "setup": [
+        "Load plates evenly. Log only the plates you add, not the sled.",
+        "Back and shoulders flat against the pads, feet shoulder-width in the middle of the platform."
+      ],
+      "steps": [
+        "Release the safety handles.",
+        "Bend your knees and lower until your thighs are at least parallel to the platform.",
+        "Push through the whole foot back to the top without locking the knees hard."
+      ],
+      "cues": ["Knees travel in line with your toes.", "Feet lower on the platform = more quads."],
+      "mistakes": ["Heels lifting at the bottom.", "Cutting the depth short to lift more."],
+      "alternatives": ["smith-machine-squat", "leg-press", "barbell-back-squat"],
+      "images": ["images/hack-squat/0.jpg", "images/hack-squat/1.jpg"],
+      "es": {
+        "name": "Sentadilla hack",
+        "equipment": ["máquina de sentadilla hack", "discos"],
+        "setup": [
+          "Carga los discos por igual. Apunta solo los discos que pones, no el carro.",
+          "Espalda y hombros pegados a las almohadillas, pies a la anchura de los hombros en el centro de la plataforma."
+        ],
+        "steps": [
+          "Quita los seguros.",
+          "Flexiona las rodillas y baja hasta que los muslos queden al menos paralelos a la plataforma.",
+          "Empuja con todo el pie hasta arriba sin bloquear las rodillas de golpe."
+        ],
+        "cues": [
+          "Las rodillas van en la dirección de las puntas.",
+          "Pies más abajo en la plataforma = más cuádriceps."
+        ],
+        "mistakes": ["Levantar los talones abajo.", "Bajar poco para mover más peso."]
+      }
+    },
+    {
+      "id": "smith-machine-squat",
+      "name": "Smith Machine Squat",
+      "equipment": ["Smith machine"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["quads", "glutes"],
+      "secondary": ["adductors", "hamstrings"],
+      "setup": [
+        "Bar at upper-chest height. Step under it so it rests on your upper back, not your neck.",
+        "Feet slightly in front of the bar, shoulder-width apart. Log the plates you add (the bar's own weight varies by machine)."
+      ],
+      "steps": [
+        "Twist the bar to unhook it.",
+        "Sit down between your heels until your thighs are about parallel.",
+        "Stand back up, then twist the bar back onto the hooks after the last rep."
+      ],
+      "cues": ["Brace your core before every rep.", "Set the safety stops just below your lowest point."],
+      "mistakes": [
+        "Feet right under the bar, which pushes the knees far forward.",
+        "Bouncing out of the bottom."
+      ],
+      "alternatives": ["hack-squat", "barbell-back-squat", "leg-press"],
+      "images": ["images/smith-machine-squat/0.jpg", "images/smith-machine-squat/1.jpg"],
+      "es": {
+        "name": "Sentadilla en multipower",
+        "equipment": ["multipower"],
+        "setup": [
+          "Barra a la altura de la parte alta del pecho. Métete debajo para que apoye en la parte alta de la espalda, no en el cuello.",
+          "Pies un poco por delante de la barra, a la anchura de los hombros. Apunta los discos que pones (lo que pesa la barra cambia según la máquina)."
+        ],
+        "steps": [
+          "Gira la barra para soltarla de los ganchos.",
+          "Baja sentándote entre los talones hasta que los muslos queden más o menos paralelos.",
+          "Sube y, tras la última repetición, gira la barra para engancharla."
+        ],
+        "cues": [
+          "Aprieta el abdomen antes de cada repetición.",
+          "Pon los topes de seguridad justo por debajo de tu punto más bajo."
+        ],
+        "mistakes": ["Pies justo debajo de la barra, lo que adelanta mucho las rodillas.", "Rebotar abajo."]
+      }
+    },
+    {
+      "id": "barbell-front-squat",
+      "name": "Barbell Front Squat",
+      "equipment": ["barbell", "rack"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["quads"],
+      "secondary": ["glutes", "upper_back", "abs"],
+      "setup": [
+        "Bar in the rack at upper-chest height.",
+        "Rest the bar on the front of your shoulders, close to your throat. Fingertips under the bar, elbows high. Arms crossed works too."
+      ],
+      "steps": [
+        "Unrack, step back and set your feet shoulder-width.",
+        "Squat down keeping your chest up and elbows pointing forward.",
+        "Drive up through the whole foot."
+      ],
+      "cues": ["Elbows up the whole time.", "Torso stays more upright than in a back squat."],
+      "mistakes": [
+        "Elbows dropping so the bar rolls forward.",
+        "Gripping the bar tightly with the whole hand and straining the wrists."
+      ],
+      "alternatives": ["goblet-squat", "barbell-back-squat", "hack-squat"],
+      "images": ["images/barbell-front-squat/0.jpg", "images/barbell-front-squat/1.jpg"],
+      "es": {
+        "name": "Sentadilla frontal con barra",
+        "equipment": ["barra", "rack"],
+        "setup": [
+          "Barra en el rack a la altura de la parte alta del pecho.",
+          "Apoya la barra en la parte delantera de los hombros, cerca del cuello. Yemas de los dedos bajo la barra y codos altos. También vale con los brazos cruzados."
+        ],
+        "steps": [
+          "Saca la barra, da un paso atrás y coloca los pies a la anchura de los hombros.",
+          "Baja con el pecho alto y los codos apuntando hacia delante.",
+          "Sube empujando con todo el pie."
+        ],
+        "cues": ["Codos arriba todo el rato.", "El tronco va más vertical que en la sentadilla trasera."],
+        "mistakes": [
+          "Bajar los codos y que la barra ruede hacia delante.",
+          "Agarrar la barra con toda la mano y forzar las muñecas."
+        ]
+      }
+    },
+    {
+      "id": "db-walking-lunge",
+      "name": "Dumbbell Walking Lunge",
+      "equipment": ["dumbbells"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "perSide": true,
+      "primary": ["quads", "glutes"],
+      "secondary": ["adductors", "hamstrings"],
+      "setup": ["Hold a dumbbell in each hand at your sides. You need a clear strip of floor."],
+      "steps": [
+        "Take a long step forward and lower until the back knee nearly touches the floor.",
+        "Push through the front heel and bring the back foot forward into the next step.",
+        "Alternate legs. Log the reps for one leg."
+      ],
+      "cues": ["Front shin roughly vertical.", "Tall chest, eyes forward."],
+      "mistakes": ["Steps so short the front knee shoots far past the toes.", "Front knee caving inward."],
+      "alternatives": ["db-reverse-lunge", "db-bulgarian-split-squat", "db-step-up"],
+      "images": ["images/db-walking-lunge/0.jpg", "images/db-walking-lunge/1.jpg"],
+      "es": {
+        "name": "Zancadas caminando con mancuernas",
+        "equipment": ["mancuernas"],
+        "setup": ["Una mancuerna en cada mano a los lados. Necesitas un tramo de suelo libre."],
+        "steps": [
+          "Da un paso largo hacia delante y baja hasta que la rodilla de atrás casi toque el suelo.",
+          "Empuja con el talón de delante y lleva el pie de atrás al siguiente paso.",
+          "Alterna las piernas. Apunta las repeticiones de una pierna."
+        ],
+        "cues": ["La espinilla de delante más o menos vertical.", "Pecho alto, mirada al frente."],
+        "mistakes": [
+          "Pasos tan cortos que la rodilla de delante se adelanta mucho.",
+          "Dejar que la rodilla de delante se vaya hacia dentro."
+        ]
+      }
+    },
+    {
+      "id": "db-step-up",
+      "name": "Dumbbell Step-Up",
+      "equipment": ["dumbbells", "plyo box or step"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "perSide": true,
+      "primary": ["quads", "glutes"],
+      "secondary": ["hamstrings", "calves"],
+      "setup": ["Box or bench about knee height. Dumbbells at your sides."],
+      "steps": [
+        "Put one whole foot on the box.",
+        "Drive through that foot to stand up on the box, without pushing off the back leg.",
+        "Step down slowly with the other foot. Do all reps on one leg, then switch."
+      ],
+      "cues": ["The top leg does all the work.", "Lean slightly forward from the hips."],
+      "mistakes": [
+        "Bouncing off the bottom foot.",
+        "A box so high your hips drop below the knee and you twist to get up."
+      ],
+      "alternatives": ["db-reverse-lunge", "db-bulgarian-split-squat", "db-walking-lunge"],
+      "images": ["images/db-step-up/0.jpg", "images/db-step-up/1.jpg"],
+      "es": {
+        "name": "Subida al cajón con mancuernas",
+        "equipment": ["mancuernas", "cajón o escalón"],
+        "setup": ["Cajón o banco más o menos a la altura de la rodilla. Mancuernas a los lados."],
+        "steps": [
+          "Apoya un pie entero en el cajón.",
+          "Empuja con ese pie hasta quedar de pie en el cajón, sin impulsarte con la pierna de atrás.",
+          "Baja despacio con el otro pie. Haz todas las repeticiones con una pierna y cambia."
+        ],
+        "cues": [
+          "Todo el trabajo lo hace la pierna de arriba.",
+          "Inclínate un poco hacia delante desde la cadera."
+        ],
+        "mistakes": [
+          "Impulsarse con el pie de abajo.",
+          "Un cajón tan alto que la cadera queda por debajo de la rodilla y te giras para subir."
+        ]
+      }
+    },
+    {
+      "id": "sumo-deadlift",
+      "name": "Sumo Deadlift",
+      "equipment": ["barbell", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["glutes", "quads", "adductors"],
+      "secondary": ["hamstrings", "lower_back", "traps", "forearms"],
+      "setup": [
+        "Wide stance, toes turned out, shins close to the bar.",
+        "Grip the bar shoulder-width, arms straight down inside your knees."
+      ],
+      "steps": [
+        "Push your knees out, drop your hips and pull your chest up until your back is flat.",
+        "Push the floor away and stand up, keeping the bar against your legs.",
+        "Lower it the same way, hips back first."
+      ],
+      "cues": [
+        "Spread the floor with your feet.",
+        "Take the slack out of the bar before it leaves the floor."
+      ],
+      "mistakes": [
+        "Knees caving in as the bar leaves the floor.",
+        "Hips shooting up first so it turns into a stiff-leg pull."
+      ],
+      "alternatives": ["barbell-deadlift", "barbell-rdl", "goblet-squat"],
+      "images": ["images/sumo-deadlift/0.jpg", "images/sumo-deadlift/1.jpg"],
+      "es": {
+        "name": "Peso muerto sumo",
+        "equipment": ["barra", "discos"],
+        "setup": [
+          "Piernas abiertas, puntas hacia fuera y espinillas cerca de la barra.",
+          "Agarra la barra a la anchura de los hombros, con los brazos rectos por dentro de las rodillas."
+        ],
+        "steps": [
+          "Abre las rodillas, baja la cadera y sube el pecho hasta que la espalda quede recta.",
+          "Empuja el suelo y ponte de pie con la barra pegada a las piernas.",
+          "Bájala igual, llevando primero la cadera atrás."
+        ],
+        "cues": ["Separa el suelo con los pies.", "Tensa la barra antes de despegarla del suelo."],
+        "mistakes": [
+          "Rodillas que se van hacia dentro al despegar.",
+          "Subir primero la cadera y acabar tirando con las piernas rectas."
+        ]
+      }
+    },
+    {
+      "id": "kettlebell-swing",
+      "name": "Kettlebell Swing",
+      "equipment": ["kettlebell"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["glutes", "hamstrings"],
+      "secondary": ["lower_back", "abs", "forearms"],
+      "setup": ["Kettlebell on the floor about a foot in front of you. Feet a bit wider than hips."],
+      "steps": [
+        "Hinge, grab the handle with both hands and hike it back between your legs.",
+        "Snap your hips forward to swing it up to chest height. The arms only guide it.",
+        "Let it fall back between your legs and hinge again into the next rep."
+      ],
+      "cues": [
+        "It's a hip hinge, not a squat.",
+        "Squeeze your glutes and brace at the top like a standing plank."
+      ],
+      "mistakes": ["Lifting the bell with the arms and shoulders.", "Rounding the back at the bottom."],
+      "alternatives": ["cable-pull-through", "db-rdl", "barbell-hip-thrust"],
+      "images": ["images/kettlebell-swing/0.jpg", "images/kettlebell-swing/1.jpg"],
+      "es": {
+        "name": "Swing con kettlebell",
+        "equipment": ["kettlebell"],
+        "setup": [
+          "Kettlebell en el suelo, a un palmo largo delante de ti. Pies algo más abiertos que la cadera."
+        ],
+        "steps": [
+          "Lleva la cadera atrás, coge el asa con las dos manos y pásala hacia atrás entre las piernas.",
+          "Lleva la cadera hacia delante con fuerza para que suba a la altura del pecho. Los brazos solo la guían.",
+          "Deja que vuelva entre las piernas y lleva la cadera atrás para la siguiente."
+        ],
+        "cues": [
+          "Es una bisagra de cadera, no una sentadilla.",
+          "Arriba aprieta glúteos y abdomen, como una plancha de pie."
+        ],
+        "mistakes": ["Subir la kettlebell con brazos y hombros.", "Redondear la espalda abajo."]
+      }
+    },
+    {
+      "id": "barbell-good-morning",
+      "name": "Barbell Good Morning",
+      "equipment": ["barbell", "rack"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["hamstrings", "lower_back"],
+      "secondary": ["glutes"],
+      "setup": ["Bar on your upper back as for a squat. Start light: this loads the lower back a lot."],
+      "steps": [
+        "Soften your knees and push your hips back, tipping your torso forward with a flat back.",
+        "Go until your torso is close to parallel or you feel a strong hamstring stretch.",
+        "Drive your hips forward to stand back up."
+      ],
+      "cues": ["Chest proud, back flat.", "Knee bend stays the same the whole rep."],
+      "mistakes": ["Rounding the back to get lower.", "Going heavy before the movement is solid."],
+      "alternatives": ["barbell-rdl", "db-rdl", "back-extension"],
+      "images": ["images/barbell-good-morning/0.jpg", "images/barbell-good-morning/1.jpg"],
+      "es": {
+        "name": "Buenos días con barra",
+        "equipment": ["barra", "rack"],
+        "setup": [
+          "Barra en la parte alta de la espalda, como en la sentadilla. Empieza con poco peso: carga mucho la zona lumbar."
+        ],
+        "steps": [
+          "Flexiona un poco las rodillas y lleva la cadera atrás, inclinando el tronco con la espalda recta.",
+          "Baja hasta que el tronco esté casi paralelo al suelo o notes un estiramiento fuerte en los isquios.",
+          "Empuja la cadera hacia delante para volver arriba."
+        ],
+        "cues": ["Pecho fuera, espalda recta.", "La flexión de rodilla no cambia en toda la repetición."],
+        "mistakes": ["Redondear la espalda para bajar más.", "Cargar mucho antes de dominar el movimiento."]
+      }
+    },
+    {
+      "id": "back-extension",
+      "name": "Back Extension",
+      "equipment": ["back extension bench"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["lower_back", "glutes"],
+      "secondary": ["hamstrings"],
+      "setup": [
+        "Set the pad so it sits just below your hip bones and you can bend freely at the hips.",
+        "Heels hooked under the foot pads. Hold a plate to your chest to add weight."
+      ],
+      "steps": [
+        "Lower your torso by bending at the hips until you feel a stretch.",
+        "Squeeze your glutes to lift back up until your body is in a straight line.",
+        "Pause, then lower slowly."
+      ],
+      "cues": ["Stop at a straight line; don't lean back past it.", "Lead with the hips, not the neck."],
+      "mistakes": ["Hyperextending the lower back at the top.", "Swinging up fast."],
+      "alternatives": ["ball-back-extension", "barbell-rdl", "barbell-good-morning"],
+      "images": ["images/back-extension/0.jpg", "images/back-extension/1.jpg"],
+      "es": {
+        "name": "Extensión lumbar en banco",
+        "equipment": ["banco de hiperextensiones"],
+        "setup": [
+          "Ajusta la almohadilla para que quede justo debajo de los huesos de la cadera y puedas doblarte libremente.",
+          "Talones enganchados bajo los rodillos. Sujeta un disco contra el pecho para añadir peso."
+        ],
+        "steps": [
+          "Baja el tronco doblándote por la cadera hasta notar estiramiento.",
+          "Aprieta el glúteo para subir hasta que el cuerpo quede en línea recta.",
+          "Aguanta un momento y baja despacio."
+        ],
+        "cues": [
+          "Para en línea recta, sin pasarte hacia atrás.",
+          "El movimiento sale de la cadera, no del cuello."
+        ],
+        "mistakes": ["Arquear de más la zona lumbar arriba.", "Subir a tirón."]
+      }
+    },
+    {
+      "id": "ball-back-extension",
+      "name": "Exercise Ball Back Extension",
+      "equipment": ["exercise ball"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["lower_back", "glutes"],
+      "secondary": ["hamstrings"],
+      "setup": [
+        "Lie face down with the ball under your hips and belly. Feet wide on the floor, or wedged against a wall for balance.",
+        "Hands behind your head or crossed on your chest."
+      ],
+      "steps": [
+        "Let your chest round down over the ball.",
+        "Lift your chest until your body is in a straight line from head to heels.",
+        "Pause and lower slowly."
+      ],
+      "cues": ["Squeeze your glutes as you lift.", "Wider feet = more stable."],
+      "mistakes": ["Arching up past straight.", "Ball too far forward so you roll off."],
+      "alternatives": ["back-extension", "glute-bridge", "db-rdl"],
+      "images": ["images/ball-back-extension/0.jpg", "images/ball-back-extension/1.jpg"],
+      "es": {
+        "name": "Extensión lumbar en fitball",
+        "equipment": ["fitball"],
+        "setup": [
+          "Túmbate boca abajo con el balón bajo la cadera y el vientre. Pies abiertos en el suelo, o contra la pared para tener más equilibrio.",
+          "Manos detrás de la cabeza o cruzadas sobre el pecho."
+        ],
+        "steps": [
+          "Deja que el pecho baje rodeando el balón.",
+          "Sube el pecho hasta que el cuerpo quede en línea recta de la cabeza a los talones.",
+          "Aguanta un momento y baja despacio."
+        ],
+        "cues": ["Aprieta el glúteo al subir.", "Pies más abiertos = más estable."],
+        "mistakes": [
+          "Subir arqueando más allá de la línea recta.",
+          "Balón demasiado adelantado y acabar rodando."
+        ]
+      }
+    },
+    {
+      "id": "stability-ball-leg-curl",
+      "name": "Exercise Ball Leg Curl",
+      "equipment": ["exercise ball"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["hamstrings"],
+      "secondary": ["glutes", "calves"],
+      "setup": ["Lie on your back with your heels on top of the ball, arms out to the sides, palms down."],
+      "steps": [
+        "Lift your hips so your body is straight from shoulders to heels.",
+        "Keeping the hips up, curl your heels toward your glutes, rolling the ball in.",
+        "Roll it back out slowly until your legs are straight, hips still up."
+      ],
+      "cues": ["Hips stay high the whole set.", "Harder: one leg at a time."],
+      "mistakes": ["Dropping the hips as the ball rolls in.", "Pushing hard with the arms to stay balanced."],
+      "alternatives": ["machine-leg-curl", "barbell-rdl", "glute-bridge"],
+      "images": ["images/stability-ball-leg-curl/0.jpg", "images/stability-ball-leg-curl/1.jpg"],
+      "es": {
+        "name": "Curl femoral con fitball",
+        "equipment": ["fitball"],
+        "setup": [
+          "Túmbate boca arriba con los talones encima del balón, brazos abiertos y palmas hacia abajo."
+        ],
+        "steps": [
+          "Sube la cadera hasta que el cuerpo quede recto de los hombros a los talones.",
+          "Sin bajar la cadera, lleva los talones hacia el glúteo haciendo rodar el balón.",
+          "Vuelve a estirar las piernas despacio, con la cadera todavía arriba."
+        ],
+        "cues": ["La cadera arriba toda la serie.", "Más difícil: con una pierna."],
+        "mistakes": [
+          "Bajar la cadera al recoger el balón.",
+          "Apoyarse mucho en los brazos para no perder el equilibrio."
+        ]
+      }
+    },
+    {
+      "id": "seated-calf-raise-machine",
+      "name": "Seated Calf Raise Machine",
+      "equipment": ["seated calf raise machine", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["calves"],
+      "setup": [
+        "Balls of your feet on the platform edge, knee pad snug on your lower thighs.",
+        "Log the plates you add."
+      ],
+      "steps": [
+        "Lift the pad slightly and release the safety lever.",
+        "Lower your heels as far as you can for a full stretch.",
+        "Push up onto your toes as high as possible and pause."
+      ],
+      "cues": [
+        "Pause at the bottom to kill the bounce.",
+        "Seated work hits the lower calf (soleus) more than standing."
+      ],
+      "mistakes": ["Short, bouncy reps.", "Rolling onto the outside of the feet."],
+      "alternatives": ["db-seated-calf-raise", "smith-calf-raise", "leg-press-calf-raise"],
+      "images": ["images/seated-calf-raise-machine/0.jpg", "images/seated-calf-raise-machine/1.jpg"],
+      "es": {
+        "name": "Elevación de gemelos sentado en máquina",
+        "equipment": ["máquina de gemelos sentado", "discos"],
+        "setup": [
+          "Parte delantera de los pies en el borde de la plataforma y la almohadilla ajustada sobre la parte baja de los muslos.",
+          "Apunta los discos que pones."
+        ],
+        "steps": [
+          "Sube un poco la almohadilla y quita el seguro.",
+          "Baja los talones todo lo que puedas para estirar bien.",
+          "Sube de puntillas lo más alto posible y aguanta."
+        ],
+        "cues": [
+          "Haz una pausa abajo para no rebotar.",
+          "Sentado trabaja más la parte baja del gemelo (sóleo) que de pie."
+        ],
+        "mistakes": ["Repeticiones cortas y a rebote.", "Cargar el peso en la parte de fuera de los pies."]
+      }
+    },
+    {
+      "id": "db-seated-calf-raise",
+      "name": "Seated Dumbbell Calf Raise",
+      "equipment": ["dumbbells", "bench", "plyo box or step"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["calves"],
+      "setup": [
+        "Sit on the end of a bench with the balls of your feet on a step or plate.",
+        "Rest a dumbbell on each knee, ends on your thighs. A towel makes it comfier."
+      ],
+      "steps": [
+        "Let your heels drop below the step for a stretch.",
+        "Push up onto your toes as high as you can.",
+        "Pause at the top, then lower slowly."
+      ],
+      "cues": [
+        "Full range: deep stretch, high squeeze.",
+        "Same exercise as the seated calf machine, using what your gym has."
+      ],
+      "mistakes": ["Feet flat on the floor, which cuts the range in half.", "Bouncing."],
+      "alternatives": ["seated-calf-raise-machine", "db-single-leg-calf-raise", "smith-calf-raise"],
+      "images": ["images/db-seated-calf-raise/0.jpg", "images/db-seated-calf-raise/1.jpg"],
+      "es": {
+        "name": "Elevación de gemelos sentado con mancuernas",
+        "equipment": ["mancuernas", "banco", "cajón o escalón"],
+        "setup": [
+          "Siéntate en el extremo de un banco con la parte delantera de los pies sobre un escalón o un disco.",
+          "Apoya una mancuerna sobre cada rodilla, con el extremo sobre el muslo. Una toalla lo hace más cómodo."
+        ],
+        "steps": [
+          "Deja que los talones bajen por debajo del escalón para estirar.",
+          "Sube de puntillas lo más alto que puedas.",
+          "Aguanta arriba y baja despacio."
+        ],
+        "cues": [
+          "Recorrido completo: estira abajo y aprieta arriba.",
+          "Es el mismo ejercicio que la máquina de gemelos sentado, con lo que tiene tu gimnasio."
+        ],
+        "mistakes": ["Pies planos en el suelo, que corta el recorrido a la mitad.", "Rebotar."]
+      }
+    },
+    {
+      "id": "leg-press-calf-raise",
+      "name": "Leg Press Calf Raise",
+      "equipment": ["leg press machine", "plates"],
+      "logType": "weight",
+      "incrementGroup": "lower",
+      "primary": ["calves"],
+      "setup": [
+        "Sit in the leg press with only the balls of your feet on the bottom edge of the platform.",
+        "Keep the safety catches on; legs straight but knees not locked hard."
+      ],
+      "steps": [
+        "Let the platform push your toes back toward you for a stretch.",
+        "Press the platform away by pointing your toes.",
+        "Pause, then let it come back slowly."
+      ],
+      "cues": ["Only your ankles move.", "Slow and full range."],
+      "mistakes": ["Feet slipping off the platform; keep them firmly planted.", "Bending the knees to help."],
+      "alternatives": ["smith-calf-raise", "seated-calf-raise-machine", "db-single-leg-calf-raise"],
+      "images": ["images/leg-press-calf-raise/0.jpg", "images/leg-press-calf-raise/1.jpg"],
+      "es": {
+        "name": "Gemelos en prensa",
+        "equipment": ["máquina de prensa", "discos"],
+        "setup": [
+          "Siéntate en la prensa con solo la parte delantera de los pies en el borde de abajo de la plataforma.",
+          "Deja puestos los seguros. Piernas estiradas, sin bloquear las rodillas de golpe."
+        ],
+        "steps": [
+          "Deja que la plataforma te lleve las puntas hacia ti para estirar.",
+          "Empuja la plataforma estirando las puntas de los pies.",
+          "Aguanta y deja que vuelva despacio."
+        ],
+        "cues": ["Solo se mueven los tobillos.", "Lento y con recorrido completo."],
+        "mistakes": [
+          "Que los pies resbalen de la plataforma: apóyalos bien.",
+          "Doblar las rodillas para ayudarte."
+        ]
+      }
+    },
+    {
+      "id": "machine-chest-press",
+      "name": "Machine Chest Press",
+      "equipment": ["chest press machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["chest"],
+      "secondary": ["front_delts", "triceps"],
+      "setup": [
+        "Set the seat so the handles line up with the middle of your chest.",
+        "Back flat on the pad, shoulder blades pulled back and down."
+      ],
+      "steps": [
+        "Press the handles forward until your arms are almost straight.",
+        "Pause briefly without letting your shoulders roll forward.",
+        "Bring the handles back slowly until you feel a stretch across the chest."
+      ],
+      "cues": ["Elbows about 45° from your body, not flared straight out.", "Keep your back on the pad."],
+      "mistakes": [
+        "Seat too low so you press upward toward your face.",
+        "Letting the stack slam between reps."
+      ],
+      "alternatives": ["db-bench-press", "barbell-bench-press", "push-up"],
+      "images": ["images/machine-chest-press/0.jpg", "images/machine-chest-press/1.jpg"],
+      "es": {
+        "name": "Press de pecho en máquina",
+        "equipment": ["máquina de press de pecho"],
+        "setup": [
+          "Ajusta el asiento para que las asas queden a la altura de la mitad del pecho.",
+          "Espalda apoyada, escápulas atrás y abajo."
+        ],
+        "steps": [
+          "Empuja las asas hacia delante hasta que los brazos estén casi rectos.",
+          "Aguanta un momento sin que los hombros se vayan hacia delante.",
+          "Vuelve despacio hasta notar estiramiento en el pecho."
+        ],
+        "cues": ["Codos a unos 45° del cuerpo, no abiertos del todo.", "La espalda pegada al respaldo."],
+        "mistakes": [
+          "Asiento demasiado bajo y empujar hacia la cara.",
+          "Dejar que el peso golpee entre repeticiones."
+        ]
+      }
+    },
+    {
+      "id": "incline-barbell-bench-press",
+      "name": "Incline Barbell Bench Press",
+      "equipment": ["barbell", "adjustable bench", "rack"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["chest", "front_delts"],
+      "secondary": ["triceps"],
+      "setup": [
+        "Bench at about 30° inside the rack or in front of the Smith machine. Bar at a height you can unrack with nearly straight arms.",
+        "Grip a little wider than shoulders, feet flat, shoulder blades pinched."
+      ],
+      "steps": [
+        "Unrack and hold the bar over your upper chest.",
+        "Lower it to just below your collarbones.",
+        "Press back up and slightly back over your shoulders."
+      ],
+      "cues": ["A low incline (about 30°) keeps it a chest exercise.", "Wrists stacked over elbows."],
+      "mistakes": ["Bench set too steep so it becomes a shoulder press.", "Bouncing the bar off the chest."],
+      "alternatives": ["incline-db-press", "barbell-bench-press", "machine-chest-press"],
+      "images": ["images/incline-barbell-bench-press/0.jpg", "images/incline-barbell-bench-press/1.jpg"],
+      "es": {
+        "name": "Press inclinado con barra",
+        "equipment": ["barra", "banco regulable", "rack"],
+        "setup": [
+          "Banco a unos 30° dentro del rack o delante del multipower. Barra a una altura que puedas sacar con los brazos casi estirados.",
+          "Agarre un poco más abierto que los hombros, pies apoyados y escápulas juntas."
+        ],
+        "steps": [
+          "Saca la barra y sujétala sobre la parte alta del pecho.",
+          "Bájala hasta justo debajo de las clavículas.",
+          "Empuja hacia arriba y un poco hacia atrás, hasta encima de los hombros."
+        ],
+        "cues": [
+          "Una inclinación baja (unos 30°) mantiene el trabajo en el pecho.",
+          "Muñecas encima de los codos."
+        ],
+        "mistakes": [
+          "Banco demasiado inclinado, que lo convierte en un press de hombro.",
+          "Rebotar la barra en el pecho."
+        ]
+      }
+    },
+    {
+      "id": "db-fly",
+      "name": "Dumbbell Fly",
+      "equipment": ["dumbbells", "flat bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["chest"],
+      "secondary": ["front_delts"],
+      "setup": [
+        "Lie on a flat bench with a dumbbell in each hand, arms up over your chest, palms facing each other."
+      ],
+      "steps": [
+        "With a slight bend in the elbows, open your arms out wide in an arc.",
+        "Stop when you feel a good stretch across the chest, elbows about level with the bench.",
+        "Bring the dumbbells back together over your chest, like hugging a big tree."
+      ],
+      "cues": ["Elbow bend stays fixed; it is not a press.", "Go lighter than you think."],
+      "mistakes": [
+        "Dropping too deep and straining the shoulders.",
+        "Bending the elbows more and more until it turns into a press."
+      ],
+      "alternatives": ["cable-fly", "pec-deck", "low-to-high-cable-fly"],
+      "images": ["images/db-fly/0.jpg", "images/db-fly/1.jpg"],
+      "es": {
+        "name": "Aperturas con mancuernas",
+        "equipment": ["mancuernas", "banco plano"],
+        "setup": [
+          "Túmbate en un banco plano con una mancuerna en cada mano, brazos estirados sobre el pecho y palmas enfrentadas."
+        ],
+        "steps": [
+          "Con los codos un poco flexionados, abre los brazos en arco.",
+          "Para cuando notes un buen estiramiento en el pecho, con los codos más o menos a la altura del banco.",
+          "Vuelve a juntar las mancuernas sobre el pecho, como si abrazaras un árbol grande."
+        ],
+        "cues": ["La flexión del codo no cambia: no es un press.", "Coge menos peso del que crees."],
+        "mistakes": [
+          "Bajar demasiado y forzar los hombros.",
+          "Doblar cada vez más los codos hasta acabar haciendo un press."
+        ]
+      }
+    },
+    {
+      "id": "pec-deck",
+      "name": "Pec Deck",
+      "equipment": ["pec deck machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["chest"],
+      "secondary": ["front_delts"],
+      "setup": [
+        "Seat height so the handles or pads are at chest level.",
+        "Set the start so your arms are out wide with a stretch you can control."
+      ],
+      "steps": [
+        "Bring the handles together in front of your chest.",
+        "Squeeze the chest for a second.",
+        "Open back out slowly."
+      ],
+      "cues": ["Chest up, shoulders back against the pad.", "Lead with the elbows, not the hands."],
+      "mistakes": ["Shoulders rolling forward at the end.", "Letting the arms fly back too far."],
+      "alternatives": ["cable-fly", "db-fly", "low-to-high-cable-fly"],
+      "images": ["images/pec-deck/0.jpg", "images/pec-deck/1.jpg"],
+      "es": {
+        "name": "Contractor de pecho",
+        "equipment": ["máquina de contractor de pecho"],
+        "setup": [
+          "Altura del asiento para que las asas o almohadillas queden a la altura del pecho.",
+          "Ajusta el inicio para empezar con los brazos abiertos y un estiramiento que controles."
+        ],
+        "steps": [
+          "Junta las asas delante del pecho.",
+          "Aprieta el pecho un segundo.",
+          "Vuelve a abrir despacio."
+        ],
+        "cues": ["Pecho fuera, hombros atrás contra el respaldo.", "Guía con los codos, no con las manos."],
+        "mistakes": [
+          "Llevar los hombros hacia delante al final.",
+          "Dejar que los brazos se vayan demasiado atrás."
+        ]
+      }
+    },
+    {
+      "id": "low-to-high-cable-fly",
+      "name": "Low-to-High Cable Fly",
+      "equipment": ["cable stack", "D-handle"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["chest"],
+      "secondary": ["front_delts"],
+      "setup": ["Both pulleys at the lowest setting with D-handles. Stand in the middle, one step forward."],
+      "steps": [
+        "Start with your arms down and slightly behind you, palms forward.",
+        "Sweep the handles up and together to about chin height.",
+        "Lower slowly back to the start."
+      ],
+      "cues": ["Slight elbow bend that stays fixed.", "Targets the upper chest."],
+      "mistakes": ["Shrugging the shoulders up.", "Too heavy, turning it into a front raise."],
+      "alternatives": ["cable-fly", "incline-db-press", "db-fly"],
+      "images": ["images/low-to-high-cable-fly/0.jpg", "images/low-to-high-cable-fly/1.jpg"],
+      "es": {
+        "name": "Cruce de poleas de abajo arriba",
+        "equipment": ["polea", "agarre en D"],
+        "setup": [
+          "Las dos poleas en la posición más baja con agarres en D. Colócate en el centro, un paso por delante."
+        ],
+        "steps": [
+          "Empieza con los brazos abajo y un poco por detrás, palmas hacia delante.",
+          "Lleva las asas hacia arriba hasta juntarlas a la altura de la barbilla.",
+          "Baja despacio al inicio."
+        ],
+        "cues": ["Codos un poco flexionados, siempre igual.", "Trabaja sobre todo la parte alta del pecho."],
+        "mistakes": [
+          "Subir los hombros hacia las orejas.",
+          "Demasiado peso, y acabar haciendo una elevación frontal."
+        ]
+      }
+    },
+    {
+      "id": "dip",
+      "name": "Dip",
+      "equipment": ["dip bars"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["chest", "triceps"],
+      "secondary": ["front_delts"],
+      "setup": [
+        "Grip the bars and jump up to straight arms.",
+        "Add weight with a dumbbell between your feet or a dip belt."
+      ],
+      "steps": [
+        "Lean your torso slightly forward and bend your elbows to lower yourself.",
+        "Go down until your shoulders are about level with your elbows.",
+        "Push back up to straight arms."
+      ],
+      "cues": [
+        "More forward lean = more chest; upright = more triceps.",
+        "Shoulders down, away from your ears."
+      ],
+      "mistakes": [
+        "Dropping too deep and straining the front of the shoulder.",
+        "Swinging the legs to get up."
+      ],
+      "alternatives": ["bench-dip", "close-grip-bench-press", "push-up"],
+      "images": ["images/dip/0.jpg", "images/dip/1.jpg"],
+      "es": {
+        "name": "Fondos en paralelas",
+        "equipment": ["paralelas"],
+        "setup": [
+          "Agárrate a las paralelas y sube hasta tener los brazos estirados.",
+          "Añade peso con una mancuerna entre los pies o un cinturón de lastre."
+        ],
+        "steps": [
+          "Inclina un poco el tronco hacia delante y flexiona los codos para bajar.",
+          "Baja hasta que los hombros queden más o menos a la altura de los codos.",
+          "Empuja hasta volver a estirar los brazos."
+        ],
+        "cues": [
+          "Más inclinado = más pecho; más vertical = más tríceps.",
+          "Hombros abajo, lejos de las orejas."
+        ],
+        "mistakes": [
+          "Bajar demasiado y forzar la parte delantera del hombro.",
+          "Balancear las piernas para subir."
+        ]
+      }
+    },
+    {
+      "id": "bench-dip",
+      "name": "Bench Dip",
+      "equipment": ["bench"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["triceps"],
+      "secondary": ["chest", "front_delts"],
+      "setup": [
+        "Hands on the edge of a bench behind you, fingers forward. Legs out in front.",
+        "Bent knees is easier; feet up on another bench is harder."
+      ],
+      "steps": [
+        "Bend your elbows to lower your hips toward the floor.",
+        "Stop when your upper arms are about parallel to the floor.",
+        "Press back up to straight arms."
+      ],
+      "cues": ["Keep your back close to the bench.", "Elbows point back, not out."],
+      "mistakes": ["Going too deep, which strains the shoulders.", "Pushing with the legs."],
+      "alternatives": ["dip", "cable-rope-pushdown", "close-grip-bench-press"],
+      "images": ["images/bench-dip/0.jpg", "images/bench-dip/1.jpg"],
+      "es": {
+        "name": "Fondos en banco",
+        "equipment": ["banco"],
+        "setup": [
+          "Manos en el borde de un banco detrás de ti, dedos hacia delante. Piernas estiradas delante.",
+          "Con las rodillas dobladas es más fácil; con los pies en otro banco, más difícil."
+        ],
+        "steps": [
+          "Flexiona los codos para bajar la cadera hacia el suelo.",
+          "Para cuando los brazos queden más o menos paralelos al suelo.",
+          "Empuja hasta estirar los brazos."
+        ],
+        "cues": ["La espalda cerca del banco.", "Codos hacia atrás, no hacia los lados."],
+        "mistakes": ["Bajar demasiado, que fuerza los hombros.", "Empujar con las piernas."]
+      }
+    },
+    {
+      "id": "db-pullover",
+      "name": "Dumbbell Pullover",
+      "equipment": ["dumbbell", "flat bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["lats", "chest"],
+      "secondary": ["triceps", "abs"],
+      "setup": [
+        "Lie on a flat bench holding one dumbbell over your chest with both hands cupping the top end."
+      ],
+      "steps": [
+        "With a slight elbow bend, lower the dumbbell back behind your head in an arc.",
+        "Stop when you feel a stretch through your lats and chest.",
+        "Pull it back over your chest along the same arc."
+      ],
+      "cues": ["Ribs down; don't arch your lower back.", "Elbows stay at the same bend."],
+      "mistakes": [
+        "Going so far back that the shoulders hurt.",
+        "Bending the elbows into a triceps extension."
+      ],
+      "alternatives": ["straight-arm-pulldown", "cable-lat-pulldown", "db-fly"],
+      "images": ["images/db-pullover/0.jpg", "images/db-pullover/1.jpg"],
+      "es": {
+        "name": "Pullover con mancuerna",
+        "equipment": ["mancuerna", "banco plano"],
+        "setup": [
+          "Túmbate en un banco plano con una mancuerna sobre el pecho, sujetando el extremo de arriba con las dos manos."
+        ],
+        "steps": [
+          "Con los codos un poco flexionados, baja la mancuerna en arco por detrás de la cabeza.",
+          "Para cuando notes estiramiento en dorsales y pecho.",
+          "Vuelve a llevarla sobre el pecho por el mismo arco."
+        ],
+        "cues": ["Costillas abajo: no arquees la zona lumbar.", "Los codos no cambian de flexión."],
+        "mistakes": [
+          "Bajar tanto que duelen los hombros.",
+          "Doblar los codos y acabar haciendo una extensión de tríceps."
+        ]
+      }
+    },
+    {
+      "id": "barbell-row",
+      "name": "Barbell Row",
+      "equipment": ["barbell", "plates"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["upper_back", "lats"],
+      "secondary": ["rear_delts", "biceps", "lower_back"],
+      "setup": [
+        "Grip the bar a little wider than shoulders, palms facing you.",
+        "Hinge forward until your torso is about 45° or lower, knees soft, back flat."
+      ],
+      "steps": [
+        "Let the bar hang at arm's length below your shoulders.",
+        "Pull it to your lower ribs, driving your elbows back.",
+        "Lower it under control without standing up."
+      ],
+      "cues": ["Torso angle stays the same every rep.", "Squeeze your shoulder blades at the top."],
+      "mistakes": ["Standing more upright with each rep to cheat the weight up.", "Rounding the lower back."],
+      "alternatives": ["chest-supported-db-row", "one-arm-db-row", "cable-seated-row"],
+      "images": ["images/barbell-row/0.jpg", "images/barbell-row/1.jpg"],
+      "es": {
+        "name": "Remo con barra",
+        "equipment": ["barra", "discos"],
+        "setup": [
+          "Agarra la barra un poco más abierto que los hombros, palmas hacia ti.",
+          "Inclínate desde la cadera hasta unos 45° o más, rodillas flexionadas y espalda recta."
+        ],
+        "steps": [
+          "Deja la barra colgando con los brazos estirados debajo de los hombros.",
+          "Llévala a las costillas de abajo, tirando de los codos hacia atrás.",
+          "Bájala controlando, sin incorporarte."
+        ],
+        "cues": ["El ángulo del tronco no cambia.", "Junta las escápulas arriba."],
+        "mistakes": [
+          "Incorporarse un poco más en cada repetición para subir el peso.",
+          "Redondear la zona lumbar."
+        ]
+      }
+    },
+    {
+      "id": "straight-arm-pulldown",
+      "name": "Straight-Arm Pulldown",
+      "equipment": ["cable stack", "straight bar or rope"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["lats"],
+      "secondary": ["triceps", "abs"],
+      "setup": ["Pulley at the top with a straight bar or rope. Step back and hinge forward slightly."],
+      "steps": [
+        "Start with arms straight out in front, hands about head height.",
+        "Keeping the arms straight, pull the bar down in an arc to your thighs.",
+        "Let it rise back slowly until you feel the lats stretch."
+      ],
+      "cues": ["Think \"elbows to hips\".", "Ribs down, no arching."],
+      "mistakes": ["Bending the elbows into a pushdown.", "Rocking the body to move the weight."],
+      "alternatives": ["cable-lat-pulldown", "db-pullover", "pull-up"],
+      "images": ["images/straight-arm-pulldown/0.jpg", "images/straight-arm-pulldown/1.jpg"],
+      "es": {
+        "name": "Jalón con brazos rectos",
+        "equipment": ["polea", "barra recta o cuerda"],
+        "setup": [
+          "Polea arriba con barra recta o cuerda. Da un paso atrás e inclínate un poco hacia delante."
+        ],
+        "steps": [
+          "Empieza con los brazos estirados delante, manos más o menos a la altura de la cabeza.",
+          "Sin doblar los brazos, baja la barra en arco hasta los muslos.",
+          "Deja que suba despacio hasta notar el dorsal estirado."
+        ],
+        "cues": ["Piensa en llevar los codos a la cadera.", "Costillas abajo, sin arquear."],
+        "mistakes": [
+          "Doblar los codos y acabar haciendo un press hacia abajo de tríceps.",
+          "Balancear el cuerpo para mover el peso."
+        ]
+      }
+    },
+    {
+      "id": "chin-up",
+      "name": "Chin-Up",
+      "equipment": ["pull-up bar"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["lats", "biceps"],
+      "secondary": ["upper_back", "forearms"],
+      "setup": ["Grip the bar shoulder-width with palms facing you."],
+      "steps": [
+        "Hang with straight arms, then pull your shoulder blades down.",
+        "Pull until your chin clears the bar.",
+        "Lower all the way down slowly."
+      ],
+      "cues": ["Chest up toward the bar.", "Usually easier than pull-ups thanks to the biceps."],
+      "mistakes": ["Half reps that never reach straight arms.", "Kicking the legs."],
+      "alternatives": ["pull-up", "cable-lat-pulldown", "assisted-pull-up-machine"],
+      "images": ["images/chin-up/0.jpg", "images/chin-up/1.jpg"],
+      "es": {
+        "name": "Dominadas supinas",
+        "equipment": ["barra de dominadas"],
+        "setup": ["Agarra la barra a la anchura de los hombros con las palmas hacia ti."],
+        "steps": [
+          "Cuelga con los brazos estirados y lleva las escápulas hacia abajo.",
+          "Sube hasta que la barbilla pase la barra.",
+          "Baja despacio del todo."
+        ],
+        "cues": [
+          "Lleva el pecho hacia la barra.",
+          "Suele ser más fácil que la dominada prona gracias al bíceps."
+        ],
+        "mistakes": ["Medias repeticiones sin llegar a estirar los brazos.", "Dar patadas con las piernas."]
+      }
+    },
+    {
+      "id": "inverted-row",
+      "name": "Inverted Row",
+      "equipment": ["rack", "barbell"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["upper_back", "lats"],
+      "secondary": ["biceps", "rear_delts", "abs"],
+      "setup": [
+        "Set a bar in a rack or the Smith machine at about hip height.",
+        "Hang underneath with straight arms, heels on the floor, body straight. Bent knees is easier."
+      ],
+      "steps": [
+        "Pull your chest up to the bar.",
+        "Squeeze your shoulder blades together at the top.",
+        "Lower until your arms are straight."
+      ],
+      "cues": ["Body moves as one plank.", "Lower bar or feet raised = harder."],
+      "mistakes": ["Hips sagging.", "Reaching with the chin instead of pulling the chest up."],
+      "alternatives": ["cable-seated-row", "chest-supported-db-row", "chin-up"],
+      "images": ["images/inverted-row/0.jpg", "images/inverted-row/1.jpg"],
+      "es": {
+        "name": "Remo invertido",
+        "equipment": ["rack", "barra"],
+        "setup": [
+          "Pon una barra en el rack o en el multipower más o menos a la altura de la cadera.",
+          "Cuélgate debajo con los brazos estirados, talones en el suelo y el cuerpo recto. Con las rodillas dobladas es más fácil."
+        ],
+        "steps": [
+          "Tira hasta llevar el pecho a la barra.",
+          "Junta las escápulas arriba.",
+          "Baja hasta estirar los brazos."
+        ],
+        "cues": ["El cuerpo se mueve como una plancha.", "Barra más baja o pies elevados = más difícil."],
+        "mistakes": ["Dejar caer la cadera.", "Estirar la barbilla en vez de subir el pecho."]
+      }
+    },
+    {
+      "id": "assisted-pull-up-machine",
+      "name": "Assisted Pull-Up Machine",
+      "equipment": ["assisted pull-up machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["lats"],
+      "secondary": ["biceps", "upper_back"],
+      "setup": [
+        "Kneel or stand on the platform and pick the assistance weight. More weight on the stack = more help, so a lower number means progress."
+      ],
+      "steps": [
+        "Grip the handles and lower to straight arms.",
+        "Pull until your chin is over the handles.",
+        "Lower slowly to straight arms."
+      ],
+      "cues": [
+        "Same technique as a real pull-up.",
+        "No machine? Lat pulldown and slow negative pull-ups do the same job."
+      ],
+      "mistakes": [
+        "Using so much assistance that the set never gets hard.",
+        "Short range at the top or bottom."
+      ],
+      "alternatives": ["cable-lat-pulldown", "chin-up", "pull-up"],
+      "images": ["images/assisted-pull-up-machine/0.jpg", "images/assisted-pull-up-machine/1.jpg"],
+      "es": {
+        "name": "Dominadas asistidas en máquina",
+        "equipment": ["máquina de dominadas asistidas"],
+        "setup": [
+          "Arrodíllate o ponte de pie en la plataforma y elige la ayuda. Más peso en la máquina = más ayuda, así que bajar el número es progresar."
+        ],
+        "steps": [
+          "Agarra las asas y baja hasta estirar los brazos.",
+          "Sube hasta que la barbilla pase las asas.",
+          "Baja despacio hasta estirar los brazos."
+        ],
+        "cues": [
+          "La misma técnica que una dominada de verdad.",
+          "¿No hay máquina? El jalón y las dominadas bajando despacio cumplen la misma función."
+        ],
+        "mistakes": ["Poner tanta ayuda que la serie nunca cuesta.", "Recorrido corto arriba o abajo."]
+      }
+    },
+    {
+      "id": "db-shrug",
+      "name": "Dumbbell Shrug",
+      "equipment": ["dumbbells"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["traps"],
+      "secondary": ["forearms"],
+      "setup": ["Stand tall with a heavy dumbbell in each hand at your sides."],
+      "steps": [
+        "Lift your shoulders straight up toward your ears.",
+        "Hold the top for a second.",
+        "Lower slowly to a full stretch."
+      ],
+      "cues": ["Straight up and down; no rolling.", "Arms stay straight."],
+      "mistakes": ["Rolling the shoulders in circles.", "Bouncing heavy weight with tiny reps."],
+      "alternatives": ["farmers-carry", "barbell-deadlift"],
+      "images": ["images/db-shrug/0.jpg", "images/db-shrug/1.jpg"],
+      "es": {
+        "name": "Encogimientos con mancuernas",
+        "equipment": ["mancuernas"],
+        "setup": ["De pie, con una mancuerna pesada en cada mano a los lados."],
+        "steps": [
+          "Sube los hombros en vertical hacia las orejas.",
+          "Aguanta arriba un segundo.",
+          "Baja despacio hasta estirar del todo."
+        ],
+        "cues": ["Arriba y abajo en vertical, sin hacer círculos.", "Los brazos no se doblan."],
+        "mistakes": ["Hacer círculos con los hombros.", "Rebotar mucho peso con repeticiones cortas."]
+      }
+    },
+    {
+      "id": "machine-shoulder-press",
+      "name": "Machine Shoulder Press",
+      "equipment": ["shoulder press machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["front_delts", "side_delts"],
+      "secondary": ["triceps"],
+      "setup": ["Set the seat so the handles start at about shoulder height.", "Back flat against the pad."],
+      "steps": [
+        "Press the handles overhead until your arms are almost straight.",
+        "Pause briefly.",
+        "Lower slowly back to shoulder height."
+      ],
+      "cues": ["Elbows slightly in front of your body.", "Don't shrug as you press."],
+      "mistakes": [
+        "Arching the lower back off the pad.",
+        "Seat so low the bottom position hurts the shoulders."
+      ],
+      "alternatives": ["seated-db-shoulder-press", "barbell-overhead-press", "arnold-press"],
+      "images": ["images/machine-shoulder-press/0.jpg", "images/machine-shoulder-press/1.jpg"],
+      "es": {
+        "name": "Press de hombro en máquina",
+        "equipment": ["máquina de press de hombro"],
+        "setup": [
+          "Ajusta el asiento para que las asas empiecen más o menos a la altura de los hombros.",
+          "Espalda apoyada en el respaldo."
+        ],
+        "steps": [
+          "Empuja las asas por encima de la cabeza hasta que los brazos estén casi rectos.",
+          "Aguanta un momento.",
+          "Baja despacio hasta la altura de los hombros."
+        ],
+        "cues": ["Codos un poco por delante del cuerpo.", "No subas los hombros al empujar."],
+        "mistakes": [
+          "Separar la zona lumbar del respaldo arqueándola.",
+          "Asiento tan bajo que abajo molestan los hombros."
+        ]
+      }
+    },
+    {
+      "id": "arnold-press",
+      "name": "Arnold Press",
+      "equipment": ["dumbbells", "adjustable bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["front_delts", "side_delts"],
+      "secondary": ["triceps"],
+      "setup": ["Sit on an upright bench with dumbbells in front of your shoulders, palms facing you."],
+      "steps": [
+        "Press up while turning your palms to face forward.",
+        "Finish with arms nearly straight overhead.",
+        "Reverse the turn as you lower back to the start."
+      ],
+      "cues": ["Smooth rotation through the whole press.", "Use less weight than a normal dumbbell press."],
+      "mistakes": ["Arching the lower back.", "Rushing the rotation at the bottom."],
+      "alternatives": ["seated-db-shoulder-press", "machine-shoulder-press", "barbell-overhead-press"],
+      "images": ["images/arnold-press/0.jpg", "images/arnold-press/1.jpg"],
+      "es": {
+        "name": "Press Arnold",
+        "equipment": ["mancuernas", "banco regulable"],
+        "setup": [
+          "Siéntate en un banco vertical con las mancuernas delante de los hombros y las palmas hacia ti."
+        ],
+        "steps": [
+          "Empuja hacia arriba mientras giras las palmas hacia delante.",
+          "Termina con los brazos casi estirados por encima de la cabeza.",
+          "Deshaz el giro al bajar al inicio."
+        ],
+        "cues": [
+          "Giro suave durante todo el empuje.",
+          "Usa menos peso que en el press normal con mancuernas."
+        ],
+        "mistakes": ["Arquear la zona lumbar.", "Girar con prisa abajo."]
+      }
+    },
+    {
+      "id": "db-front-raise",
+      "name": "Dumbbell Front Raise",
+      "equipment": ["dumbbells"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["front_delts"],
+      "secondary": ["side_delts", "upper_back"],
+      "setup": ["Stand with dumbbells in front of your thighs, palms facing you."],
+      "steps": [
+        "Raise the dumbbells straight in front of you to shoulder height.",
+        "Pause briefly.",
+        "Lower slowly."
+      ],
+      "cues": [
+        "Slight bend in the elbows.",
+        "Most people get plenty of front-delt work from pressing; use this sparingly."
+      ],
+      "mistakes": ["Swinging the body to lift the weight.", "Lifting above shoulder height and shrugging."],
+      "alternatives": ["db-lateral-raise", "seated-db-shoulder-press"],
+      "images": ["images/db-front-raise/0.jpg", "images/db-front-raise/1.jpg"],
+      "es": {
+        "name": "Elevaciones frontales con mancuernas",
+        "equipment": ["mancuernas"],
+        "setup": ["De pie, con las mancuernas delante de los muslos y las palmas hacia ti."],
+        "steps": [
+          "Sube las mancuernas por delante hasta la altura de los hombros.",
+          "Aguanta un momento.",
+          "Baja despacio."
+        ],
+        "cues": [
+          "Codos un poco flexionados.",
+          "Los press ya trabajan mucho el deltoides anterior: úsalo con moderación."
+        ],
+        "mistakes": [
+          "Balancear el cuerpo para subir el peso.",
+          "Subir por encima de los hombros y encogerlos."
+        ]
+      }
+    },
+    {
+      "id": "cable-rear-delt-fly",
+      "name": "Cable Rear Delt Fly",
+      "equipment": ["cable stack"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["rear_delts"],
+      "secondary": ["upper_back"],
+      "setup": [
+        "Both pulleys at shoulder height, no handles: grab the cable ends or balls directly. Cross the cables: left hand holds the right cable and vice versa.",
+        "Stand in the middle with your arms crossed in front of you."
+      ],
+      "steps": [
+        "Pull your hands out and back in a wide arc until your arms are in a T.",
+        "Pause and squeeze the back of your shoulders.",
+        "Let the arms cross back in front slowly."
+      ],
+      "cues": ["Arms nearly straight; move from the shoulder.", "Light weight, strict reps."],
+      "mistakes": [
+        "Squeezing the shoulder blades together so the upper back takes over.",
+        "Leaning back to move more weight."
+      ],
+      "alternatives": ["db-rear-delt-fly", "reverse-pec-deck", "cable-face-pull"],
+      "images": ["images/cable-rear-delt-fly/0.jpg", "images/cable-rear-delt-fly/1.jpg"],
+      "es": {
+        "name": "Pájaros en polea",
+        "equipment": ["polea"],
+        "setup": [
+          "Las dos poleas a la altura de los hombros, sin agarres: coge directamente el final del cable. Cruza los cables: la mano izquierda coge el cable derecho y al revés.",
+          "Ponte en el centro con los brazos cruzados delante."
+        ],
+        "steps": [
+          "Lleva las manos hacia fuera y atrás en un arco amplio hasta formar una T con los brazos.",
+          "Aguanta y aprieta la parte de atrás de los hombros.",
+          "Deja que los brazos vuelvan a cruzarse delante despacio."
+        ],
+        "cues": ["Brazos casi rectos: el movimiento sale del hombro.", "Poco peso y repeticiones estrictas."],
+        "mistakes": [
+          "Juntar mucho las escápulas y que trabaje sobre todo la espalda.",
+          "Echarse atrás para mover más peso."
+        ]
+      }
+    },
+    {
+      "id": "reverse-pec-deck",
+      "name": "Reverse Pec Deck",
+      "equipment": ["pec deck machine"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["rear_delts"],
+      "secondary": ["upper_back"],
+      "setup": [
+        "Sit facing the pad with your chest against it. Set the handles to the rear-delt position (fully forward).",
+        "Handles at shoulder height."
+      ],
+      "steps": [
+        "With arms nearly straight, sweep the handles out and back.",
+        "Stop when your arms are in line with your body.",
+        "Return slowly."
+      ],
+      "cues": ["Think \"push the handles apart\", not \"pull\".", "Keep your chest on the pad."],
+      "mistakes": ["Shrugging the shoulders up.", "Swinging back past your body."],
+      "alternatives": ["cable-rear-delt-fly", "db-rear-delt-fly", "cable-face-pull"],
+      "images": ["images/reverse-pec-deck/0.jpg", "images/reverse-pec-deck/1.jpg"],
+      "es": {
+        "name": "Pájaros en máquina",
+        "equipment": ["máquina de contractor de pecho"],
+        "setup": [
+          "Siéntate mirando al respaldo con el pecho apoyado. Pon las asas en la posición para hombro posterior (del todo hacia delante).",
+          "Asas a la altura de los hombros."
+        ],
+        "steps": [
+          "Con los brazos casi rectos, lleva las asas hacia fuera y atrás.",
+          "Para cuando los brazos estén en línea con el cuerpo.",
+          "Vuelve despacio."
+        ],
+        "cues": ["Piensa en separar las asas, no en tirar de ellas.", "El pecho pegado al respaldo."],
+        "mistakes": ["Subir los hombros.", "Pasarse de la línea del cuerpo a tirón."]
+      }
+    },
+    {
+      "id": "cable-external-rotation",
+      "name": "Cable External Rotation",
+      "equipment": ["cable stack", "D-handle"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "perSide": true,
+      "primary": ["rear_delts"],
+      "secondary": ["upper_back"],
+      "setup": [
+        "Pulley at elbow height with a D-handle. Stand side-on, the working arm furthest from the stack.",
+        "Elbow bent 90° and tucked against your side. A rolled towel under the elbow helps."
+      ],
+      "steps": [
+        "Start with your forearm across your belly.",
+        "Rotate your forearm outward, keeping the elbow pinned.",
+        "Return slowly. Do all reps, then switch arms."
+      ],
+      "cues": [
+        "Very light; this is for the small rotator cuff muscles.",
+        "Good as a warm-up before pressing."
+      ],
+      "mistakes": ["Elbow drifting away from your side.", "Twisting the torso to help."],
+      "alternatives": ["cable-face-pull", "db-rear-delt-fly"],
+      "images": ["images/cable-external-rotation/0.jpg", "images/cable-external-rotation/1.jpg"],
+      "es": {
+        "name": "Rotación externa en polea",
+        "equipment": ["polea", "agarre en D"],
+        "setup": [
+          "Polea a la altura del codo con agarre en D. Ponte de lado, con el brazo que trabaja en el lado más alejado de la polea.",
+          "Codo doblado a 90° y pegado al costado. Una toalla enrollada bajo el codo ayuda."
+        ],
+        "steps": [
+          "Empieza con el antebrazo delante del vientre.",
+          "Gira el antebrazo hacia fuera sin separar el codo.",
+          "Vuelve despacio. Haz todas las repeticiones y cambia de brazo."
+        ],
+        "cues": [
+          "Muy poco peso: trabaja los músculos pequeños del manguito rotador.",
+          "Va bien como calentamiento antes de los press."
+        ],
+        "mistakes": ["Separar el codo del costado.", "Girar el tronco para ayudarte."]
+      }
+    },
+    {
+      "id": "db-curl",
+      "name": "Dumbbell Biceps Curl",
+      "equipment": ["dumbbells"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["biceps"],
+      "secondary": ["forearms"],
+      "setup": ["Stand tall with a dumbbell in each hand, palms facing forward."],
+      "steps": [
+        "Curl the dumbbells up toward your shoulders, keeping your elbows at your sides.",
+        "Squeeze at the top.",
+        "Lower slowly until your arms are straight."
+      ],
+      "cues": ["Elbows stay pinned.", "Both arms together or alternating, whichever you prefer."],
+      "mistakes": ["Swinging the weight up with the hips.", "Stopping short of straight arms at the bottom."],
+      "alternatives": ["ez-bar-curl", "cable-curl", "db-hammer-curl"],
+      "images": ["images/db-curl/0.jpg", "images/db-curl/1.jpg"],
+      "es": {
+        "name": "Curl de bíceps con mancuernas",
+        "equipment": ["mancuernas"],
+        "setup": ["De pie, con una mancuerna en cada mano y las palmas hacia delante."],
+        "steps": [
+          "Sube las mancuernas hacia los hombros sin separar los codos del cuerpo.",
+          "Aprieta arriba.",
+          "Baja despacio hasta estirar los brazos."
+        ],
+        "cues": ["Los codos no se mueven.", "Con los dos brazos a la vez o alternando, como prefieras."],
+        "mistakes": ["Subir el peso balanceando la cadera.", "No llegar a estirar los brazos abajo."]
+      }
+    },
+    {
+      "id": "incline-db-curl",
+      "name": "Incline Dumbbell Curl",
+      "equipment": ["dumbbells", "adjustable bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["biceps"],
+      "secondary": ["forearms"],
+      "setup": [
+        "Bench at about 45-60°. Sit back with your arms hanging straight down behind your body, palms forward."
+      ],
+      "steps": [
+        "Curl the dumbbells up without moving your upper arms forward.",
+        "Squeeze at the top.",
+        "Lower all the way to a full stretch."
+      ],
+      "cues": [
+        "The stretch at the bottom is the point of this one.",
+        "Use lighter dumbbells than for standing curls."
+      ],
+      "mistakes": [
+        "Bringing the elbows forward as you curl.",
+        "Lifting the head and shoulders off the bench."
+      ],
+      "alternatives": ["db-curl", "cable-curl", "preacher-curl"],
+      "images": ["images/incline-db-curl/0.jpg", "images/incline-db-curl/1.jpg"],
+      "es": {
+        "name": "Curl inclinado con mancuernas",
+        "equipment": ["mancuernas", "banco regulable"],
+        "setup": [
+          "Banco a unos 45-60°. Siéntate apoyado con los brazos colgando por detrás del cuerpo, palmas hacia delante."
+        ],
+        "steps": [
+          "Sube las mancuernas sin adelantar los brazos.",
+          "Aprieta arriba.",
+          "Baja del todo hasta estirar bien."
+        ],
+        "cues": [
+          "Lo importante de este ejercicio es el estiramiento de abajo.",
+          "Usa mancuernas más ligeras que en el curl de pie."
+        ],
+        "mistakes": ["Adelantar los codos al subir.", "Despegar la cabeza y los hombros del banco."]
+      }
+    },
+    {
+      "id": "preacher-curl",
+      "name": "Preacher Curl",
+      "equipment": ["preacher curl bench", "EZ bar"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["biceps"],
+      "secondary": ["forearms"],
+      "setup": [
+        "Seat height so your armpits sit snug on top of the pad.",
+        "No preacher bench? Lean your upper arm on an incline bench set high, with a dumbbell."
+      ],
+      "steps": [
+        "Hold the bar with your arms down the pad, nearly straight.",
+        "Curl it up until your forearms are vertical.",
+        "Lower slowly to almost straight."
+      ],
+      "cues": [
+        "Back of the upper arms stays on the pad.",
+        "Control the bottom; that is where the biceps are most vulnerable."
+      ],
+      "mistakes": ["Dropping the weight fast into a locked elbow.", "Lifting the elbows off the pad."],
+      "alternatives": ["ez-bar-curl", "incline-db-curl", "cable-curl"],
+      "images": ["images/preacher-curl/0.jpg", "images/preacher-curl/1.jpg"],
+      "es": {
+        "name": "Curl predicador",
+        "equipment": ["banco predicador", "barra Z"],
+        "setup": [
+          "Altura del asiento para que las axilas queden ajustadas sobre la almohadilla.",
+          "¿No hay banco predicador? Apoya el brazo en un banco inclinado bien alto, con una mancuerna."
+        ],
+        "steps": [
+          "Sujeta la barra con los brazos apoyados en la almohadilla, casi estirados.",
+          "Súbela hasta que los antebrazos estén verticales.",
+          "Baja despacio hasta casi estirar."
+        ],
+        "cues": [
+          "La parte de atrás de los brazos pegada a la almohadilla.",
+          "Controla abajo: ahí es donde el bíceps es más vulnerable."
+        ],
+        "mistakes": [
+          "Dejar caer el peso rápido y bloquear el codo.",
+          "Despegar los codos de la almohadilla."
+        ]
+      }
+    },
+    {
+      "id": "barbell-curl",
+      "name": "Barbell Curl",
+      "equipment": ["barbell"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["biceps"],
+      "secondary": ["forearms"],
+      "setup": ["Stand holding the bar with an underhand grip, hands shoulder-width."],
+      "steps": [
+        "Curl the bar up to your upper chest, elbows by your sides.",
+        "Squeeze at the top.",
+        "Lower slowly to straight arms."
+      ],
+      "cues": ["Stand still; only the forearms move.", "If your wrists complain, use the EZ bar."],
+      "mistakes": ["Leaning back to swing the bar up.", "Elbows drifting forward at the top."],
+      "alternatives": ["ez-bar-curl", "db-curl", "cable-curl"],
+      "images": ["images/barbell-curl/0.jpg", "images/barbell-curl/1.jpg"],
+      "es": {
+        "name": "Curl con barra",
+        "equipment": ["barra"],
+        "setup": [
+          "De pie, con la barra agarrada con las palmas hacia arriba y las manos a la anchura de los hombros."
+        ],
+        "steps": [
+          "Sube la barra hasta la parte alta del pecho, con los codos pegados al cuerpo.",
+          "Aprieta arriba.",
+          "Baja despacio hasta estirar los brazos."
+        ],
+        "cues": ["Quieto: solo se mueven los antebrazos.", "Si te molestan las muñecas, usa la barra Z."],
+        "mistakes": ["Echarse atrás para subir la barra a tirón.", "Adelantar los codos arriba."]
+      }
+    },
+    {
+      "id": "close-grip-bench-press",
+      "name": "Close-Grip Bench Press",
+      "equipment": ["barbell", "flat bench", "rack"],
+      "logType": "weight",
+      "incrementGroup": "upper",
+      "primary": ["triceps", "chest"],
+      "secondary": ["front_delts"],
+      "setup": [
+        "Lie on the bench under the bar. Grip about shoulder-width, a bit narrower than your normal bench grip."
+      ],
+      "steps": [
+        "Unrack and lower the bar to your lower chest, elbows tucked close to your sides.",
+        "Touch lightly.",
+        "Press back up to straight arms."
+      ],
+      "cues": [
+        "Shoulder-width is close enough; very narrow grips strain the wrists.",
+        "Elbows close to your body."
+      ],
+      "mistakes": ["Hands touching in the middle.", "Elbows flaring out wide."],
+      "alternatives": ["ez-bar-skullcrusher", "dip", "db-bench-press"],
+      "images": ["images/close-grip-bench-press/0.jpg", "images/close-grip-bench-press/1.jpg"],
+      "es": {
+        "name": "Press de banca con agarre cerrado",
+        "equipment": ["barra", "banco plano", "rack"],
+        "setup": [
+          "Túmbate bajo la barra. Agarre a la anchura de los hombros, algo más cerrado que en tu press de banca normal."
+        ],
+        "steps": [
+          "Saca la barra y bájala a la parte baja del pecho, con los codos cerca del cuerpo.",
+          "Toca suavemente.",
+          "Empuja hasta estirar los brazos."
+        ],
+        "cues": [
+          "Con la anchura de los hombros basta: un agarre muy cerrado fuerza las muñecas.",
+          "Codos cerca del cuerpo."
+        ],
+        "mistakes": ["Juntar las manos en el centro.", "Abrir mucho los codos."]
+      }
+    },
+    {
+      "id": "db-overhead-triceps-extension",
+      "name": "Dumbbell Overhead Triceps Extension",
+      "equipment": ["dumbbell", "bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["triceps"],
+      "setup": [
+        "Sit on a bench with back support. Hold one dumbbell overhead with both hands cupping the top end."
+      ],
+      "steps": [
+        "Bend your elbows to lower the dumbbell behind your head.",
+        "Go until you feel a deep stretch in the triceps.",
+        "Straighten your arms back overhead."
+      ],
+      "cues": ["Elbows point up and stay roughly shoulder-width.", "Ribs down to keep your back flat."],
+      "mistakes": ["Elbows flaring wide.", "Arching the lower back."],
+      "alternatives": ["overhead-cable-triceps-extension", "ez-bar-skullcrusher", "cable-rope-pushdown"],
+      "images": ["images/db-overhead-triceps-extension/0.jpg", "images/db-overhead-triceps-extension/1.jpg"],
+      "es": {
+        "name": "Extensión de tríceps por encima de la cabeza con mancuerna",
+        "equipment": ["mancuerna", "banco"],
+        "setup": [
+          "Siéntate en un banco con respaldo. Sujeta una mancuerna por encima de la cabeza con las dos manos en el extremo de arriba."
+        ],
+        "steps": [
+          "Dobla los codos para bajar la mancuerna por detrás de la cabeza.",
+          "Baja hasta notar un buen estiramiento en el tríceps.",
+          "Estira los brazos de nuevo por encima de la cabeza."
+        ],
+        "cues": [
+          "Codos hacia arriba y más o menos a la anchura de los hombros.",
+          "Costillas abajo para no arquear la espalda."
+        ],
+        "mistakes": ["Abrir mucho los codos.", "Arquear la zona lumbar."]
+      }
+    },
+    {
+      "id": "db-triceps-kickback",
+      "name": "Dumbbell Triceps Kickback",
+      "equipment": ["dumbbell", "flat bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "perSide": true,
+      "primary": ["triceps"],
+      "setup": [
+        "One knee and hand on a bench, back flat. Hold a dumbbell in the other hand.",
+        "Upper arm against your side, parallel to the floor, elbow bent 90°."
+      ],
+      "steps": [
+        "Straighten your elbow to push the dumbbell back.",
+        "Squeeze the triceps with the arm straight.",
+        "Bend back to 90° slowly. Do all reps, then switch arms."
+      ],
+      "cues": ["Upper arm stays still.", "Light weight; the squeeze matters more."],
+      "mistakes": ["Swinging the dumbbell.", "Upper arm dropping toward the floor."],
+      "alternatives": ["cable-rope-pushdown", "cable-bar-pushdown"],
+      "images": ["images/db-triceps-kickback/0.jpg", "images/db-triceps-kickback/1.jpg"],
+      "es": {
+        "name": "Patada de tríceps con mancuerna",
+        "equipment": ["mancuerna", "banco plano"],
+        "setup": [
+          "Una rodilla y una mano en el banco, espalda recta. La mancuerna en la otra mano.",
+          "Brazo pegado al costado y paralelo al suelo, con el codo a 90°."
+        ],
+        "steps": [
+          "Estira el codo para llevar la mancuerna hacia atrás.",
+          "Aprieta el tríceps con el brazo estirado.",
+          "Vuelve despacio a 90°. Haz todas las repeticiones y cambia de brazo."
+        ],
+        "cues": ["El brazo no se mueve.", "Poco peso: importa más apretar."],
+        "mistakes": ["Balancear la mancuerna.", "Dejar caer el brazo hacia el suelo."]
+      }
+    },
+    {
+      "id": "cable-bar-pushdown",
+      "name": "Cable Bar Pushdown",
+      "equipment": ["cable stack", "straight bar or V-bar"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["triceps"],
+      "setup": ["Pulley at the top with a straight bar or V-bar.", "Stand close, elbows at your sides."],
+      "steps": [
+        "Push the bar down until your arms are straight.",
+        "Squeeze the triceps.",
+        "Let the bar rise until your forearms are just above parallel."
+      ],
+      "cues": ["Elbows pinned; only the forearms move.", "Lets you go heavier than the rope."],
+      "mistakes": ["Leaning over the bar to push with bodyweight.", "Elbows drifting forward."],
+      "alternatives": ["cable-rope-pushdown", "db-triceps-kickback", "overhead-cable-triceps-extension"],
+      "images": ["images/cable-bar-pushdown/0.jpg", "images/cable-bar-pushdown/1.jpg"],
+      "es": {
+        "name": "Extensión de tríceps en polea con barra",
+        "equipment": ["polea", "barra recta o en V"],
+        "setup": [
+          "Polea arriba con barra recta o en V.",
+          "De pie cerca de la polea, codos pegados al cuerpo."
+        ],
+        "steps": [
+          "Empuja la barra hacia abajo hasta estirar los brazos.",
+          "Aprieta el tríceps.",
+          "Deja que suba hasta que los antebrazos queden un poco por encima de la horizontal."
+        ],
+        "cues": ["Codos fijos: solo se mueven los antebrazos.", "Permite más peso que con la cuerda."],
+        "mistakes": ["Echarse encima de la barra para empujar con el cuerpo.", "Adelantar los codos."]
+      }
+    },
+    {
+      "id": "db-wrist-curl",
+      "name": "Dumbbell Wrist Curl",
+      "equipment": ["dumbbells", "bench"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["forearms"],
+      "setup": ["Sit on a bench with your forearms on your thighs, wrists just past your knees, palms up."],
+      "steps": [
+        "Let the dumbbells roll down toward your fingertips.",
+        "Curl them back up by bending your wrists as far as you can.",
+        "Lower slowly."
+      ],
+      "cues": ["Only the wrists move.", "Palms down works the other side of the forearm."],
+      "mistakes": ["Lifting the forearms off the thighs.", "Going too heavy and making the reps tiny."],
+      "alternatives": ["farmers-carry", "db-hammer-curl"],
+      "images": ["images/db-wrist-curl/0.jpg", "images/db-wrist-curl/1.jpg"],
+      "es": {
+        "name": "Curl de muñeca con mancuernas",
+        "equipment": ["mancuernas", "banco"],
+        "setup": [
+          "Siéntate en un banco con los antebrazos sobre los muslos, las muñecas justo por delante de las rodillas y las palmas hacia arriba."
+        ],
+        "steps": [
+          "Deja que las mancuernas rueden hacia las yemas de los dedos.",
+          "Súbelas doblando las muñecas todo lo que puedas.",
+          "Baja despacio."
+        ],
+        "cues": [
+          "Solo se mueven las muñecas.",
+          "Con las palmas hacia abajo trabajas la otra cara del antebrazo."
+        ],
+        "mistakes": [
+          "Despegar los antebrazos de los muslos.",
+          "Coger demasiado peso y hacer repeticiones mínimas."
+        ]
+      }
+    },
+    {
+      "id": "cable-crunch",
+      "name": "Cable Crunch",
+      "equipment": ["cable stack", "rope"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "primary": ["abs"],
+      "secondary": ["obliques"],
+      "setup": [
+        "Pulley at the top with the rope. Kneel facing the stack, holding the rope ends beside your head."
+      ],
+      "steps": [
+        "Curl your ribs down toward your hips, rounding your spine.",
+        "Squeeze your abs at the bottom.",
+        "Come back up slowly until you feel the stretch."
+      ],
+      "cues": ["Hips stay still; the spine does the bending.", "Elbows toward your knees."],
+      "mistakes": [
+        "Sitting back on your heels and pulling with the arms.",
+        "Bending at the hips instead of crunching."
+      ],
+      "alternatives": ["reverse-crunch", "hanging-leg-raise", "plank"],
+      "images": ["images/cable-crunch/0.jpg", "images/cable-crunch/1.jpg"],
+      "es": {
+        "name": "Crunch en polea",
+        "equipment": ["polea", "cuerda"],
+        "setup": [
+          "Polea arriba con la cuerda. Arrodíllate mirando a la polea, con los extremos de la cuerda junto a la cabeza."
+        ],
+        "steps": [
+          "Lleva las costillas hacia la cadera redondeando la espalda.",
+          "Aprieta el abdomen abajo.",
+          "Sube despacio hasta notar el estiramiento."
+        ],
+        "cues": ["La cadera no se mueve: se dobla la columna.", "Codos hacia las rodillas."],
+        "mistakes": [
+          "Sentarse sobre los talones y tirar con los brazos.",
+          "Doblarse por la cadera en vez de encoger el abdomen."
+        ]
+      }
+    },
+    {
+      "id": "hanging-leg-raise",
+      "name": "Hanging Leg Raise",
+      "equipment": ["pull-up bar"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs"],
+      "secondary": ["obliques", "forearms"],
+      "setup": ["Hang from a pull-up bar with straight arms. Stop any swinging first."],
+      "steps": [
+        "Raise your straight legs in front of you to at least hip height.",
+        "Curl your pelvis up at the top.",
+        "Lower slowly without swinging."
+      ],
+      "cues": ["Harder version of the hanging knee raise.", "Control the way down."],
+      "mistakes": [
+        "Swinging to get the legs up.",
+        "Just lifting the legs from the hips with an arched back."
+      ],
+      "alternatives": ["hanging-knee-raise", "reverse-crunch", "cable-crunch"],
+      "images": ["images/hanging-leg-raise/0.jpg", "images/hanging-leg-raise/1.jpg"],
+      "es": {
+        "name": "Elevación de piernas colgado",
+        "equipment": ["barra de dominadas"],
+        "setup": ["Cuélgate de la barra con los brazos estirados. Para cualquier balanceo antes de empezar."],
+        "steps": [
+          "Sube las piernas estiradas por delante al menos hasta la altura de la cadera.",
+          "Arriba, lleva la pelvis hacia arriba.",
+          "Baja despacio sin balancearte."
+        ],
+        "cues": ["Versión más difícil de la elevación de rodillas colgado.", "Controla la bajada."],
+        "mistakes": [
+          "Balancearse para subir las piernas.",
+          "Subir las piernas solo con la cadera y la espalda arqueada."
+        ]
+      }
+    },
+    {
+      "id": "russian-twist",
+      "name": "Russian Twist",
+      "equipment": ["medicine ball or plate"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["obliques"],
+      "secondary": ["abs"],
+      "setup": [
+        "Sit with knees bent and lean back to about 45°, holding the weight at your chest. Feet down is easier; feet up is harder."
+      ],
+      "steps": [
+        "Rotate your torso to bring the weight beside one hip.",
+        "Rotate to the other side.",
+        "Each side counts as one rep."
+      ],
+      "cues": ["Turn the shoulders, not just the arms.", "Tall chest, no slumping."],
+      "mistakes": ["Rounding the back.", "Going fast with no control."],
+      "alternatives": ["cable-woodchop", "pallof-press", "bicycle-crunch"],
+      "images": ["images/russian-twist/0.jpg", "images/russian-twist/1.jpg"],
+      "es": {
+        "name": "Giros rusos",
+        "equipment": ["balón medicinal o disco"],
+        "setup": [
+          "Siéntate con las rodillas dobladas y échate atrás a unos 45°, con el peso delante del pecho. Con los pies en el suelo es más fácil; levantados, más difícil."
+        ],
+        "steps": [
+          "Gira el tronco para llevar el peso junto a una cadera.",
+          "Gira hacia el otro lado.",
+          "Cada lado cuenta como una repetición."
+        ],
+        "cues": ["Gira los hombros, no solo los brazos.", "Pecho alto, sin encorvarte."],
+        "mistakes": ["Redondear la espalda.", "Ir rápido y sin control."]
+      }
+    },
+    {
+      "id": "side-plank",
+      "name": "Side Plank",
+      "equipment": ["mat"],
+      "logType": "time",
+      "perSide": true,
+      "primary": ["obliques"],
+      "secondary": ["abs", "glutes"],
+      "setup": ["Lie on your side propped on your forearm, elbow under your shoulder, legs stacked."],
+      "steps": [
+        "Lift your hips until your body is straight from head to feet.",
+        "Hold, breathing normally.",
+        "Lower, then switch sides."
+      ],
+      "cues": ["Push the floor away with your forearm.", "Easier: bottom knee down."],
+      "mistakes": ["Hips sagging toward the floor.", "Rolling forward or back."],
+      "alternatives": ["plank", "copenhagen-plank", "pallof-press"],
+      "images": ["images/side-plank/0.jpg", "images/side-plank/1.jpg"],
+      "es": {
+        "name": "Plancha lateral",
+        "equipment": ["esterilla"],
+        "setup": [
+          "Túmbate de lado apoyado en el antebrazo, con el codo bajo el hombro y las piernas una encima de otra."
+        ],
+        "steps": [
+          "Sube la cadera hasta que el cuerpo quede recto de la cabeza a los pies.",
+          "Aguanta respirando con normalidad.",
+          "Baja y cambia de lado."
+        ],
+        "cues": ["Empuja el suelo con el antebrazo.", "Más fácil: con la rodilla de abajo apoyada."],
+        "mistakes": ["Dejar caer la cadera hacia el suelo.", "Girarse hacia delante o hacia atrás."]
+      }
+    },
+    {
+      "id": "bicycle-crunch",
+      "name": "Bicycle Crunch",
+      "equipment": ["mat"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs", "obliques"],
+      "setup": ["Lie on your back, hands lightly behind your head, legs lifted with knees bent."],
+      "steps": [
+        "Bring one elbow toward the opposite knee while straightening the other leg.",
+        "Switch sides in a slow pedalling motion.",
+        "Each side counts as one rep."
+      ],
+      "cues": ["Rotate through the ribs, shoulder toward knee.", "Lower back pressed into the floor."],
+      "mistakes": ["Pulling on your neck.", "Pedalling fast with tiny twists."],
+      "alternatives": ["russian-twist", "dead-bug", "reverse-crunch"],
+      "images": ["images/bicycle-crunch/0.jpg", "images/bicycle-crunch/1.jpg"],
+      "es": {
+        "name": "Crunch bicicleta",
+        "equipment": ["esterilla"],
+        "setup": [
+          "Túmbate boca arriba, manos suaves detrás de la cabeza y piernas levantadas con las rodillas dobladas."
+        ],
+        "steps": [
+          "Lleva un codo hacia la rodilla contraria mientras estiras la otra pierna.",
+          "Cambia de lado como si pedalearas despacio.",
+          "Cada lado cuenta como una repetición."
+        ],
+        "cues": [
+          "Gira desde las costillas, llevando el hombro hacia la rodilla.",
+          "Zona lumbar pegada al suelo."
+        ],
+        "mistakes": ["Tirar del cuello.", "Pedalear rápido con giros mínimos."]
+      }
+    },
+    {
+      "id": "cable-woodchop",
+      "name": "Cable Woodchop",
+      "equipment": ["cable stack", "D-handle"],
+      "logType": "weight",
+      "loadUnit": "pin",
+      "perSide": true,
+      "primary": ["obliques"],
+      "secondary": ["abs", "front_delts"],
+      "setup": [
+        "Pulley at the top with a D-handle. Stand side-on, feet wide, holding the handle with both hands above the near shoulder."
+      ],
+      "steps": [
+        "Pull the handle diagonally down and across your body to the outside of the far knee.",
+        "Rotate your hips and pivot the back foot as you go.",
+        "Return slowly. Do all reps, then switch sides."
+      ],
+      "cues": [
+        "Arms stay fairly straight; power comes from the trunk.",
+        "Low-to-high works too: pulley at the bottom."
+      ],
+      "mistakes": ["Pulling with the arms only.", "Rounding the back as you chop down."],
+      "alternatives": ["pallof-press", "russian-twist", "side-plank"],
+      "images": ["images/cable-woodchop/0.jpg", "images/cable-woodchop/1.jpg"],
+      "es": {
+        "name": "Leñador en polea",
+        "equipment": ["polea", "agarre en D"],
+        "setup": [
+          "Polea arriba con agarre en D. Ponte de lado con los pies abiertos y sujeta el asa con las dos manos por encima del hombro más cercano."
+        ],
+        "steps": [
+          "Tira del asa en diagonal hacia abajo, cruzando el cuerpo hasta fuera de la rodilla contraria.",
+          "Gira la cadera y pivota el pie de atrás mientras bajas.",
+          "Vuelve despacio. Haz todas las repeticiones y cambia de lado."
+        ],
+        "cues": [
+          "Brazos casi rectos: la fuerza sale del tronco.",
+          "También de abajo arriba, con la polea abajo."
+        ],
+        "mistakes": ["Tirar solo con los brazos.", "Redondear la espalda al bajar."]
+      }
+    },
+    {
+      "id": "reverse-crunch",
+      "name": "Reverse Crunch",
+      "equipment": ["mat"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs"],
+      "secondary": ["obliques"],
+      "setup": ["Lie on your back, arms by your sides, knees bent 90° with feet off the floor."],
+      "steps": [
+        "Curl your hips off the floor, bringing your knees toward your chest.",
+        "Pause with the hips lifted.",
+        "Lower your hips slowly back down."
+      ],
+      "cues": ["Think \"peel the spine off the floor\".", "Small, controlled movement."],
+      "mistakes": ["Throwing the legs over with momentum.", "Only moving the legs, not the hips."],
+      "alternatives": ["hanging-knee-raise", "dead-bug", "cable-crunch"],
+      "images": ["images/reverse-crunch/0.jpg", "images/reverse-crunch/1.jpg"],
+      "es": {
+        "name": "Crunch inverso",
+        "equipment": ["esterilla"],
+        "setup": [
+          "Túmbate boca arriba con los brazos a los lados y las rodillas a 90° con los pies en el aire."
+        ],
+        "steps": [
+          "Despega la cadera del suelo llevando las rodillas hacia el pecho.",
+          "Aguanta con la cadera arriba.",
+          "Baja la cadera despacio."
+        ],
+        "cues": [
+          "Piensa en despegar la columna del suelo vértebra a vértebra.",
+          "Movimiento corto y controlado."
+        ],
+        "mistakes": ["Lanzar las piernas con impulso.", "Mover solo las piernas y no la cadera."]
+      }
+    },
+    {
+      "id": "barbell-rollout",
+      "name": "Barbell Rollout",
+      "equipment": ["barbell", "mat"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs"],
+      "secondary": ["lats", "obliques"],
+      "setup": [
+        "Load a barbell with round plates so it rolls. Kneel on a mat and grip the bar shoulder-width."
+      ],
+      "steps": [
+        "Roll the bar forward, letting your hips and arms extend together.",
+        "Go as far as you can without your lower back sagging.",
+        "Pull the bar back to the start using your abs."
+      ],
+      "cues": [
+        "Same as an ab wheel; no wheel needed.",
+        "Squeeze glutes and keep a slight round in the upper back."
+      ],
+      "mistakes": [
+        "Lower back arching at the far point.",
+        "Rolling out further than you can come back from."
+      ],
+      "alternatives": ["plank", "dead-bug", "hanging-knee-raise"],
+      "images": ["images/barbell-rollout/0.jpg", "images/barbell-rollout/1.jpg"],
+      "es": {
+        "name": "Rueda abdominal con barra",
+        "equipment": ["barra", "esterilla"],
+        "setup": [
+          "Pon discos redondos en una barra para que ruede. Arrodíllate en una esterilla y agarra la barra a la anchura de los hombros."
+        ],
+        "steps": [
+          "Haz rodar la barra hacia delante, estirando a la vez cadera y brazos.",
+          "Llega tan lejos como puedas sin que se hunda la zona lumbar.",
+          "Vuelve al inicio tirando con el abdomen."
+        ],
+        "cues": [
+          "Igual que la rueda abdominal, sin necesitar la rueda.",
+          "Aprieta el glúteo y mantén la parte alta de la espalda un poco redondeada."
+        ],
+        "mistakes": ["Arquear la zona lumbar al final.", "Ir más lejos de lo que puedes volver."]
+      }
+    },
+    {
+      "id": "mountain-climber",
+      "name": "Mountain Climber",
+      "equipment": ["bodyweight"],
+      "logType": "time",
+      "primary": ["abs"],
+      "secondary": ["quads", "front_delts"],
+      "setup": ["Start in a high plank, hands under your shoulders."],
+      "steps": [
+        "Drive one knee toward your chest.",
+        "Switch legs quickly, like running in place.",
+        "Keep going for the time."
+      ],
+      "cues": ["Hips level with your shoulders.", "Hands stay planted."],
+      "mistakes": ["Hips bobbing up high.", "Shoulders drifting behind the hands."],
+      "alternatives": ["plank", "battle-rope-waves", "box-jump"],
+      "images": ["images/mountain-climber/0.jpg", "images/mountain-climber/1.jpg"],
+      "es": {
+        "name": "Escaladores",
+        "equipment": ["peso corporal"],
+        "setup": ["Empieza en plancha alta, con las manos bajo los hombros."],
+        "steps": [
+          "Lleva una rodilla hacia el pecho.",
+          "Cambia de pierna rápido, como si corrieras en el sitio.",
+          "Sigue durante el tiempo marcado."
+        ],
+        "cues": ["Cadera a la altura de los hombros.", "Las manos no se mueven."],
+        "mistakes": ["Subir y bajar mucho la cadera.", "Que los hombros se queden por detrás de las manos."]
+      }
+    },
+    {
+      "id": "med-ball-slam",
+      "name": "Medicine Ball Slam",
+      "equipment": ["medicine ball"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["abs", "lats"],
+      "secondary": ["front_delts", "glutes", "triceps"],
+      "setup": [
+        "Use a slam ball or a medicine ball that's allowed to be thrown on the floor.",
+        "Feet shoulder-width, ball held at your chest."
+      ],
+      "steps": [
+        "Lift the ball overhead, rising onto your toes.",
+        "Slam it down hard in front of your feet, bending at the hips and knees.",
+        "Pick it up with a flat back and repeat."
+      ],
+      "cues": ["Throw it with your whole body, not just the arms.", "Exhale hard as you slam."],
+      "mistakes": ["Rounding the back to pick it up.", "Using a bouncy ball that flies back at your face."],
+      "alternatives": ["battle-rope-waves", "kettlebell-swing", "cable-woodchop"],
+      "images": ["images/med-ball-slam/0.jpg", "images/med-ball-slam/1.jpg"],
+      "es": {
+        "name": "Slam con balón medicinal",
+        "equipment": ["balón medicinal"],
+        "setup": [
+          "Usa un balón de slam o un balón medicinal que se pueda tirar al suelo.",
+          "Pies a la anchura de los hombros y el balón delante del pecho."
+        ],
+        "steps": [
+          "Sube el balón por encima de la cabeza poniéndote de puntillas.",
+          "Lánzalo con fuerza contra el suelo delante de los pies, doblando cadera y rodillas.",
+          "Recógelo con la espalda recta y repite."
+        ],
+        "cues": [
+          "Lánzalo con todo el cuerpo, no solo con los brazos.",
+          "Suelta el aire con fuerza al lanzar."
+        ],
+        "mistakes": ["Redondear la espalda al recogerlo.", "Usar un balón que rebota y te vuelve a la cara."]
+      }
+    },
+    {
+      "id": "battle-rope-waves",
+      "name": "Battle Rope Waves",
+      "equipment": ["battle rope"],
+      "logType": "time",
+      "primary": ["front_delts"],
+      "secondary": ["abs", "forearms", "upper_back", "quads"],
+      "setup": [
+        "Hold one end of the rope in each hand and step back until there is a little slack.",
+        "Athletic stance: feet shoulder-width, knees bent, chest up."
+      ],
+      "steps": [
+        "Whip your arms up and down fast, alternating, to send waves down the rope.",
+        "Keep the waves reaching the anchor.",
+        "Go for the time, then rest."
+      ],
+      "cues": [
+        "Power from the legs and core, not just the shoulders.",
+        "Both arms together = double waves; harder."
+      ],
+      "mistakes": ["Standing up straight so only the arms work.", "Tiny waves that die halfway."],
+      "alternatives": ["battle-rope-slams", "med-ball-slam", "mountain-climber"],
+      "images": ["images/battle-rope-waves/0.jpg", "images/battle-rope-waves/1.jpg"],
+      "es": {
+        "name": "Ondas con cuerda de batalla",
+        "equipment": ["cuerda de batalla"],
+        "setup": [
+          "Coge un extremo de la cuerda con cada mano y retrocede hasta que quede un poco floja.",
+          "Postura atlética: pies a la anchura de los hombros, rodillas flexionadas y pecho alto."
+        ],
+        "steps": [
+          "Sube y baja los brazos rápido, alternando, para mandar ondas por la cuerda.",
+          "Que las ondas lleguen hasta el anclaje.",
+          "Mantén el ritmo durante el tiempo y descansa."
+        ],
+        "cues": [
+          "La fuerza sale de piernas y abdomen, no solo de los hombros.",
+          "Con los dos brazos a la vez son ondas dobles: más difícil."
+        ],
+        "mistakes": [
+          "Ponerse recto y que solo trabajen los brazos.",
+          "Ondas pequeñas que mueren a mitad de camino."
+        ]
+      }
+    },
+    {
+      "id": "battle-rope-slams",
+      "name": "Battle Rope Slams",
+      "equipment": ["battle rope"],
+      "logType": "time",
+      "primary": ["front_delts", "lats"],
+      "secondary": ["abs", "glutes", "quads", "forearms"],
+      "setup": ["Hold one end of the rope in each hand, feet shoulder-width, knees bent."],
+      "steps": [
+        "Raise both arms overhead together, rising onto your toes.",
+        "Slam the ropes down to the floor as hard as you can, dropping into a half squat.",
+        "Repeat for the time."
+      ],
+      "cues": ["Hips and legs drive the slam.", "Keep a steady rhythm rather than all-out for 5 seconds."],
+      "mistakes": ["Rounding the back as you slam.", "Standing too close so the rope has no slack."],
+      "alternatives": ["battle-rope-waves", "med-ball-slam", "kettlebell-swing"],
+      "images": ["images/battle-rope-slams/0.jpg", "images/battle-rope-slams/1.jpg"],
+      "es": {
+        "name": "Golpes con cuerda de batalla",
+        "equipment": ["cuerda de batalla"],
+        "setup": [
+          "Coge un extremo de la cuerda con cada mano, pies a la anchura de los hombros y rodillas flexionadas."
+        ],
+        "steps": [
+          "Sube los dos brazos a la vez por encima de la cabeza, poniéndote de puntillas.",
+          "Golpea el suelo con las cuerdas lo más fuerte que puedas, bajando a media sentadilla.",
+          "Repite durante el tiempo marcado."
+        ],
+        "cues": [
+          "La cadera y las piernas impulsan el golpe.",
+          "Mejor un ritmo constante que todo a tope 5 segundos."
+        ],
+        "mistakes": ["Redondear la espalda al golpear.", "Ponerse tan cerca que la cuerda no tiene holgura."]
+      }
+    },
+    {
+      "id": "db-thruster",
+      "name": "Dumbbell Thruster",
+      "equipment": ["dumbbells or kettlebells"],
+      "logType": "weight",
+      "incrementGroup": "dumbbell",
+      "primary": ["quads", "front_delts"],
+      "secondary": ["glutes", "triceps", "abs"],
+      "setup": ["Hold a dumbbell or kettlebell in each hand at your shoulders. Feet shoulder-width."],
+      "steps": [
+        "Squat down to about parallel, keeping the weights at your shoulders.",
+        "Drive up out of the squat and use that momentum to press the weights overhead.",
+        "Bring the weights back to your shoulders as you go into the next squat."
+      ],
+      "cues": ["One smooth movement: squat into press.", "Elbows up in the squat."],
+      "mistakes": [
+        "Pressing with the arms only after standing still.",
+        "Leaning back with an arched spine at the top."
+      ],
+      "alternatives": ["goblet-squat", "seated-db-shoulder-press", "kettlebell-swing"],
+      "images": ["images/db-thruster/0.jpg", "images/db-thruster/1.jpg"],
+      "es": {
+        "name": "Thruster con mancuernas",
+        "equipment": ["mancuernas o kettlebells"],
+        "setup": [
+          "Una mancuerna o kettlebell en cada mano a la altura de los hombros. Pies a la anchura de los hombros."
+        ],
+        "steps": [
+          "Baja en sentadilla hasta más o menos la horizontal, con el peso en los hombros.",
+          "Sube con fuerza y aprovecha el impulso para empujar el peso por encima de la cabeza.",
+          "Vuelve a llevar el peso a los hombros al bajar a la siguiente sentadilla."
+        ],
+        "cues": ["Un solo movimiento fluido: de la sentadilla al press.", "Codos altos en la sentadilla."],
+        "mistakes": [
+          "Ponerse de pie, pararse y empujar solo con los brazos.",
+          "Echarse atrás arqueando la espalda arriba."
+        ]
+      }
+    },
+    {
+      "id": "box-jump",
+      "name": "Box Jump",
+      "equipment": ["plyo box or step"],
+      "logType": "bodyweight",
+      "incrementGroup": "dumbbell",
+      "primary": ["quads", "glutes"],
+      "secondary": ["calves", "hamstrings"],
+      "setup": [
+        "Start with a low, stable box. The soft plyo boxes are the safest.",
+        "Stand about a foot away, feet hip-width."
+      ],
+      "steps": [
+        "Swing your arms back and dip into a quarter squat.",
+        "Jump up, landing softly on the whole foot in a half squat on top of the box.",
+        "Stand up, then step down. Don't jump down."
+      ],
+      "cues": ["Land quietly.", "Box height is about the jump, not how deep you can tuck."],
+      "mistakes": ["A box so high you land in a deep squat.", "Knees caving in on landing."],
+      "alternatives": ["goblet-squat", "db-step-up", "kettlebell-swing"],
+      "images": ["images/box-jump/0.jpg", "images/box-jump/1.jpg"],
+      "es": {
+        "name": "Salto al cajón",
+        "equipment": ["cajón o escalón"],
+        "setup": [
+          "Empieza con un cajón bajo y estable. Los cajones blandos son los más seguros.",
+          "Colócate a un palmo largo, con los pies a la anchura de la cadera."
+        ],
+        "steps": [
+          "Lleva los brazos atrás y baja a un cuarto de sentadilla.",
+          "Salta y aterriza suave con todo el pie en media sentadilla encima del cajón.",
+          "Ponte de pie y baja andando. No bajes saltando."
+        ],
+        "cues": [
+          "Aterriza sin hacer ruido.",
+          "La altura del cajón mide el salto, no lo mucho que encoges las piernas."
+        ],
+        "mistakes": [
+          "Un cajón tan alto que aterrizas en sentadilla profunda.",
+          "Rodillas hacia dentro al aterrizar."
+        ]
+      }
+    },
+    {
+      "id": "rowing-machine",
+      "name": "Rowing Machine",
+      "equipment": ["rowing machine"],
+      "logType": "time",
+      "primary": ["upper_back", "quads"],
+      "secondary": ["lats", "glutes", "hamstrings", "biceps"],
+      "setup": ["Strap your feet in with the strap across the widest part of the foot. Damper around 3-5."],
+      "steps": [
+        "Drive: push with your legs first, then lean back slightly, then pull the handle to your lower ribs.",
+        "Recovery: arms forward, lean forward from the hips, then bend the knees.",
+        "Keep a steady rhythm for the time."
+      ],
+      "cues": ["Legs, body, arms — then arms, body, legs.", "Most of the power comes from the legs."],
+      "mistakes": [
+        "Pulling with the arms before the legs have pushed.",
+        "Rounding the back at the front of the stroke."
+      ],
+      "alternatives": ["cable-seated-row", "battle-rope-waves"],
+      "images": ["images/rowing-machine/0.jpg", "images/rowing-machine/1.jpg"],
+      "es": {
+        "name": "Remo en máquina",
+        "equipment": ["máquina de remo"],
+        "setup": ["Ajusta los pies con la cinta en la parte más ancha. Resistencia más o menos en 3-5."],
+        "steps": [
+          "Empuje: primero las piernas, luego te echas un poco atrás y por último llevas el asa a las costillas de abajo.",
+          "Vuelta: brazos adelante, te inclinas desde la cadera y después doblas las rodillas.",
+          "Mantén un ritmo constante durante el tiempo."
+        ],
+        "cues": [
+          "Piernas, tronco, brazos; y al volver, brazos, tronco, piernas.",
+          "La mayor parte de la fuerza sale de las piernas."
+        ],
+        "mistakes": [
+          "Tirar con los brazos antes de empujar con las piernas.",
+          "Redondear la espalda al llegar adelante."
+        ]
       }
     }
   ]
