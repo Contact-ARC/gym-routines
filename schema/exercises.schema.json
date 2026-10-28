@@ -46,6 +46,41 @@
               "time"
             ]
           },
+          "pattern": {
+            "enum": [
+              "squat",
+              "lunge",
+              "hinge",
+              "hip_extension",
+              "leg_curl",
+              "leg_extension",
+              "hip_abduction",
+              "hip_adduction",
+              "calf_raise",
+              "horizontal_push",
+              "dip",
+              "vertical_push",
+              "chest_fly",
+              "horizontal_pull",
+              "vertical_pull",
+              "pullover",
+              "lateral_raise",
+              "front_raise",
+              "rear_delt",
+              "external_rotation",
+              "curl",
+              "triceps_extension",
+              "shrug",
+              "carry",
+              "wrist",
+              "core_stability",
+              "core_flexion",
+              "core_rotation",
+              "conditioning",
+              "jump"
+            ],
+            "description": "Movement pattern. Swap suggestions rank exercises with the same pattern and muscles highest."
+          },
           "loadUnit": {
             "enum": [
               "kg",
