@@ -43,7 +43,8 @@
             "enum": [
               "weight",
               "bodyweight",
-              "time"
+              "time",
+              "climb"
             ]
           },
           "pattern": {
@@ -77,9 +78,18 @@
               "core_flexion",
               "core_rotation",
               "conditioning",
-              "jump"
+              "jump",
+              "climbing",
+              "hang"
             ],
             "description": "Movement pattern. Swap suggestions rank exercises with the same pattern and muscles highest."
+          },
+          "climbType": {
+            "enum": [
+              "boulder",
+              "route"
+            ],
+            "description": "Climbing only (logType climb): bouldering or roped climbing. Picks the grade system (Font/V or French/YDS)."
           },
           "loadUnit": {
             "enum": [

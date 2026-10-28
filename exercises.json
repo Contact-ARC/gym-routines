@@ -4184,6 +4184,269 @@
           "Redondear la espalda al llegar adelante."
         ]
       }
+    },
+    {
+      "id": "bouldering",
+      "name": "Bouldering",
+      "equipment": ["climbing wall", "crash pads"],
+      "logType": "climb",
+      "pattern": "climbing",
+      "climbType": "boulder",
+      "primary": ["forearms", "lats"],
+      "secondary": ["biceps", "upper_back", "abs", "rear_delts"],
+      "setup": [
+        "Warm up for 10–15 minutes: easy problems well below your limit, shoulder circles, a few gentle hangs.",
+        "Brush the holds you care about and chalk up before each try."
+      ],
+      "steps": [
+        "Read the problem from the ground first: where each hand and foot goes, and where it gets hard.",
+        "Climb it. Log it when you top out or step off for good: grade, wall, and whether you flashed it, sent it or are still working it.",
+        "Rest 2–4 minutes between hard tries; your fingers recover slower than you feel.",
+        "Downclimb or jump onto the pads with bent knees and land on your feet."
+      ],
+      "cues": [
+        "Straight arms when you can; pull with your back, not your biceps.",
+        "Quiet feet: place them, then trust them.",
+        "Hips close to the wall on steep ground."
+      ],
+      "mistakes": [
+        "Pulling hard on small crimps before your fingers are warm.",
+        "Projecting the same hard move for an hour with no rest; that is how fingers get hurt.",
+        "Landing on straight legs or with your arms out."
+      ],
+      "alternatives": ["rope-climbing", "hangboard-hang", "pull-up"],
+      "es": {
+        "name": "Búlder",
+        "equipment": ["rocódromo", "colchonetas"],
+        "setup": [
+          "Calienta 10–15 minutos: bloques fáciles muy por debajo de tu nivel, círculos de hombros y algunas suspensiones suaves.",
+          "Cepilla las presas que importan y ponte magnesio antes de cada intento."
+        ],
+        "steps": [
+          "Lee el bloque desde el suelo: dónde va cada mano y cada pie, y dónde se pone difícil.",
+          "Escálalo. Apúntalo cuando llegues arriba o lo dejes del todo: grado, muro y si lo hiciste a vista, lo encadenaste o sigues probándolo.",
+          "Descansa 2–4 minutos entre intentos duros: los dedos se recuperan más despacio de lo que parece.",
+          "Destrepa o salta a la colchoneta con las rodillas flexionadas y cae de pie."
+        ],
+        "cues": [
+          "Brazos estirados siempre que puedas: tira con la espalda, no con los bíceps.",
+          "Pies silenciosos: colócalos y confía en ellos.",
+          "Cadera pegada a la pared en los desplomes."
+        ],
+        "mistakes": [
+          "Apretar regletas pequeñas antes de tener los dedos calientes.",
+          "Probar el mismo movimiento duro durante una hora sin descansar: así se lesionan los dedos.",
+          "Caer con las piernas rectas o apoyando las manos."
+        ]
+      }
+    },
+    {
+      "id": "rope-climbing",
+      "name": "Rope Climbing",
+      "equipment": ["climbing wall", "rope, harness and belayer"],
+      "logType": "climb",
+      "pattern": "climbing",
+      "climbType": "route",
+      "primary": ["forearms", "lats"],
+      "secondary": ["biceps", "upper_back", "abs", "calves"],
+      "setup": [
+        "Warm up on one or two easy routes.",
+        "Partner check every time: harness buckles, knot finished and through both tie-in points, belay device locked."
+      ],
+      "steps": [
+        "Climb the route on top rope or lead.",
+        "Rest on the rope if you need to; it still counts as a try, not a send.",
+        "Log it when you are back on the ground: grade, wall, style, and whether you flashed or sent it."
+      ],
+      "cues": [
+        "Shake out and breathe on good holds.",
+        "Clip from a comfortable position, at about waist height."
+      ],
+      "mistakes": [
+        "Skipping the partner check.",
+        "Over-gripping the whole route.",
+        "Back-clipping or z-clipping when leading."
+      ],
+      "alternatives": ["bouldering", "hangboard-hang", "pull-up"],
+      "es": {
+        "name": "Escalada con cuerda",
+        "equipment": ["rocódromo", "cuerda, arnés y asegurador"],
+        "setup": [
+          "Calienta con una o dos vías fáciles.",
+          "Revisión con tu compañero cada vez: hebillas del arnés, nudo terminado y pasado por los dos puntos de encordamiento, aparato de aseguramiento con el mosquetón cerrado."
+        ],
+        "steps": [
+          "Escala la vía en top rope o de primero.",
+          "Descansa en la cuerda si lo necesitas: cuenta como intento, no como encadenada.",
+          "Apúntala cuando vuelvas al suelo: grado, muro, estilo y si la hiciste a vista o la encadenaste."
+        ],
+        "cues": [
+          "Sacude los brazos y respira en las presas buenas.",
+          "Chapa desde una posición cómoda, más o menos a la altura de la cintura."
+        ],
+        "mistakes": [
+          "Saltarse la revisión con el compañero.",
+          "Apretar de más durante toda la vía.",
+          "Chapar al revés o hacer una Z al ir de primero."
+        ]
+      }
+    },
+    {
+      "id": "hangboard-hang",
+      "name": "Hangboard Hang",
+      "equipment": ["hangboard"],
+      "logType": "time",
+      "pattern": "hang",
+      "loadable": true,
+      "incrementGroup": "dumbbell",
+      "primary": ["forearms"],
+      "secondary": ["lats", "upper_back"],
+      "setup": [
+        "Only after you are warm, and not for complete beginners: give your fingers a few months of climbing first.",
+        "Pick an edge you can hold for about 10 seconds with a little left in reserve. Add weight with a belt, or take some off with your feet on a chair."
+      ],
+      "steps": [
+        "Grip the edge with an open hand or half crimp, arms straight, shoulders engaged.",
+        "Hang for the time, usually 7–10 seconds.",
+        "Step down and rest 2–3 minutes between hangs."
+      ],
+      "cues": [
+        "Shoulders pulled down, not hanging off your joints.",
+        "Stop the set the moment your grip changes."
+      ],
+      "mistakes": ["Full crimping with the thumb over; save that for the wall.", "Hanging to failure."],
+      "alternatives": ["dead-hang", "finger-curl", "bouldering"],
+      "es": {
+        "name": "Suspensiones en multipresa",
+        "equipment": ["multipresa"],
+        "setup": [
+          "Solo con el cuerpo caliente, y no si estás empezando: deja que tus dedos se acostumbren unos meses escalando.",
+          "Elige una regleta que puedas aguantar unos 10 segundos con algo de margen. Añade peso con un cinturón, o quita peso apoyando los pies en una silla."
+        ],
+        "steps": [
+          "Agarra la regleta con la mano abierta o en semi-arqueo, brazos estirados y hombros activos.",
+          "Aguanta el tiempo marcado, normalmente 7–10 segundos.",
+          "Bájate y descansa 2–3 minutos entre suspensiones."
+        ],
+        "cues": [
+          "Hombros hacia abajo, sin colgar de las articulaciones.",
+          "Para en cuanto cambie tu agarre."
+        ],
+        "mistakes": [
+          "Arquear del todo con el pulgar encima: déjalo para la pared.",
+          "Aguantar hasta no poder más."
+        ]
+      }
+    },
+    {
+      "id": "dead-hang",
+      "name": "Dead Hang",
+      "equipment": ["pull-up bar"],
+      "logType": "time",
+      "pattern": "hang",
+      "primary": ["forearms"],
+      "secondary": ["lats", "upper_back"],
+      "setup": ["Grip the pull-up bar shoulder-width, palms away from you."],
+      "steps": [
+        "Hang with straight arms and your feet off the floor.",
+        "Keep your shoulders slightly pulled down and your ribs in.",
+        "Hold for the time, then step down."
+      ],
+      "cues": ["Good for grip and for shoulders that sit at a desk all day.", "Breathe slowly."],
+      "mistakes": ["Shrugging your shoulders up into your ears.", "Swinging."],
+      "alternatives": ["hangboard-hang", "farmers-carry", "scapular-pull-up"],
+      "images": ["images/dead-hang/0.jpg"],
+      "es": {
+        "name": "Colgarse de la barra",
+        "equipment": ["barra de dominadas"],
+        "setup": ["Agarra la barra a la anchura de los hombros, con las palmas hacia delante."],
+        "steps": [
+          "Cuélgate con los brazos estirados y los pies en el aire.",
+          "Mantén los hombros un poco hacia abajo y las costillas recogidas.",
+          "Aguanta el tiempo marcado y bájate."
+        ],
+        "cues": [
+          "Va bien para el agarre y para los hombros que pasan el día en una mesa.",
+          "Respira despacio."
+        ],
+        "mistakes": ["Subir los hombros hasta las orejas.", "Balancearse."]
+      }
+    },
+    {
+      "id": "scapular-pull-up",
+      "name": "Scapular Pull-Up",
+      "equipment": ["pull-up bar"],
+      "logType": "bodyweight",
+      "pattern": "vertical_pull",
+      "incrementGroup": "dumbbell",
+      "primary": ["upper_back", "lats"],
+      "secondary": ["traps", "forearms"],
+      "setup": ["Hang from the bar with straight arms, hands shoulder-width."],
+      "steps": [
+        "Without bending your elbows, pull your shoulder blades down and together so your body rises a few centimetres.",
+        "Hold for a second.",
+        "Let your shoulders rise back to a full hang, slowly."
+      ],
+      "cues": [
+        "Arms stay straight; it is a small movement.",
+        "Builds the shoulder control climbing and pull-ups need."
+      ],
+      "mistakes": ["Bending the arms into a half pull-up.", "Dropping into the bottom without control."],
+      "alternatives": ["pull-up", "cable-lat-pulldown", "dead-hang"],
+      "images": ["images/scapular-pull-up/0.jpg", "images/scapular-pull-up/1.jpg"],
+      "es": {
+        "name": "Dominada escapular",
+        "equipment": ["barra de dominadas"],
+        "setup": ["Cuélgate de la barra con los brazos estirados y las manos a la anchura de los hombros."],
+        "steps": [
+          "Sin doblar los codos, lleva las escápulas hacia abajo y juntas para que el cuerpo suba unos centímetros.",
+          "Aguanta un segundo.",
+          "Deja que los hombros vuelvan a subir despacio hasta colgar del todo."
+        ],
+        "cues": [
+          "Los brazos no se doblan: es un movimiento corto.",
+          "Desarrolla el control de hombros que necesitan la escalada y las dominadas."
+        ],
+        "mistakes": ["Doblar los brazos y hacer media dominada.", "Dejarse caer abajo sin control."]
+      }
+    },
+    {
+      "id": "finger-curl",
+      "name": "Finger Curl",
+      "equipment": ["barbell or dumbbells", "bench"],
+      "logType": "weight",
+      "pattern": "wrist",
+      "incrementGroup": "dumbbell",
+      "primary": ["forearms"],
+      "setup": [
+        "Sit on a bench with your forearms on your thighs, palms up, holding a light barbell or dumbbells."
+      ],
+      "steps": [
+        "Let the weight roll down to your fingertips.",
+        "Close your fingers to roll it back into your palm, then curl your wrists a little.",
+        "Lower slowly and repeat."
+      ],
+      "cues": ["Slow and controlled; this is for finger strength and tendons.", "Light weight, higher reps."],
+      "mistakes": ["Going heavy and letting the weight drop off your fingers."],
+      "alternatives": ["db-wrist-curl", "hangboard-hang", "farmers-carry"],
+      "images": ["images/finger-curl/0.jpg", "images/finger-curl/1.jpg"],
+      "es": {
+        "name": "Curl de dedos",
+        "equipment": ["barra o mancuernas", "banco"],
+        "setup": [
+          "Siéntate en un banco con los antebrazos sobre los muslos, palmas hacia arriba, con una barra ligera o mancuernas."
+        ],
+        "steps": [
+          "Deja que el peso ruede hasta las yemas de los dedos.",
+          "Cierra los dedos para devolverlo a la palma y dobla un poco las muñecas.",
+          "Baja despacio y repite."
+        ],
+        "cues": [
+          "Lento y controlado: es para la fuerza de los dedos y los tendones.",
+          "Poco peso y más repeticiones."
+        ],
+        "mistakes": ["Cargar mucho y dejar que el peso se escape de los dedos."]
+      }
     }
   ]
 }

@@ -46,7 +46,8 @@ for (const ex of ids.values()) {
   for (const img of ex.images || []) {
     if (!img.startsWith('https://') && !existsSync(join(root, img))) fail(`${exFile}: "${ex.id}" image ${img} does not exist`)
   }
-  if (ex.logType !== 'time' && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
+  if (ex.logType === 'climb' && !ex.climbType) fail(`${exFile}: "${ex.id}" is a climb but has no climbType (boulder or route)`)
+  if (ex.logType !== 'time' && ex.logType !== 'climb' && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
     warn(`${exFile}: "${ex.id}" has no incrementGroup — the app will assume "upper"`)
   }
   if (ex.es) {
