@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.11.1",
-    "notes": "New November routine: full body from 10 November (A Squat & Bench, B Deadlift & Press, C Leg press & RDL, D Conditioning), with the 14-workout challenge. Exercise bike, air bike and SkiErg are set and logged in minutes. Also in 0.11: Train together with up to 3 people from your crew (⋯, Train together), with shared-bar plate plans and Spot me.",
+    "version": "0.11.2",
+    "notes": "Fixes a crash when opening a workout whose first exercise had no weight yet (like the November Conditioning day). Also in 0.11: the new November full-body routine, bikes and SkiErg in minutes, and Train together with up to 3 people from your crew.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Nueva rutina de noviembre: cuerpo completo desde el 10 de noviembre (A Sentadilla y press banca, B Peso muerto y press, C Prensa y peso muerto rumano, D Acondicionamiento), con el reto de 14 entrenamientos. La bici estática, la air bike y el SkiErg se marcan en minutos. También en 0.11: Entrenar juntos con hasta 3 personas de tu grupo (⋯, Entrenar juntos), con plan de discos para barra compartida y «Ayúdame»."
+      "notes": "Corrige un fallo al abrir un entrenamiento cuyo primer ejercicio aún no tenía peso (como el día de Acondicionamiento de noviembre). También en 0.11: la nueva rutina de cuerpo completo de noviembre, bicis y SkiErg en minutos, y Entrenar juntos con hasta 3 personas de tu grupo."
     }
   },
   "exercisesFile": "exercises.json",
