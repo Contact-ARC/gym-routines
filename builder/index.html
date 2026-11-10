@@ -321,7 +321,7 @@ function renderDays () {
 
 function itemRow (it, di, ii) {
   const ex = byId[it.exerciseId]
-  const timed = ex?.logType === 'time'
+  const timed = ['time', 'cardio'].includes(ex?.logType)
   const range = timed ? (it.durationSec || [30, 45]) : (it.repRange || [8, 12])
   const key = timed ? 'durationSec' : 'repRange'
   const items = R.days[di].items
@@ -354,7 +354,7 @@ function itemRow (it, di, ii) {
 function begRow (it, di, ii) {
   const b = it.beginner
   const ex = byId[b.exerciseId || it.exerciseId]
-  const timed = ex?.logType === 'time'
+  const timed = ['time', 'cardio'].includes(ex?.logType)
   const key = timed ? 'durationSec' : 'repRange'
   const r = b[key] || []
   return `
@@ -435,7 +435,7 @@ function validate () {
       const bex = byId[b.exerciseId || it.exerciseId]
       if (b.exerciseId && !byId[b.exerciseId]) errs.push(`${where}, exercise ${i + 1}: pick the beginner exercise from the list.`)
       else if (bex) {
-        const timed = bex.logType === 'time'
+        const timed = ['time', 'cardio'].includes(bex.logType)
         const r = timed ? (b.durationSec || it.durationSec) : (b.repRange || it.repRange)
         if (!r) errs.push(`${where}, beginner ${bex.name}: fill in the ${timed ? 'seconds' : 'reps'} range (it's a different kind of exercise).`)
         else if (r.length === 2 && r[0] > r[1]) errs.push(`${where}, beginner ${bex.name}: range is backwards.`)
@@ -592,19 +592,19 @@ document.addEventListener('input', (e) => {
     if (k === 'beginner.exercise') {
       const v = el.value.trim()
       const ex = exercises.find(x => x.name.toLowerCase() === v.toLowerCase())
-      const wasTimed = byId[it.beginner.exerciseId || it.exerciseId]?.logType === 'time'
+      const wasTimed = ['time', 'cardio'].includes(byId[it.beginner.exerciseId || it.exerciseId]?.logType)
       if (!v) delete it.beginner.exerciseId
       else it.beginner.exerciseId = ex ? ex.id : v
-      const nowTimed = byId[it.beginner.exerciseId || it.exerciseId]?.logType === 'time'
+      const nowTimed = ['time', 'cardio'].includes(byId[it.beginner.exerciseId || it.exerciseId]?.logType)
       if (wasTimed !== nowTimed) { delete it.beginner.repRange; delete it.beginner.durationSec; renderDays() }
     } else if (k.startsWith('beginner.') || k.startsWith('es.')) {
       setPath(it, k, val)
     } else if (k === 'exercise') {
       const ex = exercises.find(x => x.name.toLowerCase() === el.value.trim().toLowerCase())
       if (!ex) { it.exerciseId = el.value.trim(); refresh(); return }
-      const wasTimed = byId[it.exerciseId]?.logType === 'time'
+      const wasTimed = ['time', 'cardio'].includes(byId[it.exerciseId]?.logType)
       it.exerciseId = ex.id
-      const timed = ex.logType === 'time'
+      const timed = ['time', 'cardio'].includes(ex.logType)
       if (timed && !it.durationSec) { delete it.repRange; it.durationSec = [30, 45] }
       if (!timed && !it.repRange) { delete it.durationSec; it.repRange = [8, 12] }
       if (timed !== wasTimed) { renderDays() }

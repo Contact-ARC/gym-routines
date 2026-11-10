@@ -44,7 +44,8 @@
               "weight",
               "bodyweight",
               "time",
-              "climb"
+              "climb",
+              "cardio"
             ]
           },
           "pattern": {
@@ -96,11 +97,11 @@
               "kg",
               "pin"
             ],
-            "description": "Omit for normal weights (uses the user's kg/lb). 'pin' for machine stacks numbered by position."
+            "description": "Omit for normal weights (uses the user's kg/lb). 'pin' for weight-stack machines: logged in kg/lb from app 0.9 (pin numbers if the user prefers)."
           },
           "loadable": {
             "type": "boolean",
-            "description": "For timed exercises that also take a weight (carries)."
+            "description": "For timed exercises that also take a weight (carries, weighted walks)."
           },
           "incrementGroup": {
             "enum": [

@@ -11,3 +11,7 @@ Closest photos used for the October 2026 additions:
 - dumbbell thruster shows the kettlebell thruster,
 - battle rope slams use the battle rope waves photos.
 Tall photos are centred on a blurred copy of themselves so the 3:2 frame doesn't crop the person.
+
+November 2026 (treadmill):
+- treadmill shows Running, Treadmill; incline treadmill walk shows Walking, Treadmill (flat in the photo),
+- weighted incline walk reuses the incline walk photos (no vest in the library).

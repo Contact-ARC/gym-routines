@@ -216,7 +216,7 @@
       "pattern": "hinge",
       "incrementGroup": "dumbbell",
       "primary": ["hamstrings", "glutes"],
-      "secondary": ["lower_back", "forearms"],
+      "secondary": ["lower_back", "forearms", "upper_back"],
       "steps": [
         "Stand with a dumbbell in each hand in front of your thighs.",
         "Soft knees; push your hips back and let the dumbbells slide down the front of your legs.",
@@ -600,7 +600,7 @@
       "pattern": "vertical_push",
       "incrementGroup": "dumbbell",
       "primary": ["front_delts", "side_delts"],
-      "secondary": ["triceps", "upper_back"],
+      "secondary": ["triceps", "traps"],
       "setup": ["Bench upright or one notch back from vertical."],
       "steps": [
         "Start with the dumbbells at shoulder height, palms forward, elbows slightly in front of your body.",
@@ -673,7 +673,7 @@
       "incrementGroup": "dumbbell",
       "perSide": true,
       "primary": ["lats", "upper_back"],
-      "secondary": ["rear_delts", "biceps"],
+      "secondary": ["rear_delts", "biceps", "forearms"],
       "steps": [
         "Place one knee and the same-side hand on a bench, back flat and roughly parallel to the floor.",
         "Hold the dumbbell with the other arm hanging straight down.",
@@ -777,8 +777,8 @@
       "logType": "bodyweight",
       "pattern": "vertical_pull",
       "incrementGroup": "dumbbell",
-      "primary": ["lats"],
-      "secondary": ["biceps", "upper_back", "abs"],
+      "primary": ["lats", "upper_back"],
+      "secondary": ["biceps", "forearms", "rear_delts"],
       "steps": [
         "Hang from the bar with an overhand grip slightly wider than your shoulders.",
         "Pull your shoulders down first, then drive your elbows down until your chin clears the bar.",
@@ -1045,7 +1045,7 @@
       "logType": "time",
       "pattern": "core_stability",
       "primary": ["abs"],
-      "secondary": ["obliques", "glutes"],
+      "secondary": ["obliques", "glutes", "front_delts"],
       "steps": [
         "Forearms on the floor, elbows under your shoulders, legs straight.",
         "Squeeze your glutes and pull your ribs down so your body is one straight line.",
@@ -1385,7 +1385,7 @@
       "pattern": "vertical_push",
       "incrementGroup": "upper",
       "primary": ["front_delts", "side_delts"],
-      "secondary": ["triceps", "upper_back", "abs"],
+      "secondary": ["triceps", "traps", "abs"],
       "setup": ["Bar on the J-hooks at upper-chest height."],
       "steps": [
         "Grip just outside shoulder width, unrack the bar onto your upper chest, feet hip-width.",
@@ -2197,8 +2197,8 @@
       "logType": "bodyweight",
       "pattern": "hinge",
       "incrementGroup": "dumbbell",
-      "primary": ["lower_back", "glutes"],
-      "secondary": ["hamstrings"],
+      "primary": ["glutes", "hamstrings", "lower_back"],
+      "secondary": [],
       "setup": [
         "Set the pad so it sits just below your hip bones and you can bend freely at the hips.",
         "Heels hooked under the foot pads. Hold a plate to your chest to add weight."
@@ -2781,7 +2781,7 @@
       "pattern": "horizontal_pull",
       "incrementGroup": "upper",
       "primary": ["upper_back", "lats"],
-      "secondary": ["rear_delts", "biceps", "lower_back"],
+      "secondary": ["rear_delts", "biceps", "lower_back", "forearms"],
       "setup": [
         "Grip the bar a little wider than shoulders, palms facing you.",
         "Hinge forward until your torso is about 45° or lower, knees soft, back flat."
@@ -2931,8 +2931,8 @@
       "logType": "weight",
       "pattern": "vertical_pull",
       "loadUnit": "pin",
-      "primary": ["lats"],
-      "secondary": ["biceps", "upper_back"],
+      "primary": ["lats", "upper_back"],
+      "secondary": ["biceps", "rear_delts"],
       "setup": [
         "Kneel or stand on the platform and pick the assistance weight. More weight on the stack = more help, so a lower number means progress."
       ],
@@ -3087,7 +3087,7 @@
       "pattern": "front_raise",
       "incrementGroup": "dumbbell",
       "primary": ["front_delts"],
-      "secondary": ["side_delts", "upper_back"],
+      "secondary": ["side_delts", "chest"],
       "setup": ["Stand with dumbbells in front of your thighs, palms facing you."],
       "steps": [
         "Raise the dumbbells straight in front of you to shoulder height.",
@@ -3128,7 +3128,7 @@
       "pattern": "rear_delt",
       "loadUnit": "pin",
       "primary": ["rear_delts"],
-      "secondary": ["upper_back"],
+      "secondary": ["upper_back", "traps"],
       "setup": [
         "Both pulleys at shoulder height, no handles: grab the cable ends or balls directly. Cross the cables: left hand holds the right cable and vice versa.",
         "Stand in the middle with your arms crossed in front of you."
@@ -3172,7 +3172,7 @@
       "pattern": "rear_delt",
       "loadUnit": "pin",
       "primary": ["rear_delts"],
-      "secondary": ["upper_back"],
+      "secondary": ["upper_back", "traps"],
       "setup": [
         "Sit facing the pad with your chest against it. Set the handles to the rear-delt position (fully forward).",
         "Handles at shoulder height."
@@ -4446,6 +4446,138 @@
           "Poco peso y más repeticiones."
         ],
         "mistakes": ["Cargar mucho y dejar que el peso se escape de los dedos."]
+      }
+    },
+    {
+      "id": "treadmill",
+      "name": "Treadmill",
+      "equipment": ["treadmill"],
+      "logType": "cardio",
+      "pattern": "conditioning",
+      "primary": ["quads", "calves"],
+      "secondary": ["glutes", "hamstrings"],
+      "setup": [
+        "Stand on the side rails, start the belt slowly, then step on.",
+        "Clip the safety key to your clothes."
+      ],
+      "steps": [
+        "Walk for two or three minutes to warm up, then bring the speed up to your pace.",
+        "Run or walk tall with relaxed shoulders, landing under your body.",
+        "Slow down for the last couple of minutes, then log the time, speed and incline."
+      ],
+      "cues": ["A 1% incline feels closest to running outside.", "Short, quick steps rather than long reaching ones."],
+      "mistakes": ["Holding the handrails while you run or walk.", "Jumping on or off a moving belt."],
+      "alternatives": ["incline-treadmill-walk", "rowing-machine"],
+      "images": ["images/treadmill/0.jpg", "images/treadmill/1.jpg"],
+      "es": {
+        "name": "Cinta de correr",
+        "equipment": ["cinta de correr"],
+        "setup": [
+          "Ponte sobre los laterales, arranca la cinta despacio y súbete.",
+          "Engancha la llave de seguridad a la ropa."
+        ],
+        "steps": [
+          "Camina dos o tres minutos para calentar y luego sube la velocidad a tu ritmo.",
+          "Corre o camina erguido, con los hombros sueltos, apoyando el pie debajo del cuerpo.",
+          "Baja el ritmo los dos últimos minutos y apunta el tiempo, la velocidad y la inclinación."
+        ],
+        "cues": ["Con un 1% de inclinación se parece más a correr en la calle.", "Pasos cortos y rápidos, no largos."],
+        "mistakes": ["Agarrarse a las barras mientras corres o caminas.", "Subirse o bajarse con la cinta en marcha."]
+      }
+    },
+    {
+      "id": "incline-treadmill-walk",
+      "name": "Incline Treadmill Walk",
+      "equipment": ["treadmill"],
+      "logType": "cardio",
+      "pattern": "conditioning",
+      "primary": ["glutes", "calves"],
+      "secondary": ["hamstrings", "quads"],
+      "setup": [
+        "Start flat, then raise the incline once you're walking: 8–12% is typical, up to 15% on most treadmills."
+      ],
+      "steps": [
+        "Walk at a brisk pace you could hold a conversation at, usually 4.5–6 km/h.",
+        "Stand tall and push through your whole foot, letting your arms swing.",
+        "Bring the incline down before you stop, then log the time, speed and incline."
+      ],
+      "cues": [
+        "Hands off the rails: holding on takes most of the work away.",
+        "Steeper and slower beats flatter and faster for your glutes."
+      ],
+      "mistakes": ["Leaning back on the handrails.", "Going so fast you have to lean forward and shuffle."],
+      "alternatives": ["weighted-incline-walk", "treadmill", "db-step-up"],
+      "images": ["images/incline-treadmill-walk/0.jpg", "images/incline-treadmill-walk/1.jpg"],
+      "es": {
+        "name": "Caminar en cinta inclinada",
+        "equipment": ["cinta de correr"],
+        "setup": [
+          "Empieza en plano y sube la inclinación cuando ya estés caminando: lo normal es 8–12%, hasta 15% en casi todas las cintas."
+        ],
+        "steps": [
+          "Camina a buen paso, a un ritmo en el que puedas hablar, normalmente 4,5–6 km/h.",
+          "Erguido, empuja con todo el pie y deja que los brazos se muevan.",
+          "Baja la inclinación antes de parar y apunta el tiempo, la velocidad y la inclinación."
+        ],
+        "cues": [
+          "Sin agarrarte a las barras: si te agarras, casi todo el trabajo desaparece.",
+          "Más inclinación y menos velocidad trabaja más los glúteos."
+        ],
+        "mistakes": [
+          "Echarse hacia atrás colgado de las barras.",
+          "Ir tan rápido que tienes que inclinarte hacia delante y arrastrar los pies."
+        ]
+      }
+    },
+    {
+      "id": "weighted-incline-walk",
+      "name": "Weighted Incline Walk",
+      "equipment": ["treadmill", "weighted vest or backpack"],
+      "logType": "cardio",
+      "pattern": "conditioning",
+      "loadable": true,
+      "incrementGroup": "dumbbell",
+      "primary": ["glutes", "calves"],
+      "secondary": ["hamstrings", "quads", "abs", "traps"],
+      "setup": [
+        "Wear a weighted vest, or a backpack with the weight high and tight against your back.",
+        "Start light: 5–10% of your bodyweight, and a lower incline than you'd walk without it."
+      ],
+      "steps": [
+        "Start the belt flat, then raise the incline once you're walking.",
+        "Walk tall at a steady pace, without holding the rails.",
+        "Bring the incline down before you stop, then log the time, speed, incline and the weight you carried."
+      ],
+      "cues": [
+        "Add weight or incline, not both at once.",
+        "Shoulders back: let the vest sit on your upper back, not pull you forward."
+      ],
+      "mistakes": [
+        "A loose backpack that bounces and pulls on your shoulders.",
+        "Holding the rails, which takes the weight off your legs."
+      ],
+      "alternatives": ["incline-treadmill-walk", "farmers-carry", "db-step-up"],
+      "images": ["images/incline-treadmill-walk/0.jpg", "images/incline-treadmill-walk/1.jpg"],
+      "es": {
+        "name": "Caminar inclinado con peso",
+        "equipment": ["cinta de correr", "chaleco lastrado o mochila"],
+        "setup": [
+          "Ponte un chaleco lastrado, o una mochila con el peso arriba y bien pegado a la espalda.",
+          "Empieza con poco: un 5–10% de tu peso, y menos inclinación de la que usarías sin peso."
+        ],
+        "steps": [
+          "Arranca la cinta en plano y sube la inclinación cuando ya estés caminando.",
+          "Camina erguido a un ritmo constante, sin agarrarte a las barras.",
+          "Baja la inclinación antes de parar y apunta el tiempo, la velocidad, la inclinación y el peso que llevabas."
+        ],
+        "cues": [
+          "Sube el peso o la inclinación, no las dos cosas a la vez.",
+          "Hombros atrás: que el chaleco se apoye en la espalda alta y no tire de ti hacia delante."
+        ],
+        "mistakes": [
+          "Una mochila suelta que rebota y tira de los hombros.",
+          "Agarrarse a las barras, que quita el peso de las piernas."
+        ]
       }
     }
   ]

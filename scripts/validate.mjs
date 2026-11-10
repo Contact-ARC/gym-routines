@@ -47,7 +47,7 @@ for (const ex of ids.values()) {
     if (!img.startsWith('https://') && !existsSync(join(root, img))) fail(`${exFile}: "${ex.id}" image ${img} does not exist`)
   }
   if (ex.logType === 'climb' && !ex.climbType) fail(`${exFile}: "${ex.id}" is a climb but has no climbType (boulder or route)`)
-  if (ex.logType !== 'time' && ex.logType !== 'climb' && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
+  if (!['time', 'climb', 'cardio'].includes(ex.logType) && ex.loadUnit !== 'pin' && !ex.incrementGroup) {
     warn(`${exFile}: "${ex.id}" has no incrementGroup — the app will assume "upper"`)
   }
   if (ex.es) {
@@ -104,8 +104,9 @@ for (const entry of latest?.routines || []) {
       const where = `${entry.file} day ${day.id} item ${i + 1}`
       const ex = ids.get(it.exerciseId)
       if (!ex) { fail(`${where}: unknown exerciseId "${it.exerciseId}"`); return }
-      if (ex.logType === 'time' && !it.durationSec) fail(`${where}: "${ex.id}" is timed — use durationSec, not repRange`)
-      if (ex.logType !== 'time' && it.durationSec) fail(`${where}: "${ex.id}" is rep-based — use repRange, not durationSec`)
+      const timedEx = ex.logType === 'time' || ex.logType === 'cardio' // cardio: durationSec in seconds too
+      if (timedEx && !it.durationSec) fail(`${where}: "${ex.id}" is timed — use durationSec, not repRange`)
+      if (!timedEx && it.durationSec) fail(`${where}: "${ex.id}" is rep-based — use repRange, not durationSec`)
       const range = it.repRange || it.durationSec
       if (range && range[0] > range[1]) fail(`${where}: range ${JSON.stringify(range)} is backwards`)
       if (it.group) (groups[it.group] ||= []).push(i)
@@ -115,7 +116,7 @@ for (const entry of latest?.routines || []) {
         const bex = ids.get(b.exerciseId)
         if (!bex) { fail(`${where}: beginner version uses unknown exerciseId "${b.exerciseId}"`); return }
         if (it.beginner.repRange && it.beginner.durationSec) fail(`${where}: beginner version has both repRange and durationSec`)
-        const timed = bex.logType === 'time'
+        const timed = bex.logType === 'time' || bex.logType === 'cardio'
         const bRange = it.beginner.durationSec || it.beginner.repRange || (timed ? it.durationSec : it.repRange)
         if (timed && !(it.beginner.durationSec || it.durationSec)) fail(`${where}: beginner exercise "${bex.id}" is timed — give the beginner version a durationSec`)
         if (!timed && !(it.beginner.repRange || it.repRange)) fail(`${where}: beginner exercise "${bex.id}" is rep-based — give the beginner version a repRange`)
