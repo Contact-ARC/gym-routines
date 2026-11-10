@@ -1,82 +1,56 @@
 {
   "schemaVersion": 1,
   "month": "2026-11",
-  "effectiveFrom": "2026-11-01",
-  "title": "November — 4-day split",
-  "description": "Four days, each on different muscles: A Chest & Triceps, B Legs, C Back & Biceps, D Shoulders & Hinge. Rotate A → B → C → D (Mon/Tue/Thu/Fri works well). Free weights lead; cables, leg press and Smith fill in.",
+  "effectiveFrom": "2026-11-10",
+  "title": "November — Full body (from 10 Nov)",
+  "description": "Three full-body strength days and an optional conditioning day. Each strength day has two heavy lifts to beat (one lower, one upper), two supersets, and 12–18 min of walking or bike to finish. Rotate A → B → C, and add D on 4-day weeks (between C and A).",
   "whatsNew": [
-    "New 4-day split: Chest & Triceps, Legs, Back & Biceps, Shoulders & Hinge.",
-    "Warm up 5 min on the rower, SkiErg or air bike before every session.",
-    "The target changes each week: leave 3 reps in the tank, then 2, then 1. The app shows it on every exercise.",
-    "Week 4 (22–28 Nov) is a deload. The app drops a set and suggests about 10% lighter weights.",
-    "Lifting for under 6 months? Pick the beginner track in Settings: simpler exercises and fewer sets."
+    "New full-body routine from 10 November: A Squat & Bench, B Deadlift & Press, C Leg press & RDL, D Conditioning.",
+    "Two heavy lifts a day for 3×4–6, stopping with 1–2 reps left. Set the safeties and never grind a barbell rep.",
+    "Every day ends with an incline walk or bike: about 12 min this week, 15 next week, 18 the week after.",
+    "Day D is optional: three pairs of fast moves, 4 rounds each, then air bike intervals.",
+    "Deload moves to the first week of December."
   ],
-  "deloadWeek": 4,
+  "rir": 2,
+  "datePlan": [
+    {
+      "from": "2026-11-10",
+      "to": "2026-11-16",
+      "rir": 2,
+      "focus": "New routine: find your working weights. Stop each set with 2 reps left.",
+      "es": { "focus": "Rutina nueva: encuentra tus pesos de trabajo. Termina cada serie con 2 repeticiones en reserva." }
+    },
+    {
+      "from": "2026-11-17",
+      "to": "2026-11-23",
+      "rir": 2,
+      "focus": "Add weight wherever every set hit the top of the range.",
+      "es": { "focus": "Sube peso donde todas las series llegaron al tope del rango." }
+    },
+    {
+      "from": "2026-11-24",
+      "to": "2026-11-30",
+      "rir": 1,
+      "focus": "Heaviest week. Push the main lifts, but never grind a barbell rep.",
+      "es": { "focus": "La semana más dura. Aprieta en los básicos, pero nunca saques una repetición con la barra a la desesperada." }
+    }
+  ],
   "days": [
     {
       "id": "A",
-      "name": "Day A — Chest & Triceps",
-      "estMinutes": 50,
-      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
-      "items": [
-        {
-          "exerciseId": "barbell-bench-press",
-          "sets": 4,
-          "repRange": [6, 8],
-          "restSec": 150,
-          "notes": "Safety arms just below chest height.",
-          "es": { "notes": "Barras de seguridad justo por debajo de la altura del pecho." },
-          "beginner": {
-            "exerciseId": "db-bench-press",
-            "sets": 3,
-            "repRange": [8, 12],
-            "restSec": 120,
-            "notes": "Dumbbells are easier to learn and safe without a spotter.",
-            "es": { "notes": "Las mancuernas son más fáciles de aprender y seguras sin compañero que te ayude." }
-          }
-        },
-        {
-          "exerciseId": "incline-db-press",
-          "sets": 3,
-          "repRange": [8, 12],
-          "restSec": 120,
-          "beginner": { "sets": 2 }
-        },
-        {
-          "exerciseId": "cable-fly",
-          "sets": 3,
-          "repRange": [12, 15],
-          "restSec": 60,
-          "beginner": { "sets": 2 }
-        },
-        {
-          "exerciseId": "ez-bar-skullcrusher",
-          "sets": 3,
-          "repRange": [8, 12],
-          "restSec": 90,
-          "beginner": { "exerciseId": "overhead-cable-triceps-extension", "sets": 2, "repRange": [10, 15] }
-        },
-        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "push-up", "sets": 2, "repRange": [8, 20], "restSec": 60, "group": "S1" }
-      ],
-      "es": { "name": "Día A — Pecho y tríceps", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
-    },
-    {
-      "id": "B",
-      "name": "Day B — Legs",
-      "estMinutes": 50,
-      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "name": "Day A — Squat & Bench",
+      "estMinutes": 65,
+      "notes": "Warm up 5 min on the rower or bike first. Finish with the incline walk.",
       "items": [
         {
           "exerciseId": "barbell-back-squat",
-          "sets": 4,
-          "repRange": [5, 8],
+          "sets": 3,
+          "repRange": [4, 6],
           "restSec": 180,
           "notes": "Safety arms just below your bottom position.",
           "es": { "notes": "Barras de seguridad justo por debajo de tu posición más baja." },
           "beginner": {
             "exerciseId": "goblet-squat",
-            "sets": 3,
             "repRange": [8, 12],
             "restSec": 120,
             "notes": "Learn the squat pattern first; the barbell comes later.",
@@ -84,157 +58,193 @@
           }
         },
         {
-          "exerciseId": "leg-press",
+          "exerciseId": "barbell-bench-press",
           "sets": 3,
-          "repRange": [10, 15],
-          "restSec": 120,
-          "notes": "Log only the plates you add, not the sled.",
-          "es": { "notes": "Apunta solo los discos que añades, no el carro." }
+          "repRange": [4, 6],
+          "restSec": 150,
+          "warmup": true,
+          "notes": "Safety arms just below chest height.",
+          "es": { "notes": "Barras de seguridad justo por debajo de la altura del pecho." },
+          "beginner": {
+            "exerciseId": "db-bench-press",
+            "repRange": [8, 12],
+            "restSec": 120,
+            "notes": "Dumbbells are easier to learn and safe without a spotter.",
+            "es": { "notes": "Las mancuernas son más fáciles de aprender y seguras sin compañero que te ayude." }
+          }
+        },
+        { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [6, 10], "restSec": 90, "group": "S1" },
+        { "exerciseId": "db-lateral-raise", "sets": 3, "repRange": [10, 15], "restSec": 90, "group": "S1" },
+        { "exerciseId": "ez-bar-curl", "sets": 2, "repRange": [8, 12], "restSec": 60, "group": "S2" },
+        { "exerciseId": "cable-rope-pushdown", "sets": 2, "repRange": [10, 12], "restSec": 60, "group": "S2" },
+        {
+          "exerciseId": "incline-treadmill-walk",
+          "sets": 1,
+          "durationSec": [720, 1080],
+          "restSec": 0,
+          "notes": "10–12% incline, 5–6 km/h, hands off the rails. About 12 min this week, then add 3 min a week.",
+          "es": { "notes": "Inclinación del 10–12 %, 5–6 km/h, sin agarrarte. Unos 12 min esta semana y luego suma 3 min cada semana." }
+        }
+      ],
+      "es": { "name": "Día A — Sentadilla y press de banca", "notes": "Calienta 5 min en el remo o la bici antes de empezar. Termina caminando en cinta inclinada." }
+    },
+    {
+      "id": "B",
+      "name": "Day B — Deadlift & Press",
+      "estMinutes": 65,
+      "notes": "Warm up 5 min on the rower or bike first. Finish on the bike.",
+      "items": [
+        {
+          "exerciseId": "barbell-deadlift",
+          "sets": 3,
+          "repRange": [4, 6],
+          "restSec": 180,
+          "notes": "Reset on the floor every rep. Stop when your back position changes, even if reps are left.",
+          "es": { "notes": "Apoya y recoloca en el suelo en cada repetición. Para si cambia la posición de la espalda, aunque te queden repeticiones." },
+          "beginner": {
+            "exerciseId": "db-rdl",
+            "repRange": [8, 12],
+            "restSec": 120,
+            "notes": "Learn the hip hinge with dumbbells first.",
+            "es": { "notes": "Aprende primero la bisagra de cadera con mancuernas." }
+          }
+        },
+        {
+          "exerciseId": "barbell-overhead-press",
+          "sets": 3,
+          "repRange": [4, 6],
+          "restSec": 150,
+          "warmup": true,
+          "notes": "Press from the rack with the safeties at upper-chest height.",
+          "es": { "notes": "Saca la barra del rack con las barras de seguridad a la altura de la parte alta del pecho." },
+          "beginner": { "exerciseId": "seated-db-shoulder-press", "repRange": [8, 12], "restSec": 120 }
+        },
+        {
+          "exerciseId": "cable-lat-pulldown",
+          "sets": 3,
+          "repRange": [6, 10],
+          "restSec": 90,
+          "group": "S1",
+          "notes": "Once you get 6 clean pull-ups, swap to Pull-up.",
+          "es": { "notes": "Cuando saques 6 dominadas limpias, cámbialo por dominadas." }
         },
         {
           "exerciseId": "db-bulgarian-split-squat",
           "sets": 3,
-          "repRange": [8, 10],
+          "repRange": [6, 10],
           "restSec": 90,
-          "beginner": { "exerciseId": "db-reverse-lunge", "sets": 2 }
+          "group": "S1",
+          "beginner": { "exerciseId": "db-reverse-lunge", "repRange": [8, 12] }
         },
-        { "exerciseId": "smith-calf-raise", "sets": 3, "repRange": [10, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "pallof-press", "sets": 3, "repRange": [10, 12], "restSec": 60, "group": "S1" }
+        { "exerciseId": "cable-face-pull", "sets": 2, "repRange": [12, 15], "restSec": 60, "group": "S2" },
+        { "exerciseId": "smith-calf-raise", "sets": 2, "repRange": [8, 12], "restSec": 60, "group": "S2" },
+        {
+          "exerciseId": "stationary-bike",
+          "sets": 1,
+          "durationSec": [720, 1080],
+          "restSec": 0,
+          "notes": "Spin or upright bike at a steady, hard pace you could still talk through. About 12 min this week, then add 3 min a week.",
+          "es": { "notes": "Bici de spinning o vertical a un ritmo constante y exigente con el que aún podrías hablar. Unos 12 min esta semana y luego suma 3 min cada semana." }
+        }
       ],
-      "es": { "name": "Día B — Piernas", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
+      "es": { "name": "Día B — Peso muerto y press militar", "notes": "Calienta 5 min en el remo o la bici antes de empezar. Termina en la bici." }
     },
     {
       "id": "C",
-      "name": "Day C — Back & Biceps",
-      "estMinutes": 45,
-      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
+      "name": "Day C — Leg press & RDL",
+      "estMinutes": 60,
+      "notes": "Warm up 5 min on the rower or bike first. Finish with the incline walk.",
       "items": [
         {
-          "exerciseId": "pull-up",
-          "sets": 4,
-          "repRange": [5, 10],
-          "restSec": 120,
-          "notes": "Can't get 5 clean reps yet? Swap to Cable Lat Pulldown.",
-          "es": { "notes": "¿Aún no sacas 5 repeticiones limpias? Cámbialo por jalón al pecho en polea." },
-          "beginner": {
-            "exerciseId": "cable-lat-pulldown",
-            "sets": 3,
-            "repRange": [8, 12],
-            "restSec": 120,
-            "notes": "Build up to pull-ups with the pulldown.",
-            "es": { "notes": "Prepárate para las dominadas con el jalón." }
-          }
-        },
-        { "exerciseId": "chest-supported-db-row", "sets": 3, "repRange": [8, 12], "restSec": 90 },
-        {
-          "exerciseId": "one-arm-db-row",
+          "exerciseId": "leg-press",
           "sets": 3,
-          "repRange": [10, 12],
-          "restSec": 75,
-          "beginner": { "sets": 2 }
-        },
-        { "exerciseId": "cable-face-pull", "sets": 3, "repRange": [12, 15], "restSec": 60 },
-        {
-          "exerciseId": "ez-bar-curl",
-          "sets": 3,
-          "repRange": [8, 12],
-          "restSec": 75,
-          "beginner": { "sets": 2 }
-        },
-        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [10, 12], "restSec": 60 }
-      ],
-      "es": { "name": "Día C — Espalda y bíceps", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
-    },
-    {
-      "id": "D",
-      "name": "Day D — Shoulders & Hinge",
-      "estMinutes": 55,
-      "notes": "Warm up 5 min on the rower, SkiErg or air bike first.",
-      "items": [
-        {
-          "exerciseId": "barbell-overhead-press",
-          "sets": 4,
-          "repRange": [6, 8],
+          "repRange": [6, 10],
           "restSec": 150,
-          "beginner": { "exerciseId": "seated-db-shoulder-press", "sets": 3, "repRange": [8, 12] }
+          "notes": "The safest lift to push close to failure. Log only the plates you add, not the sled.",
+          "es": { "notes": "El ejercicio más seguro para apretar cerca del fallo. Apunta solo los discos que añades, no el carro." }
         },
         {
           "exerciseId": "barbell-rdl",
           "sets": 3,
-          "repRange": [8, 10],
+          "repRange": [6, 8],
           "restSec": 150,
-          "beginner": { "exerciseId": "db-rdl", "repRange": [10, 12] }
+          "warmup": true,
+          "notes": "Bar close to your legs, stop when your hips stop moving back.",
+          "es": { "notes": "Barra pegada a las piernas; para cuando la cadera deje de ir hacia atrás." },
+          "beginner": { "exerciseId": "db-rdl", "repRange": [8, 12], "restSec": 120 }
         },
+        { "exerciseId": "incline-db-press", "sets": 3, "repRange": [6, 10], "restSec": 90, "group": "S1" },
+        { "exerciseId": "one-arm-db-row", "sets": 3, "repRange": [6, 10], "restSec": 90, "group": "S1" },
+        { "exerciseId": "ez-bar-skullcrusher", "sets": 2, "repRange": [8, 12], "restSec": 60, "group": "S2", "beginner": { "exerciseId": "overhead-cable-triceps-extension", "repRange": [10, 15] } },
+        { "exerciseId": "db-hammer-curl", "sets": 2, "repRange": [8, 12], "restSec": 60, "group": "S2" },
         {
-          "exerciseId": "barbell-hip-thrust",
-          "sets": 3,
-          "repRange": [8, 12],
-          "restSec": 120,
-          "beginner": { "exerciseId": "glute-bridge", "repRange": [12, 20] }
-        },
-        { "exerciseId": "db-lateral-raise", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        { "exerciseId": "db-rear-delt-fly", "sets": 3, "repRange": [12, 15], "restSec": 60, "group": "S1" },
-        {
-          "exerciseId": "hanging-knee-raise",
-          "sets": 2,
-          "repRange": [8, 15],
-          "restSec": 60,
-          "beginner": { "exerciseId": "dead-bug", "repRange": [8, 12] }
+          "exerciseId": "incline-treadmill-walk",
+          "sets": 1,
+          "durationSec": [720, 1080],
+          "restSec": 0,
+          "notes": "10–12% incline, 5–6 km/h, hands off the rails. About 12 min this week, then add 3 min a week.",
+          "es": { "notes": "Inclinación del 10–12 %, 5–6 km/h, sin agarrarte. Unos 12 min esta semana y luego suma 3 min cada semana." }
         }
       ],
-      "es": { "name": "Día D — Hombros y bisagra de cadera", "notes": "Calienta 5 min en el remo, el SkiErg o la air bike antes de empezar." }
-    }
-  ],
-  "rir": 2,
-  "weekPlan": [
-    {
-      "week": 1,
-      "rir": 3,
-      "focus": "Find working weights on the new lifts and log everything.",
-      "es": { "focus": "Encuentra tus pesos de trabajo en los ejercicios nuevos y apúntalo todo." }
+      "es": { "name": "Día C — Prensa y peso muerto rumano", "notes": "Calienta 5 min en el remo o la bici antes de empezar. Termina caminando en cinta inclinada." }
     },
     {
-      "week": 2,
-      "rir": 2,
-      "focus": "Add weight wherever every set hit the top of the range.",
-      "es": { "focus": "Sube peso donde todas las series llegaron al tope del rango." }
-    },
-    {
-      "week": 3,
-      "rir": 1,
-      "focus": "Hardest week. Chase rep records.",
-      "es": { "focus": "La semana más dura. Ve a por récords de repeticiones." }
-    },
-    {
-      "week": 4,
-      "deload": true,
-      "rir": 3,
-      "focus": "Deload: one set fewer, about 10% lighter, clean technique.",
-      "es": { "focus": "Descarga: una serie menos, un 10 % más ligero, técnica limpia." }
-    },
-    {
-      "week": 5,
-      "rir": 2,
-      "focus": "Back to normal. Carry the numbers into December.",
-      "es": { "focus": "Vuelta a la normalidad. Lleva los números a diciembre." }
+      "id": "D",
+      "name": "Day D — Conditioning",
+      "estMinutes": 45,
+      "notes": "Optional 4th day. Three pairs, 4 rounds each, rest only after the second move. Moderate weights: keep moving, don't chase records here.",
+      "items": [
+        {
+          "exerciseId": "kettlebell-swing",
+          "sets": 4,
+          "repRange": [12, 15],
+          "restSec": 60,
+          "group": "S1",
+          "warmup": true,
+          "notes": "Snap the hips; the arms just guide the bell.",
+          "es": { "notes": "Lanza con la cadera; los brazos solo guían la pesa." }
+        },
+        { "exerciseId": "push-up", "sets": 4, "repRange": [10, 15], "restSec": 60, "group": "S1" },
+        { "exerciseId": "db-thruster", "sets": 4, "repRange": [8, 10], "restSec": 60, "group": "S2" },
+        {
+          "exerciseId": "inverted-row",
+          "sets": 4,
+          "repRange": [8, 12],
+          "restSec": 60,
+          "group": "S2",
+          "notes": "Use the Smith machine bar at about hip height. Lower the bar to make it harder.",
+          "es": { "notes": "Usa la barra del multipower más o menos a la altura de la cadera. Bájala para hacerlo más difícil." }
+        },
+        { "exerciseId": "battle-rope-waves", "sets": 4, "durationSec": [30, 30], "restSec": 60, "group": "S3" },
+        { "exerciseId": "med-ball-slam", "sets": 4, "repRange": [10, 12], "restSec": 60, "group": "S3" },
+        {
+          "exerciseId": "air-bike",
+          "sets": 1,
+          "durationSec": [600, 600],
+          "restSec": 0,
+          "notes": "10 rounds: 15 s hard, 45 s easy.",
+          "es": { "notes": "10 rondas: 15 s a tope y 45 s suave." }
+        }
+      ],
+      "es": { "name": "Día D — Acondicionamiento", "notes": "Cuarto día opcional. Tres parejas, 4 rondas cada una; descansa solo después del segundo ejercicio. Pesos moderados: sigue moviéndote, aquí no se buscan récords." }
     }
   ],
   "es": {
-    "title": "Noviembre — rutina de 4 días",
-    "description": "Cuatro días, cada uno con músculos distintos: A Pecho y tríceps, B Piernas, C Espalda y bíceps, D Hombros y bisagra de cadera. Rota A → B → C → D (lunes/martes/jueves/viernes va bien). Mandan los pesos libres; poleas, prensa y multipower completan.",
+    "title": "Noviembre — Cuerpo completo (desde el 10 nov)",
+    "description": "Tres días de fuerza de cuerpo completo y un día opcional de acondicionamiento. Cada día de fuerza tiene dos ejercicios pesados (uno de pierna y otro de tren superior), dos superseries y 12–18 min de cinta o bici para terminar. Rota A → B → C y añade D en las semanas de 4 días (entre C y A).",
     "whatsNew": [
-      "Nueva rutina de 4 días: Pecho y tríceps, Piernas, Espalda y bíceps, Hombros y bisagra de cadera.",
-      "Calienta 5 min en el remo, el SkiErg o la air bike antes de cada sesión.",
-      "El objetivo cambia cada semana: deja 3 repeticiones en reserva, luego 2 y luego 1. La app lo muestra en cada ejercicio.",
-      "La semana 4 (22–28 nov) es de descarga. La app quita una serie y sugiere pesos un 10 % más ligeros.",
-      "¿Llevas menos de 6 meses entrenando? Elige la versión para principiantes en Ajustes: ejercicios más sencillos y menos series."
+      "Nueva rutina de cuerpo completo desde el 10 de noviembre: A Sentadilla y banca, B Peso muerto y press militar, C Prensa y peso muerto rumano, D Acondicionamiento.",
+      "Dos ejercicios pesados al día a 3×4–6, terminando con 1–2 repeticiones en reserva. Pon las barras de seguridad y nunca saques una repetición con la barra a la desesperada.",
+      "Cada día termina caminando en cinta inclinada o en bici: unos 12 min esta semana, 15 la siguiente y 18 la otra.",
+      "El día D es opcional: tres parejas de ejercicios rápidos, 4 rondas cada una, y luego intervalos en la air bike.",
+      "La descarga pasa a la primera semana de diciembre."
     ]
   },
   "challenge": {
     "type": "workouts",
     "target": 14,
     "title": "14 workouts in November",
-    "description": "About 3 or 4 a week. Every finished workout counts, deload week included. Track it with the crew.",
-    "es": { "title": "14 entrenamientos en noviembre", "description": "Unos 3 o 4 por semana. Cuenta cada entrenamiento terminado, también en la semana de descarga. Síguelo con tu grupo." }
+    "description": "About 3 or 4 a week. Every finished workout counts, Day D included. Track it with the crew.",
+    "es": { "title": "14 entrenamientos en noviembre", "description": "Unos 3 o 4 por semana. Cuenta cada entrenamiento terminado, también el día D. Síguelo con tu grupo." }
   }
 }

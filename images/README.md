@@ -15,3 +15,7 @@ Tall photos are centred on a blurred copy of themselves so the 3:2 frame doesn't
 November 2026 (treadmill):
 - treadmill shows Running, Treadmill; incline treadmill walk shows Walking, Treadmill (flat in the photo),
 - weighted incline walk reuses the incline walk photos (no vest in the library).
+
+November 2026 (full-body routine):
+- stationary bike shows Bicycling, Stationary; the air bike reuses those photos (the library's "Air Bike" is a crunch),
+- SkiErg reuses the straight-arm pulldown photos (the same pull, standing; there's no SkiErg in the library).

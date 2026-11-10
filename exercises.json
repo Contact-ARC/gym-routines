@@ -4579,6 +4579,156 @@
           "Agarrarse a las barras, que quita el peso de las piernas."
         ]
       }
+    },
+    {
+      "id": "stationary-bike",
+      "name": "Stationary Bike",
+      "equipment": ["spin bike, upright or recumbent bike"],
+      "logType": "time",
+      "timeUnit": "min",
+      "pattern": "conditioning",
+      "primary": ["quads", "glutes"],
+      "secondary": ["hamstrings", "calves"],
+      "setup": [
+        "Seat height: with the pedal at the bottom, your knee is only slightly bent.",
+        "Handlebars where you can hold them without locking your elbows or hunching."
+      ],
+      "steps": [
+        "Spin easy for a minute, then raise the resistance to a steady, hard pace.",
+        "Hold a pace you could still talk through, but wouldn't want to.",
+        "Ease off for the last minute, then log the time."
+      ],
+      "cues": [
+        "Push and pull through the whole circle, not just stomping down.",
+        "Turn the resistance up rather than spinning faster with no load."
+      ],
+      "mistakes": [
+        "Seat so low your knees come up past your hips.",
+        "No resistance, so it turns into an easy spin."
+      ],
+      "alternatives": ["air-bike", "incline-treadmill-walk", "rowing-machine"],
+      "images": ["images/stationary-bike/0.jpg", "images/stationary-bike/1.jpg"],
+      "es": {
+        "name": "Bicicleta estática",
+        "equipment": ["bici de spinning, vertical o reclinada"],
+        "setup": [
+          "Altura del sillín: con el pedal abajo, la rodilla queda solo un poco flexionada.",
+          "El manillar donde puedas agarrarlo sin bloquear los codos ni encorvarte."
+        ],
+        "steps": [
+          "Pedalea suave un minuto y luego sube la resistencia hasta un ritmo constante y exigente.",
+          "Mantén un ritmo con el que aún podrías hablar, aunque no te apetezca.",
+          "Afloja el último minuto y apunta el tiempo."
+        ],
+        "cues": [
+          "Empuja y tira durante toda la vuelta, no solo pisando hacia abajo.",
+          "Sube la resistencia en vez de pedalear más rápido sin carga."
+        ],
+        "mistakes": [
+          "Sillín tan bajo que las rodillas suben por encima de la cadera.",
+          "Sin resistencia, así que se queda en un paseo."
+        ]
+      }
+    },
+    {
+      "id": "air-bike",
+      "name": "Air Bike",
+      "equipment": ["air bike (fan bike)"],
+      "logType": "time",
+      "timeUnit": "min",
+      "pattern": "conditioning",
+      "primary": ["quads", "glutes"],
+      "secondary": ["hamstrings", "upper_back", "front_delts", "triceps"],
+      "setup": [
+        "Seat height: knee slightly bent with the pedal at the bottom.",
+        "Hold the handles at about chest height."
+      ],
+      "steps": [
+        "Push and pull the handles while you pedal: arms and legs both drive the fan.",
+        "For intervals, go all out for the hard part, then pedal slowly to recover.",
+        "Log the total time."
+      ],
+      "cues": [
+        "The fan gets harder the faster you go, so effort is the only setting.",
+        "Pull the handles as hard as you push them."
+      ],
+      "mistakes": [
+        "Starting the first interval so hard you can't finish the rest.",
+        "Only using the legs and letting the arms ride along."
+      ],
+      "alternatives": ["stationary-bike", "rowing-machine", "battle-rope-waves"],
+      "images": ["images/stationary-bike/0.jpg", "images/stationary-bike/1.jpg"],
+      "es": {
+        "name": "Air bike",
+        "equipment": ["air bike (bici de ventilador)"],
+        "setup": [
+          "Altura del sillín: rodilla un poco flexionada con el pedal abajo.",
+          "Agarra los manillares más o menos a la altura del pecho."
+        ],
+        "steps": [
+          "Empuja y tira de los manillares mientras pedaleas: brazos y piernas mueven el ventilador.",
+          "En intervalos, a tope en la parte dura y luego pedalea despacio para recuperar.",
+          "Apunta el tiempo total."
+        ],
+        "cues": [
+          "Cuanto más rápido vas, más resistencia hace el ventilador: tu esfuerzo es el único ajuste.",
+          "Tira de los manillares tan fuerte como empujas."
+        ],
+        "mistakes": [
+          "Empezar el primer intervalo tan fuerte que no terminas los demás.",
+          "Usar solo las piernas y dejar los brazos de paseo."
+        ]
+      }
+    },
+    {
+      "id": "ski-erg",
+      "name": "SkiErg",
+      "equipment": ["SkiErg"],
+      "logType": "time",
+      "timeUnit": "min",
+      "pattern": "conditioning",
+      "primary": ["lats", "triceps"],
+      "secondary": ["abs", "upper_back", "glutes", "hamstrings"],
+      "setup": [
+        "Stand close enough that the handles are just in front of you with arms straight up.",
+        "Damper around 4-6."
+      ],
+      "steps": [
+        "Pull both handles down together, hinging at the hips and bending the knees a little.",
+        "Finish with your hands by your thighs, then stand back up as the handles go up.",
+        "Keep a steady rhythm for the time."
+      ],
+      "cues": [
+        "Lats and hips do the work, not just the arms.",
+        "Crunch down like a powerful ski pole plant."
+      ],
+      "mistakes": [
+        "Squatting down instead of hinging at the hips.",
+        "Pulling only with the arms while standing straight."
+      ],
+      "alternatives": ["rowing-machine", "straight-arm-pulldown", "battle-rope-slams"],
+      "images": ["images/straight-arm-pulldown/0.jpg", "images/straight-arm-pulldown/1.jpg"],
+      "es": {
+        "name": "SkiErg",
+        "equipment": ["SkiErg"],
+        "setup": [
+          "Colócate lo bastante cerca para que los mangos queden justo delante con los brazos estirados hacia arriba.",
+          "Resistencia más o menos en 4-6."
+        ],
+        "steps": [
+          "Tira de los dos mangos hacia abajo a la vez, flexionando la cadera y un poco las rodillas.",
+          "Acaba con las manos junto a los muslos y vuelve a erguirte mientras suben los mangos.",
+          "Mantén un ritmo constante durante el tiempo."
+        ],
+        "cues": [
+          "Trabajan los dorsales y la cadera, no solo los brazos.",
+          "Baja con fuerza, como clavando los bastones de esquí."
+        ],
+        "mistakes": [
+          "Agacharte en sentadilla en vez de flexionar la cadera.",
+          "Tirar solo con los brazos estando de pie recto."
+        ]
+      }
     }
   ]
 }

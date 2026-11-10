@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.10.0",
-    "notes": "Badges: 33 to earn, from your first workout to a 2× bodyweight deadlift, with a few secret ones. Milestones level up from Bronze to Diamond, and habits like Early bird or Record day count up (×5, ×10…). Not earned yet shows a dotted outline and how close you are. Tap one to see how to get it and who in your crew has it, and pin 3 to your profile and the crew board. Your history counts, so you start with everything you've already earned. Also in 0.9.2: gyms (each with its own equipment, plates and machine settings), simpler warm-ups and bar lifts that start at the bar.",
+    "version": "0.11.1",
+    "notes": "New November routine: full body from 10 November (A Squat & Bench, B Deadlift & Press, C Leg press & RDL, D Conditioning), with the 14-workout challenge. Exercise bike, air bike and SkiErg are set and logged in minutes. Also in 0.11: Train together with up to 3 people from your crew (⋯, Train together), with shared-bar plate plans and Spot me.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Insignias: 33 por conseguir, desde tu primer entrenamiento hasta un peso muerto de 2× tu peso, y algunas secretas. Los hitos suben de Bronce a Diamante, y hábitos como Madrugador o Día de récords se van sumando (×5, ×10…). Las que te faltan se ven con el contorno punteado y lo cerca que estás. Toca una para ver cómo conseguirla y quién la tiene en tu grupo, y fija 3 en tu perfil y en el tablón. Tu historial cuenta, así que empiezas con todo lo que ya has conseguido. También en 0.9.2: gimnasios (cada uno con su material, discos y ajustes de máquina), calentamientos más claros y ejercicios con barra que empiezan en la barra."
+      "notes": "Nueva rutina de noviembre: cuerpo completo desde el 10 de noviembre (A Sentadilla y press banca, B Peso muerto y press, C Prensa y peso muerto rumano, D Acondicionamiento), con el reto de 14 entrenamientos. La bici estática, la air bike y el SkiErg se marcan en minutos. También en 0.11: Entrenar juntos con hasta 3 personas de tu grupo (⋯, Entrenar juntos), con plan de discos para barra compartida y «Ayúdame»."
     }
   },
   "exercisesFile": "exercises.json",
@@ -22,7 +22,7 @@
     {
       "month": "2026-11",
       "file": "routines/2026-11.json",
-      "effectiveFrom": "2026-11-01"
+      "effectiveFrom": "2026-11-10"
     }
   ]
 }

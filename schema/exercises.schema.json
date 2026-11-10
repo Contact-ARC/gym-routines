@@ -39,6 +39,10 @@
               "type": "string"
             }
           },
+          "timeUnit": {
+            "description": "Timed exercises (logType time) planned and logged in minutes instead of seconds: bikes, SkiErg. The app shows 12–18 min and a minutes stepper.",
+            "enum": ["min", "sec"]
+          },
           "logType": {
             "enum": [
               "weight",
