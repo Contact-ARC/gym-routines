@@ -1295,7 +1295,7 @@
       "pattern": "squat",
       "incrementGroup": "lower",
       "primary": ["quads", "glutes"],
-      "secondary": ["hamstrings", "adductors"],
+      "secondary": ["adductors"],
       "setup": [
         "Load plates evenly on both sides. Log only the plates you add, not the sled.",
         "Back and hips flat against the pad."
@@ -1911,7 +1911,7 @@
       "pattern": "squat",
       "incrementGroup": "lower",
       "primary": ["quads", "glutes"],
-      "secondary": ["adductors", "hamstrings"],
+      "secondary": ["adductors"],
       "setup": [
         "Bar at upper-chest height. Step under it so it rests on your upper back, not your neck.",
         "Feet slightly in front of the bar, shoulder-width apart. Log the plates you add (the bar's own weight varies by machine)."
@@ -4151,8 +4151,8 @@
       "equipment": ["rowing machine"],
       "logType": "time",
       "pattern": "conditioning",
-      "primary": ["upper_back", "quads"],
-      "secondary": ["lats", "glutes", "hamstrings", "biceps"],
+      "primary": ["quads", "glutes", "upper_back"],
+      "secondary": ["lats", "hamstrings", "biceps"],
       "setup": ["Strap your feet in with the strap across the widest part of the foot. Damper around 3-5."],
       "steps": [
         "Drive: push with your legs first, then lean back slightly, then pull the handle to your lower ribs.",
