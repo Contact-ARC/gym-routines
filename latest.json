@@ -1,17 +1,18 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.12.0",
-    "notes": "Accounts: sign in with Google in Settings → Account to save your workouts, body log, progress photos and settings to your account, and have them on any phone you sign in on. Your crew comes with you too. Optional: the app works the same without signing in.",
+    "version": "0.13.0",
+    "notes": "Health Connect: in Settings → Health, connect the app to share your workouts, weight and body fat with Samsung Health, Google Fit, Fitbit and other apps, and see heart rate from your watch on each workout, weigh-ins from a smart scale and your daily steps. Needs Android 8 or newer.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Cuentas: entra con Google en Ajustes → Cuenta para guardar tus entrenamientos, registro corporal, fotos de progreso y ajustes en tu cuenta, y tenerlos en cualquier móvil donde entres. Tu grupo también viene contigo. Es opcional: la app funciona igual sin entrar."
+      "notes": "Health Connect: en Ajustes → Salud, conecta la app para compartir tus entrenamientos, peso y grasa corporal con Samsung Health, Google Fit, Fitbit y otras apps, y ver el pulso de tu reloj en cada entrenamiento, los pesajes de una báscula inteligente y tus pasos diarios. Necesita Android 8 o posterior."
     }
   },
   "exercisesFile": "exercises.json",
   "crew": {
     "url": "https://pdusdkxnsltbyooiqewx.supabase.co",
-    "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP", "googleClientId": "698751152906-81da5vpq55kvu2pi63aqiomfv6rvi521.apps.googleusercontent.com"
+    "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP",
+    "googleClientId": "698751152906-81da5vpq55kvu2pi63aqiomfv6rvi521.apps.googleusercontent.com"
   },
   "routines": [
     {
