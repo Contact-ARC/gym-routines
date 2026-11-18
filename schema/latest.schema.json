@@ -88,6 +88,11 @@
           "type": "string",
           "minLength": 20,
           "description": "Public anon or publishable key (safe to publish)"
+        },
+        "googleClientId": {
+          "type": "string",
+          "pattern": "^[0-9]+-[a-z0-9]+\\.apps\\.googleusercontent\\.com$",
+          "description": "Web OAuth client ID from Google Cloud, for Google sign-in (app 0.12+). Leave out until accounts are set up (gym-app README, Accounts)."
         }
       }
     }
