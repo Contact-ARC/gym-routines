@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.11.2",
-    "notes": "Fixes a crash when opening a workout whose first exercise had no weight yet (like the November Conditioning day). Also in 0.11: the new November full-body routine, bikes and SkiErg in minutes, and Train together with up to 3 people from your crew.",
+    "version": "0.12.0",
+    "notes": "Accounts: sign in with Google in Settings → Account to save your workouts, body log, progress photos and settings to your account, and have them on any phone you sign in on. Your crew comes with you too. Optional: the app works the same without signing in.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Corrige un fallo al abrir un entrenamiento cuyo primer ejercicio aún no tenía peso (como el día de Acondicionamiento de noviembre). También en 0.11: la nueva rutina de cuerpo completo de noviembre, bicis y SkiErg en minutos, y Entrenar juntos con hasta 3 personas de tu grupo."
+      "notes": "Cuentas: entra con Google en Ajustes → Cuenta para guardar tus entrenamientos, registro corporal, fotos de progreso y ajustes en tu cuenta, y tenerlos en cualquier móvil donde entres. Tu grupo también viene contigo. Es opcional: la app funciona igual sin entrar."
     }
   },
   "exercisesFile": "exercises.json",
   "crew": {
     "url": "https://pdusdkxnsltbyooiqewx.supabase.co",
-    "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP"
+    "anonKey": "sb_publishable_nxq-WmMRC9gFfMHOUJtXlg_JBOdH0pP", "googleClientId": "PASTE-WEB-CLIENT-ID.apps.googleusercontent.com"
   },
   "routines": [
     {
