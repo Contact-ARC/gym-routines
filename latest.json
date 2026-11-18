@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.13.1",
-    "notes": "More from Health Connect: workouts other apps or your watch recorded (History), active calories next to heart rate on each workout, sleep, resting heart rate and VO2 max (Body). If you connected on 0.13.0, tap Allow more in Settings → Health. Also in 0.13: share your workouts, weight and body fat with Samsung Health, Google Fit, Fitbit and others.",
+    "version": "0.14.0",
+    "notes": "A tidy-up after a busy month: Settings is regrouped (You, Training, Gyms, Connections, Your data, About) with reminders, rest alerts, equipment and bar/weight jumps in their own pages, and All on / All off for equipment. Free session and Climbing sit right under your next workout, exercises open on your progress, Train together has a Join button, and numbers in Spanish use a decimal comma.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Más de Health Connect: entrenamientos que registraron otras apps o tu reloj (Historial), calorías activas junto al pulso en cada entrenamiento, sueño, pulso en reposo y VO2 máx. (Cuerpo). Si conectaste con la 0.13.0, toca Permitir más en Ajustes → Salud. También en 0.13: comparte tus entrenamientos, peso y grasa corporal con Samsung Health, Google Fit, Fitbit y otras."
+      "notes": "Una puesta a punto tras un mes de muchos cambios: Ajustes está reorganizado (Tú, Entrenamiento, Gimnasios, Conexiones, Tus datos, Acerca de) con recordatorios, avisos del descanso, equipamiento y barra/saltos de peso en sus propias páginas, y Todo activado / Todo desactivado para el equipamiento. Sesión libre y Escalada están justo debajo de tu próximo entrenamiento, los ejercicios se abren en tu progreso, Entrenar juntos tiene botón para unirte y los números usan coma decimal."
     }
   },
   "exercisesFile": "exercises.json",
