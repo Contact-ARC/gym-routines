@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.13.0",
-    "notes": "Health Connect: in Settings → Health, connect the app to share your workouts, weight and body fat with Samsung Health, Google Fit, Fitbit and other apps, and see heart rate from your watch on each workout, weigh-ins from a smart scale and your daily steps. Needs Android 8 or newer.",
+    "version": "0.13.1",
+    "notes": "More from Health Connect: workouts other apps or your watch recorded (History), active calories next to heart rate on each workout, sleep, resting heart rate and VO2 max (Body). If you connected on 0.13.0, tap Allow more in Settings → Health. Also in 0.13: share your workouts, weight and body fat with Samsung Health, Google Fit, Fitbit and others.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Health Connect: en Ajustes → Salud, conecta la app para compartir tus entrenamientos, peso y grasa corporal con Samsung Health, Google Fit, Fitbit y otras apps, y ver el pulso de tu reloj en cada entrenamiento, los pesajes de una báscula inteligente y tus pasos diarios. Necesita Android 8 o posterior."
+      "notes": "Más de Health Connect: entrenamientos que registraron otras apps o tu reloj (Historial), calorías activas junto al pulso en cada entrenamiento, sueño, pulso en reposo y VO2 máx. (Cuerpo). Si conectaste con la 0.13.0, toca Permitir más en Ajustes → Salud. También en 0.13: comparte tus entrenamientos, peso y grasa corporal con Samsung Health, Google Fit, Fitbit y otras."
     }
   },
   "exercisesFile": "exercises.json",
