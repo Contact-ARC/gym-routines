@@ -39,6 +39,17 @@
               "type": "string"
             }
           },
+          "resistance": {
+            "description": "Cardio machines with a difficulty setting: the app adds a Level (or Damper) stepper next to the minutes, remembers the last one and shows it with each set. kind: level (bikes, ellipticals) or damper (rowers, SkiErg).",
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["kind"],
+            "properties": {
+              "kind": { "enum": ["level", "damper"] },
+              "min": { "type": "integer", "minimum": 0, "maximum": 10 },
+              "max": { "type": "integer", "minimum": 1, "maximum": 100 }
+            }
+          },
           "timeUnit": {
             "description": "Timed exercises (logType time) planned and logged in minutes instead of seconds: bikes, SkiErg. The app shows 12–18 min and a minutes stepper.",
             "enum": ["min", "sec"]

@@ -4150,6 +4150,7 @@
       "name": "Rowing Machine",
       "equipment": ["rowing machine"],
       "logType": "time",
+      "resistance": { "kind": "damper", "min": 1, "max": 10 },
       "pattern": "conditioning",
       "primary": ["quads", "glutes", "upper_back"],
       "secondary": ["lats", "hamstrings", "biceps"],
@@ -4585,6 +4586,7 @@
       "name": "Stationary Bike",
       "equipment": ["spin bike, upright or recumbent bike"],
       "logType": "time",
+      "resistance": { "kind": "level", "min": 1, "max": 40 },
       "timeUnit": "min",
       "pattern": "conditioning",
       "primary": ["quads", "glutes"],
@@ -4596,7 +4598,7 @@
       "steps": [
         "Spin easy for a minute, then raise the resistance to a steady, hard pace.",
         "Hold a pace you could still talk through, but wouldn't want to.",
-        "Ease off for the last minute, then log the time."
+        "Ease off for the last minute, then log the time and the level."
       ],
       "cues": [
         "Push and pull through the whole circle, not just stomping down.",
@@ -4618,7 +4620,7 @@
         "steps": [
           "Pedalea suave un minuto y luego sube la resistencia hasta un ritmo constante y exigente.",
           "Mantén un ritmo con el que aún podrías hablar, aunque no te apetezca.",
-          "Afloja el último minuto y apunta el tiempo."
+          "Afloja el último minuto y apunta el tiempo y el nivel."
         ],
         "cues": [
           "Empuja y tira durante toda la vuelta, no solo pisando hacia abajo.",
@@ -4685,6 +4687,7 @@
       "name": "SkiErg",
       "equipment": ["SkiErg"],
       "logType": "time",
+      "resistance": { "kind": "damper", "min": 1, "max": 10 },
       "timeUnit": "min",
       "pattern": "conditioning",
       "primary": ["lats", "triceps"],
