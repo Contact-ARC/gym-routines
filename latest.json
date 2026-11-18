@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.14.0",
-    "notes": "A tidy-up after a busy month: Settings is regrouped (You, Training, Gyms, Connections, Your data, About) with reminders, rest alerts, equipment and bar/weight jumps in their own pages, and All on / All off for equipment. Free session and Climbing sit right under your next workout, exercises open on your progress, Train together has a Join button, and numbers in Spanish use a decimal comma.",
+    "version": "0.15.0",
+    "notes": "New Activity badges from Health Connect: daily steps, total steps, a 10K week, workouts your watch recorded, calories burned and a week of good sleep, plus a Weigh-ins badge. Your streak now only needs 2 workouts a week (a weekly goal tracks its own run), Home shows your steps, last night's sleep and how your weekly goal is going, and the monthly report has an Outside the gym section. The bar can be 20 down to 0 kg for an EZ bar.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Una puesta a punto tras un mes de muchos cambios: Ajustes está reorganizado (Tú, Entrenamiento, Gimnasios, Conexiones, Tus datos, Acerca de) con recordatorios, avisos del descanso, equipamiento y barra/saltos de peso en sus propias páginas, y Todo activado / Todo desactivado para el equipamiento. Sesión libre y Escalada están justo debajo de tu próximo entrenamiento, los ejercicios se abren en tu progreso, Entrenar juntos tiene botón para unirte y los números usan coma decimal."
+      "notes": "Nuevas insignias de Actividad con Health Connect: pasos en un día, pasos totales, una semana de 10.000, entrenamientos de tu reloj, calorías quemadas y una semana durmiendo bien, más una insignia de Pesajes. La racha ahora solo necesita 2 entrenamientos por semana (el objetivo semanal lleva su propia cuenta), Inicio muestra tus pasos, el sueño de anoche y cómo va tu objetivo semanal, y el resumen mensual tiene una sección Fuera del gimnasio. La barra puede ir de 20 a 0 kg para una barra Z."
     }
   },
   "exercisesFile": "exercises.json",
