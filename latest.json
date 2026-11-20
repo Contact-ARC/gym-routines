@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.16.0",
-    "notes": "Train together, redone: one slim line in your workout shows who's up (and the plates to change), and everything else is in one tidy sheet. Taking turns can now be switched off when you're on different machines, you can start it from Home's Next up card, and Home tells you when someone in your crew is training together so you can join. Also: remove an exercise from today's workout from its ⋯ menu, with Undo.",
+    "version": "0.16.1",
+    "notes": "Train together, redone: one slim line in your workout shows who's up (and the plates to change), and everything else is in one tidy sheet. Taking turns can be switched off when you're on different machines, you can start with your crew from Home's Next up card or any day's page, and Home tells you when someone in your crew is training together so you can join. Also: remove an exercise from today's workout from its ⋯ menu, with Undo.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "Entrenar juntos, renovado: una línea fina en tu entrenamiento muestra a quién le toca (y los discos que cambiar), y todo lo demás está en una sola hoja ordenada. Ahora puedes desactivar los turnos cuando estáis en máquinas distintas, empezarlo desde la tarjeta Te toca de Inicio, e Inicio te avisa cuando alguien de tu crew está entrenando junto para que te unas. Además: quita un ejercicio del entrenamiento de hoy desde su menú ⋯, con Deshacer."
+      "notes": "Entrenar juntos, renovado: una línea fina en tu entrenamiento muestra a quién le toca (y los discos que cambiar), y todo lo demás está en una sola hoja ordenada. Puedes desactivar los turnos cuando estáis en máquinas distintas, empezar con tu crew desde la tarjeta Te toca de Inicio o desde la página de cualquier día, e Inicio te avisa cuando alguien de tu crew está entrenando junto para que te unas. Además: quita un ejercicio del entrenamiento de hoy desde su menú ⋯, con Deshacer."
     }
   },
   "exercisesFile": "exercises.json",
