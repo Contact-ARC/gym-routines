@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "app": {
-    "version": "0.15.5",
-    "notes": "The stationary bike now logs its difficulty level (and the rower and SkiErg their damper), remembers your last one and shows it with each set. In a workout, tap the photo for the exercise's photos, the name for how to do it and the arrow for your progress. Supersets can add or remove a whole round, or just a set of one exercise.",
+    "version": "0.16.0",
+    "notes": "Train together, redone: one slim line in your workout shows who's up (and the plates to change), and everything else is in one tidy sheet. Taking turns can now be switched off when you're on different machines, you can start it from Home's Next up card, and Home tells you when someone in your crew is training together so you can join. Also: remove an exercise from today's workout from its ⋯ menu, with Undo.",
     "downloadUrl": "https://github.com/Contact-ARC/gym-app/releases/latest",
     "es": {
-      "notes": "La bicicleta estática ahora guarda el nivel de dificultad (y el remo y el SkiErg su resistencia), recuerda el último y lo muestra en cada serie. En el entrenamiento, toca la foto para ver las fotos del ejercicio, el nombre para ver cómo se hace y la flecha para tu progreso. En las superseries puedes añadir o quitar una ronda entera, o solo una serie de un ejercicio."
+      "notes": "Entrenar juntos, renovado: una línea fina en tu entrenamiento muestra a quién le toca (y los discos que cambiar), y todo lo demás está en una sola hoja ordenada. Ahora puedes desactivar los turnos cuando estáis en máquinas distintas, empezarlo desde la tarjeta Te toca de Inicio, e Inicio te avisa cuando alguien de tu crew está entrenando junto para que te unas. Además: quita un ejercicio del entrenamiento de hoy desde su menú ⋯, con Deshacer."
     }
   },
   "exercisesFile": "exercises.json",
